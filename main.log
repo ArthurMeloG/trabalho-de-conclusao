@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.1.14)  14 JAN 2025 03:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.1.14)  14 JAN 2025 04:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/workspaces/Trabalho de conclusão/main.tex"
-(/workspaces/Trabalho de conclusão/main.tex
+**/workspaces/trabalho-de-conclusao/main.tex
+(/workspaces/trabalho-de-conclusao/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (./fixos/pacotes.tex (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -469,14 +469,14 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 Package: babel 2024/01/07 v24.1 The Babel package
 \babel@savecnt=\count326
 \U@D=\dimen189
-\l@unhyphenated=\language89
+\l@unhyphenated=\language39
  (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
 \bbl@dirlevel=\count327
  (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language33). Reported on input line 111.
+(babel)             (\language7). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 )) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
@@ -699,10 +699,10 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 12
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package epstopdf Info: Source file: <figuras/capa.eps>
-(epstopdf)                    date: 2025-01-14 03:09:38
-(epstopdf)                    size: 649636 bytes
+(epstopdf)                    date: 2025-01-14 03:52:37
+(epstopdf)                    size: 661293 bytes
 (epstopdf)             Output file: <figuras/capa-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-01-14 03:46:08
+(epstopdf)                    date: 2025-01-14 03:52:37
 (epstopdf)                    size: 105852 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/capa-eps-converted-to.pdf figuras/capa.eps>
 (epstopdf)             \includegraphics on input line 12.
@@ -863,10 +863,10 @@ LaTeX Warning: Citation `inmetro2003' on page 39 undefined on input line 7.
 
 ] [40]
 Package epstopdf Info: Source file: <figuras/fig01.eps>
-(epstopdf)                    date: 2025-01-14 03:09:39
-(epstopdf)                    size: 2193446 bytes
+(epstopdf)                    date: 2025-01-14 03:52:37
+(epstopdf)                    size: 2224392 bytes
 (epstopdf)             Output file: <figuras/fig01-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-01-14 03:46:14
+(epstopdf)                    date: 2025-01-14 03:52:37
 (epstopdf)                    size: 42547 bytes
 (epstopdf)             Command: <repstopdf --outfile=figuras/fig01-eps-converted-to.pdf figuras/fig01.eps>
 (epstopdf)             \includegraphics on input line 115.
@@ -965,13 +965,13 @@ Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: D4ABCCF691F2867055319D175DBB2A1B;973.
  ) 
 Here is how much of TeX's memory you used:
- 16412 strings out of 474222
- 264187 string characters out of 5748733
+ 16412 strings out of 475488
+ 264182 string characters out of 5775691
  1936975 words of memory out of 5000000
- 38130 multiletter control sequences out of 15000+600000
+ 37927 multiletter control sequences out of 15000+600000
  653613 words of font info for 84 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 104i,13n,110p,1092b,640s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 397 hyphenation exceptions out of 8191
+ 104i,13n,110p,1089b,640s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
 Output written on main.pdf (61 pages, 552629 bytes).
 PDF statistics:

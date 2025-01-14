@@ -24,7 +24,15 @@ RUN apt-get update && apt-get -y upgrade \
     texlive-publishers \
     texlive-lang-portuguese \
     texlive-latex-extra \
-    texlive-fonts-recommended
+    texlive-fonts-recommended \
+    texlive-latex-extra \
+    texlive-lang-portuguese \
+    texlive-fonts-recommended \
+    texlive-science \
+    texlive-latex-recommended \
+    texlive-xetex \
+    texlive-lang-european \
+    texlive-full \
 
 # latexindent modules
 RUN apt-get install --no-install-recommends -y curl
