@@ -1,0 +1,28 @@
+\chapter[Introdução]{Introdução}
+\addcontentsline{toc}{chapter}{Introdução}
+
+A Web (World Wide Web) foi concebida como uma plataforma aberta e acessível para todos, promovendo liberdade de acesso e compartilhamento de informações de qualquer lugar e hora. 
+Porém, o funcionamento da Web está atrelado ao modelo cliente-servidor, e isso acarreta que a maioria das máquinas que participam do processo de compartilhamento de informações sejam apenas coadjuvantes, consumindo serviços de outras máquinas servidoras (1). Para contrapor esta limitação, o projeto XXX tem por finalidade desenvolver uma aplicação segura e descentralizada através do paradigma P2P (peer-to-peer), para aprendizado comunitário de assuntos gerais.
+
+A descentralização surge como uma alternativa inovadora, promovendo resiliência, maior privacidade e autonomia dos usuários ao permitir que dados sejam distribuídos e armazenados em redes ponto a ponto, sem depender de servidores centralizados. Com isso, o projeto XXX foi arquitetado para garantir a integridade e privacidade dos dados sensíveis do material didático, onde o proprietário do material possui total controle sobre seu conteúdo, sendo capaz de acessá-lo e distribuí-lo da forma como quiser, protegendo o material contra acessos não autorizados e manipulações, promovendo segurança e confiança no ambiente online.
+
+O projeto adota uma arquitetura cuidadosamente planejada para alcançar esses objetivos. Como peça central da arquitetura, temos o protocolo IPFS (InterPlanetary File System), que possibilita o armazenamento e a distribuição de arquivos de forma descentralizada, e o OrbitDB, que se trata de uma base de dados distribuída construída sobre o IPFS, que garante a persistência e a integridade das informações em um ambiente peer-to-peer. Para facilitar a implementação do IPFS na linguagem JavaScript, foi utilizada a Helia, uma biblioteca que permite a interação simplificada com a rede descentralizada, além do Nest para construção de APIs escaláveis. A escolha dessas tecnologias para o desenvolvimento da aplicação foi motivada pela flexibilidade e desempenho.
+
+Dessa forma, a utilização dessas tecnologias torna possível a criação de uma aplicação inovadora e descentralizada, que redefine a forma como o aprendizado online é conhecido.
+
+\section{Objetivos}
+\subsection{Objetivo Geral}
+
+Desenvolver uma plataforma de aprendizado comunitário que utilize uma arquitetura moderna e segura, garantindo integridade e privacidade dos dados sensíveis através de técnicas de criptografia e tecnologias descentralizadas.
+
+\subsection{Objetivos Específicos}
+
+\begin{itemize}
+    \item Implementar uma arquitetura back-end eficiente e escalável utilizando o framework NestJS integrado com banco de dados Postgres e outras soluções como OrbitDB e Helia, para o gerenciamento seguro dos dados.
+    \item Garantir a privacidade e segurança dos dados dos usuários por meio de técnicas de criptografia, armazenando apenas informações necessárias e sensíveis de forma protegida.
+    \item Utilizar o IPFS (InterPlanetary File System) para o armazenamento descentralizado de materiais de curso, otimizando a disponibilidade e a proteção dos arquivos.
+    \item Implementar um sistema de controle de acesso robusto que permita o compartilhamento seletivo de materiais com base nos níveis de permissão dos usuários, assegurando que conteúdos privados sejam acessíveis apenas para os usuários autorizados.
+    \item Fornecer uma interface amigável e responsiva para os administradores e alunos, desenvolvida com NextJS, que facilite o acesso aos cursos e materiais disponibilizados na plataforma.
+    \item Documentar e testar a solução para validar a conformidade da plataforma com os requisitos funcionais e de segurança estabelecidos.
+\end{itemize}
+  
