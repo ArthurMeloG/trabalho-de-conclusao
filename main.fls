@@ -397,11 +397,11 @@ INPUT editaveis/fundamentacao.tex
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmri10.tfm
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmsso17.tfm
-INPUT ./editaveis/consideracoes.tex
-INPUT ./editaveis/consideracoes.tex
-INPUT ./editaveis/consideracoes.tex
-INPUT ./editaveis/consideracoes.tex
-INPUT editaveis/consideracoes.tex
+INPUT ./editaveis/metodologia.tex
+INPUT ./editaveis/metodologia.tex
+INPUT ./editaveis/metodologia.tex
+INPUT ./editaveis/metodologia.tex
+INPUT editaveis/metodologia.tex
 INPUT ./editaveis/textoepostexto.tex
 INPUT ./editaveis/textoepostexto.tex
 INPUT ./editaveis/textoepostexto.tex
