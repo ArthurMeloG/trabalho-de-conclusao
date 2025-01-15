@@ -2,7 +2,7 @@
 \addcontentsline{toc}{chapter}{Fundamentação Teórica}
 
 \section{O problema das aplicações centralizadas}
-teste
+
 A arquitetura tradicional em que a internet se baseou, cliente-servidor, tem sido predominante em várias aplicações, como redes sociais, mensageiros, aplicações de busca. Apesar deste modelo ter se mostrado eficiente no decorrer do tempo, ele apresenta desafios significativos como a centralização dos dados. Segundo Wanner \cite{wanner2024}, problemas como a vulnerabilidade dos dados, a privacidade dos usuários e a censura são aspectos a serem avaliados nessa arquitetura que podem acarretar problemas de segurança e confiança. A forte tendência à centralização pode ser confirmada através do estudo da LogicMonitor \cite{logicmonitor2023} que confirma que com a pandemia COVID-19, a migração de dados das empresas para a nuvem foi acelerada 87\% e planeja seguir com esse processo. Diante dessa problemática, soluções como o \textit{InterPlanetary File System} (IPFS), bitcoin, nostr foram pensadas com o cerne na descentralização e democratização dos dados.
 
 Neste projeto, o foco é desenvolver uma plataforma descentralizada para cursos e materiais educativos, utilizando o IPFS para garantir que os dados permaneçam sob o controle direto de seus criadores. A aplicação será responsável por gerenciar os dados dos usuários e no controle dos meios de pagamento através da rede  \textit{Lightning Network} \cite{lightningnetwork} para os conteúdos privados criptografados. Tanto os materiais públicos quanto os privados serão persistidos na rede IPFS. Dessa forma, mesmo que eventualmente essa aplicação saia de circulação ou seja bloqueada, os dados permanecerão disponíveis globalmente ao público.
@@ -98,7 +98,7 @@ O \textbf{Next.js} é um framework \textit{React} para desenvolvimento de aplica
 
 \subsection{PostgreSQL}
 
-O \textbf{PostgreSQL} é um sistema de gerenciamento de banco de dados relacional de código aberto amplamente reconhecido por sua robustez, flexibilidade e conformidade com padrões SQL. Ele oferece suporte avançado a diversos tipos de dados e permite a criação de extensões personalizadas, tornando-o uma escolha ideal para aplicações modernas e escaláveis.
+O \textbf{PostgreSQL} é um banco de dados relacional muito utilizado no desenvolvimento web. Conhecido por sua flexibilidade e robustez em diagramas relacionais. 
 
 \subsubsection*{Pontos Fortes do PostgreSQL:}
 \begin{itemize}
@@ -109,3 +109,15 @@ O \textbf{PostgreSQL} é um sistema de gerenciamento de banco de dados relaciona
     \item \textbf{Segurança}: Autenticação robusta, criptografia e controle granular de permissões.
     \item \textbf{Comunidade Ativa}: Grande quantidade de documentação e suporte da comunidade global.
 \end{itemize}
+
+\section{Diagrama de Gutenberg}
+
+O desenvolvimento da aplicação web, será baseado no diagrama de Gutenberg, que é o modelo que descreve princípios fundamentais de desing que garantem uma experiência de usuário intuitiva e eficiente. Dentre os diversos princípios utilizados, destam-se para o desenvolvimento desse produto, {hierarquia visual}, a \textit{consistência}, \textit{simplicidade} e \textit{leitura} que, quando combinados corretamente, controem uma interface clara e funcional.
+
+O princípio da \textit{hierarquia visual}, conforme proposto por Lidwell, Holden e Butler (2010), reflete a respeito da importância relativa dos elementos. Eles devem ser estruturados de forma intuitiva a fim de guiar o usuário pelas informações centrais. Isso pode ser alcançado através de tamanhos diferentes de fontes, cores  e contraste, tornando mais fácil a interação do usuário.
+
+O princípio da \textit{consistência} será essencial. De acordo com esse esse princípio, os elementos semelhantes devem ser tratados de maneira consistente em todo o projeto, ou seja, sem diferenças de desing que criem confusão no usuário. Esse princípio aumenta a previsibilidade e acelera o aprendizado da interface.
+
+O princípio da \textit{simplicidade} auxilia em manter uma interface limpa e objetiva partindo da organização dos elementos e funcionalidades e com isso ações como eliminar elementos que sobrecarreguem o usuário com informações excessivas. Isso permitire maior foco na interação e nas principais tarefas, aumentando a eficácia do produto.
+
+Por fim, o princípio da \textit{leitura} destaca os padrões de leitura do ocidente. Esse padrão baseia-se no comportamento dos olhos humanos que tendem a começar a leitura do canto superior esquerdo de uma página, indo em direção ao limite esquerdo, repetindo esse comportamento até o final da leitura \cite{lidwell2010}. Esse padrão é fundamental na concepção de desings, pois dispõe informações a respeito da disposição dos componentes visuais da tela.
