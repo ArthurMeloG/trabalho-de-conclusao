@@ -1,15 +1,27 @@
 \chapter[Introdução]{Introdução}
+
 \addcontentsline{toc}{chapter}{Introdução}
-A Web (World Wide Web) foi concebida como uma plataforma aberta e acessível para todos, promovendo liberdade de acesso e compartilhamento de informações de qualquer lugar e hora. 
-Porém, o funcionamento da Web está atrelado ao modelo cliente-servidor, e isso acarreta que a maioria das máquinas que participam do processo de compartilhamento de informações sejam apenas coadjuvantes, consumindo serviços de outras máquinas servidoras \cite{rocha2004p2p}. Para contrapor esta limitação, o projeto XXX tem por finalidade desenvolver uma aplicação segura e descentralizada através do paradigma P2P (peer-to-peer), para aprendizado comunitário de assuntos gerais.
 
-A descentralização surge como uma alternativa inovadora, promovendo resiliência, maior privacidade e autonomia dos usuários ao permitir que dados sejam distribuídos e armazenados em redes ponto a ponto, sem depender de servidores centralizados. Com isso, o projeto XXX foi arquitetado para garantir a integridade e privacidade dos dados sensíveis do material didático, onde o proprietário do material possui total controle sobre seu conteúdo, sendo capaz de acessá-lo e distribuí-lo da forma como quiser, protegendo o material contra acessos não autorizados e manipulações, promovendo segurança e confiança no ambiente online.
+\section{Contexto Tecnológico}
 
-O projeto adota uma arquitetura cuidadosamente planejada para alcançar esses objetivos. Como peça central da arquitetura, temos o protocolo IPFS (InterPlanetary File System), que possibilita o armazenamento e a distribuição de arquivos de forma descentralizada, e o OrbitDB, que se trata de uma base de dados distribuída construída sobre o IPFS, que garante a persistência e a integridade das informações em um ambiente peer-to-peer. Para facilitar a implementação do IPFS na linguagem JavaScript, foi utilizada a Helia,js, uma biblioteca que permite a interação simplificada com a rede descentralizada, além do NestJS para construção de APIs escaláveis. A escolha dessas tecnologias para o desenvolvimento da aplicação foi motivada pela flexibilidade e desempenho.
+A Web (World Wide Web) foi concebida como uma plataforma aberta e acessível para todos, promovendo liberdade de acesso e compartilhamento de informações de qualquer lugar e hora. Em novembro de 2007, 5 anos após o surgimento da Web 2.0, a WWW inicia suas operações com uma série de objetivos, como a criação de um fórum para a comunidade interessada em padrões web, tradução para português de conteúdos que fossem do interesse regional, entre outros \cite{vieira2014}.
 
-Dessa forma, a utilização dessas tecnologias torna possível a criação de uma aplicação inovadora e descentralizada, que redefine a forma como o aprendizado online é conhecido.
+Desde então, a W3C tem evoluído cada vez mais, transformando não só como as informações são acessadas e compartilhadas, mas também o estilo de vida dos seres humanos, uma vez que afetou os padrões de interação social, comunicação, consumo, trabalho e muitos outros fatores, em todo o mundo.
+
+A Web possui vantagens, desvantagens e características particulares. Uma das principais peculiaridades é que seu funcionamento está atrelado ao modelo cliente-servidor, e como consequência, a maioria das máquinas que participam do processo de compartilhamento e acesso de informações são apenas coadjuvantes, consumindo serviços de outras máquinas servidoras \cite{rocha2004p2p}. Dentre as desvantagens, observa-se o risco de centralização, onde os usuários estão sob uma entidade central, que pode gerar preocupações, como privacidade e censura. 
+
+Para contrapor tais limitações e desvantagens, o presente trabalho tem por finalidade desenvolver uma aplicação segura e descentralizada através do paradigma P2P (peer-to-peer), para aprendizado comunitário de assuntos gerais, onde o proprietário do material possui total controle sobre seu conteúdo, sendo capaz de acessá-lo e distribuí-lo da forma como quiser, protegendo o material contra acessos não autorizados e manipulações, promovendo segurança e confiança no ambiente online..
+
+\section{Problema}
+
+Grande parte dos conteúdos educativos da Web estão disponíveis em plataformas centralizadas, como, por exemplo, blogs e comunidades, onde seus colaboradores desenvolvem o conteúdo em diversos formatos, e então o publicam. No entanto, como consequência da utilização do modelo tradicional cliente-servidor, as plataformas podem gerar perda de autonomia sobre o material publicado e dependência da infraestrutura da empresa responsável. Além disso, outros problemas eventuais tem se tornado comuns, como por exemplo, a depender da estrutura de servidores ou políticas da plataforma, censura, falhas ou desligamentos dos provedores de serviço, podendo levar à indisponibilidade do conteúdo, comprometendo o acesso de usuários que dependem dessas informações. 
+
+A centralização também levanta preocupações com a privacidade dos dados, uma vez que as plataformas podem rastrear e utilizar informações dos usuários para fins comerciais sem consentimento explícito \cite{beiro2020}. Assim, surge a necessidade de explorar alternativas inovadoras e descentralizadas que garantam maior resiliência, privacidade e controle aos criadores e consumidores de conteúdos educativos, redefinindo a forma como o aprendizado online acontece. 
 
 \section{Objetivos}
+
+A descentralização surge como uma alternativa inovadora, promovendo resiliência, maior privacidade e autonomia dos usuários ao permitir que dados sejam distribuídos e armazenados em redes ponto a ponto, sem depender de servidores centralizados. Com isso, o projeto Learn Chain foi arquitetado para garantir a integridade e privacidade dos dados sensíveis do material didático. 
+
 \subsection{Objetivo Geral}
 
 Desenvolver uma plataforma de aprendizado comunitário que utilize uma arquitetura moderna e segura, garantindo integridade e privacidade dos dados sensíveis através de técnicas de criptografia e tecnologias descentralizadas.
