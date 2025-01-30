@@ -1,20 +1,45 @@
 \chapter[Metodologia]{Metodologia}
 
 \section{Extreme Programming (XP)}
-Extreme Programming é uma metodologia ágil que valoriza a comunicação, simplicidade, feedback, respeito e coragem, com o objetivo de melhorar e desenvolver software enquanto prioriza as pessoas envolvidas no projeto \cite{extremeprogramming}. Diante de uma equipe enxuta composta por apenas dois desenvolvedores, foram necessárias adaptações na metodologia para que ela atendesse às necessidades específicas do projeto.
+Extreme Programming é uma metodologia ágil que valoriza os princípios de comunicação, simplicidade, feedback, respeito e coragem, com o objetivo de melhorar e desenvolver software enquanto prioriza as pessoas envolvidas no projeto \cite{extremeprogramming}. Sua abordagem iterativa e incremental permite maior adaptabilidade às mudanças, garantindo que as entregas sejam rápidas e alinhadas com os requisitos do projeto. 
+
+Diante de uma equipe enxuta composta por apenas dois desenvolvedores, foram necessárias adaptações na metodologia para que ela atendesse às necessidades específicas do projeto. Assim, algumas práticas foram enfatizadas, enquanto outras foram ajustadas ou parcialmente adotadas.
 
 \subsection{Particularidades do XP no Projeto}
-Com uma pequena equipe, algumas práticas do XP foram mais valorizadas e amplamente utilizadas pela dupla idealizadora do trabalho. Entre elas, destaca-se a programação por pares, onde periodicamente os desenvolvedores realizaram o trabalho em uma chamada online, realizando a revisão do trabalho de forma cruzada quando isto não ocorria.
+Com uma pequena equipe, algumas práticas do XP foram mais valorizadas e amplamente utilizadas pela dupla idealizadora do trabalho. Entre elas, destaca-se a programação por pares, onde periodicamente os desenvolvedores realizaram o trabalho em uma chamada online, realizando a revisão do trabalho de forma cruzada quando isto não ocorria. Dessa forma, tais práticas garantiram maior qualidade ao código produzido, reduzindo a probabilidade de erros críticos.
 
+Além disso, outras práticas do XP foram adotadas, com a finalidade de garantir a eficiência durante o desenvolvimento:
+
+\begin{itemize}
+    \item \textbf{Refatoração contínua}: O código foi revisado e aprimorado durante o desenvolvimento, para melhorar a legibilidade, eficiência e manutenção do sistema.
+    \item \textbf{Desenvolvimento incremental e iterativo}: O sistema foi construído com pequenas entregas, permitindo que as adaptações fossem realizadas de acordo com o surgimento de requisitos.
+    \item \textbf{Comunicação contínua}: A equipe manteve um fluxo constante de comunicação por meio de reuniões periódicas e mensagens assíncronas, garantindo que ambos os membros estivessem alinhados quanto às prioridades e decisões técnicas. As principais plataformas utilizadas para realizar tal comunicação foram o WhatsApp (para comunicação assíncrona) e o Discord (para comunicação síncrona).
+    \item \textbf{Simplicidade do design}: O foco foi manter a arquitetura e as implementações o mais simples possível, evitando complexidades desnecessárias, facilitando assim o processo de desenvolvimento.
+\end{itemize}
 
 \section{Kanban}
-O Kanban é uma metodologia ágil que tem como foco a visualização do fluxo de trabalho. A ideal central deste método de gestão é otimizar a entrega de valor otimizando e limitando o trabalho em progresso \cite{kanban2025}.
+O Kanban é uma metodologia ágil que tem como foco a visualização do fluxo de trabalho. A ideal central deste método de gestão é otimizar a entrega de valor otimizando e limitando o trabalho em progresso (\textit{Work in Progress - WIP}) \cite{kanban2025}. Com isso, foi possível evitar a sobrecarga de trabalho da equipe, tornando o processo de desenvolvimento mais eficiente.
+
+O Kanban, diferente de outras metodologias, permite grande flexibilidade ao adaptar o fluxo de trabalho existente sem ciclos de desenvolvimento fixos. Dentre as principais características da metodologia, a equipe de desenvolvimento fez bastante uso dos seguintes:
+
+\begin{itemize}
+    \item \textbf{Visualização do fluxo de trabalho}: Com os quadros visuais, a equipe tenha uma visão clara das tarefas pendentes, em andamento e concluídas.
+    \item \textbf{Limitação do trabalho em progresso (WIP)}: Com uma quantidade de trabalho limitada, a equipe teve um grande foco diante das tarefas dispostas nos quadros.
+    \item \textbf{Gestão contínua do fluxo}: A equipe adaptou constantemente o fluxo de trabalho com base na análise dos gargalos e otimização dos processos.
+\end{itemize}
 
 \subsection{Trello}
 O Trello é uma ferramenta de gerenciamento de projetos que tem por finalidade organizar as tarefas em um quadro visual. Ele é amplamente utilizado de forma conjunta com o método Kanban, dada sua interface intuitiva para manipulação de cartões e monitoramento do fluxo de trabalho.
 
 \subsection{Uso do Kanban com Trello}
-O Trello facilita a utilização do método Kanban, possibilitando a visualização e acompanhamento das tarefas do projeto de software de forma virtual \cite{campos2023trello}. Isso permite os desenvolvedores a melhor compreender aquilo que precisa ser feito, tendo uma clara visão a cerca dos gargalos do trabalho.
+O Trello facilita a utilização do método Kanban, possibilitando a visualização e acompanhamento das tarefas do projeto de software de forma virtual \cite{campos2023trello}. Isso permite os desenvolvedores a melhor compreender aquilo que precisa ser feito, tendo uma clara visão a cerca dos gargalos do trabalho. Para garantir uma visão clara do trabalho, a equipe estruturou o quadro Kanban do projeto com as seguintes colunas principais:
+
+\begin{itemize}
+    \item \textbf{Backlog}: Apresenta as tarefas planejadas ainda pendentes.
+    \item \textbf{Em progresso}: Atividades que estão em execução.
+    \item \textbf{Revisão}: Tarefas que devem apenas ser revisadas para serem concluídas.
+    \item \textbf{Concluído}: Atividades finalizadas e aprovadas.
+\end{itemize}
 
 \section{Busca e seleção de artigos}
 Os idealizadores do projeto tiveram uma jornada particular até encontrar os materiais necessários para construir toda a escrita do presente documento. Primeiramente, iniciaram a pesquisa utilizando o software Publish or Perish, que se trata de um software que recupera e analisa citações acadêmicas com base em uma variedade de fontes de dados particular \cite{harzing2025publish}.
