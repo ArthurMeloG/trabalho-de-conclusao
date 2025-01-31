@@ -1,21 +1,29 @@
 \chapter[Elementos do Texto]{Suporte Tecnológico}
 
 \section{Nostr e IPFS: Fundamentação da escolha}
-A escolha das ferramentas IPFS e Nostr foi baseada na necessidade de alcançar um sistema descentralizado e seguro, capaz não só de armazenar os dados, mas também realizar a troca de mensagens entre participantes de forma descentralizada. Além disso, essas tecnologias são amplamente utilizadas pela comunidade para alcançar os objetivos que a equipe almeja com o desenvolvimento do presente trabalho, o que reforça a decisão de utilizar tais tecnologias no projeto.
+A escolha das ferramentas IPFS e Nostr foi baseada na necessidade de alcançar um sistema descentralizado e seguro, capaz não só de armazenar os dados, mas também realizar a troca de mensagens entre participantes de forma distribuída. O uso destas tecnologias elimina a dependência de servidores centrais, garantindo que seja alcançado o objetivo central deste projeto.
+
+O \textbf{IPFS (InterPlanetary File System)} será utilizado para o armazenamento descentralizado de conteúdos de aprendizagem, permitindo que os dados sejam acessados de maneira eficiente, sem depender de um único servidor. Através da identificação utilizando hashs únicas, o IPFS garante a integridade do conteúdo, evitando duplicação desnecessária de arquivos na rede, além de tornar o sistema resistente a falhas e censura, uma vez que os dados podem ser distribuídos entre múltiplos nós na rede.
 
 \section{NextJS e NestJS}
-As tecnologias NextJS e NestJS emergiram como componentes fundamentais no desenvolvimento deste projeto, alinhando-se aos requisitos levantados pelos participantes. Como descrito na página de apresentação da ferramente, o Next.js é um framework React projetado para construir aplicativos web de alta qualidade , simplificando o processo de desenvolvimento ao fornecer otimizações integradas, renderização do lado do servidor e roteamento fácil \cite{nextjs2025}. 
+As tecnologias NextJS e NestJS emergiram como componentes fundamentais no desenvolvimento deste projeto, alinhando-se aos requisitos levantados pela equipe para fornecer uma arquitetura moderna, escalável e eficiente. Ambas as ferramentas foram escolhidas devido à ampla adoção das mesmas pela comunidade de desenvolvimento, além de suas ótimas documentações.
 
-Analisando simultaneamente, o NestJS é uma estrutura progressiva baseada em Node.js, ideal para desenvolver aplicativos do lado do servidor escaláveis, confiáveis e eficientes \cite{nestjs2025}, além de oferecer suporte nativo a linguagem TypeScript. Essas características tornam o NestJS particularmente adequado para a construção de APIs REST, que será o padrão utilizado no presente projeto.
+O \textbf{Next.js} é um framework React projetado para construir aplicativos web de alta qualidade, simplificando o processo de desenvolvimento ao fornecer otimizações integradas, renderizações do lado do servidor e fácil roteamento \cite{nextjs2025}. Além disso, o Next.js traz recursos como otimização automática de imagens, roteamento intuitivo e suporte integrado a APIs, facilitando a implementação de uma interface interativa e responsiva para o projeto \cite{nextjs2025}. No contexto deste trabalho, o Next.js foi escolhido para desenvolver a interface da aplicação, garantindo carregamento eficiente e uma experiência fluida para os usuários.
+
+Por sua vez, o \textbf{NestJS} é uma estrutura progressiva baseada em Node.js, ideal para desenvolver aplicativos do lado do servidor escaláveis, confiáveis e eficientes \cite{nestjs2025}. O NestJS oferece suporte nativo à linguagem TypeScript, promovendo um design modular, que facilita a organização do código e a reutilização de componentes. Sua capacidade de estruturar aplicações de forma organizada, aliada a recursos como injeção de dependência e middleware personalizável, torna-o ideal para desenvolver APIs REST robustas e seguras, que serão utilizadas na comunicação entre o frontend e o backend do sistema \cite{nestjs2025}.
 
 \section{Armazenamento e persistência de dados}
 
 \subsection{PostgreSQL}
-Conhecido por ser um dos sistemas de armazenamento de dados mais seguros e confiáveis da atualidade, o PostgreSQL está sendo utilizado para armazenar os usuários da plataforma, além dos metadados dos materiais de aprendizagem da plataforma. Além das características de confiabilidade, sua escolha também foi influenciada pela experiência dos membros desenvolvedores com tal tecnologia.
 
-\subsection{IPFS e OrbitDB}
-O IPFS, jutantamente com o OrbitDB desempenham papéis fundamentais no desenho do projeto, permitindo a descentralização no armazenamento e tratamento de dados. O IPFS, além do fato de ser bastante utilizado pela comunidade de desenvolvimento para a construção de aplicações descentralizadas, oferece uma grande capacidade de distribuir e armazenar arquivos de maneira globalmente acessível, e por isso foi escolhido como complemento arquitetural do trabalho. De forma conjunta, o OrbitDB complementa o sistema com uma solução de armazenamento distribuído baseada no protocolo IPFS.
+Conhecido por ser um dos sistemas de armazenamento de dados mais seguros e confiáveis da atualidade, promovendo segurança e integridade dos dados, principalmente por sua conformidade com os princípios ACID (Atomicidade, onsistência, Isolamento e Durabilidade), o \textbf{PostgreSQL} está sendo utilizado para armazenar os usuários da plataforma, além dos metadados dos materiais de aprendizagem da plataforma. Além das características de confiabilidade, sua escolha também foi influenciada pela experiência dos membros desenvolvedores com tal tecnologia.
 
+Outro aspecto relevante para a escolha do \textbf{PostgreSQL} é sua compatibilidade com diferentes arquiteturas computacionais, incluindo os sistemas distribuídos. Tal tecnologia é uma ótima opção para lidar com otimicações de indexação, que garante maior eficiência na busca por informações, oferecendo melhor experiência aos usuário utilizadores do sistema por uma vantagem no tempo de carregamento. Por fim, a experiência prévia da equipe de desenvolvimento com essa tecnologia também influenciou a decisão, assegurando maior agilidade e segurança na implementação do banco de dados.
+
+
+\subsection{OrbitDB}
+
+Complementando a arquitetura do sistema, o \textbf{OrbitDB} é uma peça fundamental para o software Learn Chain. Enquanto o IPFS lida com a distribuição de arquivos, o OrbitDB permite a manipulação de dados estruturados em um ambiente P2P, não fazendo mais necessários servidores centralizados. Dessa forma, o \textbf{OrbitDB} permite que os usuários interajam com os dados de maneira segura e confiável, integrando-se perfeitamente ao projeto.
 
 \section{Figma}
 O Figma é uma ferramenta de prototipação colaborativa, que possui um fluxo de trabalho criado para desenvolvedores de Software, e tem como finalidade facilitar as tarefas de design com uma interface simples e bastante intuitiva \cite{figma2025}.
