@@ -2,6 +2,8 @@
 
 \addcontentsline{toc}{chapter}{Introdução}
 
+O objetivo principal da indtrodução é dar um contexto geral sobre o tema abordado neste Trabalho de Conclusão de Curso (TCC). Para isso, será apresentado um panorama geral da metodologia científica utilizada, para obtenção dos resultados esperados. Além disso, será evidenciado os principais problemas que motivaram a realização deste estudo, destacando sua relevância e impacto dentro do contexto em que estão inseridos. 
+
 \section{Contexto Tecnológico}
 
 A Web (World Wide Web) foi concebida como uma plataforma aberta e acessível para todos, promovendo liberdade de acesso e compartilhamento de informações de qualquer lugar e hora. Em novembro de 2007, 5 anos após o surgimento da Web 2.0, a WWW inicia suas operações com uma série de objetivos, como a criação de um fórum para a comunidade interessada em padrões web, tradução para português de conteúdos que fossem do interesse regional, entre outros \cite{vieira2014}.
@@ -12,11 +14,18 @@ A Web possui vantagens, desvantagens e características particulares. Uma das pr
 
 Para contrapor tais limitações e desvantagens, o presente trabalho tem por finalidade desenvolver uma aplicação segura e descentralizada, ainda utilizando o paradigma cliente-servidor, mas atrelando em sua arquitetura tecnologias cujo funcionamento baseia-se no paradigma \textit{Peer-to-peer}, para aprendizado comunitário de assuntos gerais, onde o proprietário do material possui total controle sobre seu conteúdo, sendo capaz de acessá-lo e distribuí-lo da forma como quiser, protegendo o material contra acessos não autorizados e manipulações, promovendo segurança e confiança no ambiente online.
 
-\section{Problema}
+\section{Questão de Pesquisa}
+Diante desse contexto, o ponto chave que orienta este trabalho é:
+
+Como criar uma solução de software, para aprendizado online, sem a dependência de plataformas e serviços centralizados?
+
+\section{Problema e Justificativa}
 
 Grande parte dos conteúdos educativos da Web estão disponíveis em plataformas centralizadas, como, por exemplo, blogs e comunidades, onde seus colaboradores desenvolvem o conteúdo em diversos formatos, e então o publicam. No entanto, como consequência da utilização do modelo tradicional cliente-servidor, as plataformas podem gerar perda de autonomia sobre o material publicado e dependência da infraestrutura da empresa responsável. Além disso, problemas como vulnerabilidade dos dados, a privacidade dos usuários e a censura também são algumas preocupações nesse tipo de arquitetura, podendo ocasionar problemas de confiabilidade e segurança \cite{wanner2024}. Ainda por cima, é simples concluir que, por várias destas questões, a resultante alcançada é a indisponibilidade do conteúdo, comprometendo o acesso de usuários que dependem dessas informações. 
 
 A centralização também levanta preocupações com a privacidade dos dados, uma vez que as plataformas podem rastrear e utilizar informações dos usuários para fins comerciais sem consentimento explícito \cite{beiro2020}. Assim, surge a necessidade de explorar alternativas inovadoras e descentralizadas que garantam maior resiliência, privacidade e controle aos criadores e consumidores de conteúdos educativos, redefinindo a forma como o aprendizado online acontece.
+
+A partir dessas questões, identifica-se a oportunidade de atuar nesse cenário, construindo uma aplicação, com o uso da tecnologia com ferramenta principal, que seja capaz de oferecer um sistema de aprendizado online descentralizado.
 
 \section{Objetivos}
 
@@ -36,4 +45,51 @@ Desenvolver uma plataforma de aprendizado comunitário que utilize uma arquitetu
     \item Fornecer uma interface amigável e responsiva para os administradores e alunos, desenvolvida com NextJS, que facilite o acesso aos cursos e materiais disponibilizados na plataforma.
     \item Documentar e testar a solução para validar a conformidade da plataforma com os requisitos funcionais e de segurança estabelecidos.
 \end{itemize}
-  
+
+\section{Metodologia}
+
+Durante a elaboração deste trabalho serão empregadas duas metodologias, sendo uma de pesquisa, e outra de desenvolvimento.
+
+\subsection{Metodologia de Pesquisa}
+
+A metodologia de pesquisa descreve os métodos utilizados para construir a fundamentação teórica deste projeto. Com ela, é possível classificar este trabalho quanto à sua natureza, finalidade, forma de abordagem, objetivos e procedimentos técnicos.
+
+Com isso, as devidas classificações podem ser observadas na Tabela 1, que será melhor explorada posteriormente.
+
+\setlength{\extrarowheight}{5pt}
+
+\begin{table}
+    \centering
+    \caption{Classificações de Metodologia de pesquisa}
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Classificação}            & \textbf{Tipo de Pesquisa}\\ 
+        \hline
+        Quanto à finalidade               & Pesquisa tecnológica \\ 
+        \hline
+        Quanto à natureza                 & Pesquisa experimental \\ 
+        \hline
+        Quanto à forma de abordagem       & Pesquisa qualitativa \\
+        \hline
+        Quanto aos objetivos              & Pesquisa exploratória \\
+        \hline
+        Quanto aos procedimentos técnicos & Pesquisa bibliográfica \\
+        \hline
+    \end{tabular}
+    \caption*{Fonte: Autores}
+\end{table}
+
+
+\subsection{Metodologia de desenvolvimento}
+
+Para a elaboração do projeto serão utilizadas metodologias ágeis, apoiando-se em técnicas de desenvolvimento como Extreme Programming (XP), kanban, além da utilização de ferramentas de DevOps para uso de containers como Docker. A partir disso é possível estabelecer um ambiente de trabalho previsível, e facilitado para possíveis mudanças e refatorações do projeto. também será empregado algumas técnicas do Scrum em conjunto com o XP servirão de base para o Backlog.
+
+\subsection{Estrutura do trabalho}
+
+Este trabalho está disposto da seguinte maneira:
+
+Capítulo 1: Introdução: Este capítulo faz uma levantamento geral das ideias, ferramentas, metodologias utilzidas para o desenvolvimento do projeto.
+
+Caítulo 2: Referencial Teórico: Aqui será aprofundado o etendimento das tecnologias utilizadas bem como a razão de uso de cada uma delas no contexto do desenvolvimento distribuído\dots
+
+Capítulo 3: Proposta: 
