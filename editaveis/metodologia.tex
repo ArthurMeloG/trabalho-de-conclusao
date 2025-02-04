@@ -1,11 +1,73 @@
 \chapter[Metodologia]{Metodologia}
 
-\section{Extreme Programming (XP)}
+Este capítulo tem como finalidade detalhar a abordagem metodológica e de desenvolvimento adotada pela equipe para construir o presente trabalho, delineando os passos previstos para a conclusão do sistema.
+
+\section{Metodologia de Pesquisa}
+
+Nesta seção serão apresentadas as características dos tipos de pesquisa, conforme introduzido no Capítulo 1. A análise deve ser capaz de classificar este trabalho quanto à sua natureza, final idade, forma de abordagem, objetivos e procedimentos técnicos.
+
+\subsection{Tipo de Pesquisa (quanto à finalidade)}
+O objetivo deste trabalho é a produção de conhecimento científico através de uma aplicação prática, a saber, um software educacional distribuído. Por isso, segundo Fontelles et al. (2009), o presente trabalho classifica-se como um tipo de pesquisa aplicada ou tecnológica \cite{fontelles2009}.
+
+\subsection{Tipo de Pesquisa (quanto à natureza)}
+A presente pesquisa realizada é de natureza experimental, visto que o foco está no teste da eficácia do aplicativo de aprendizado descentralizado. O objetivo é avaliar como a arquitetura deste sistema pode impactar a disponibilidade, segurança e privacidade dos materiais e usuários da plataforma \cite{fontelles2009}.
+
+\subsection{Tipo de Pesquisa (quanto à forma de abordagem)}
+A presente pesquisa será de abordagem qualitativa, tendo em vista que busca compreender as necessidades, experiências e desejos de usuários que dependem da \textit{Internet} como meio de estudos \cite{fontelles2009}.
+
+\subsection{Tipo de Pesquisa (quanto aos objetivos)}
+A presente pesquisa é exploratória, tendo em vista que tem por finalidade investigar os principais problemas gerados pelas arquiteturas tradicionais das plataformas de ensino da \textit{Internet}, orientando assim as decisões do sistema proposto \cite{fontelles2009}.
+
+\subsection{Tipo de Pesquisa (quanto aos procedimentos técnicos)}
+A pesquisa é classificada como bibliográfica, visto que possui fundamentacão em material já publicado. Por meio a análise e síntese de infomações, a pesquisa bibliográfica utilizada será crucial para fornecer direcionamento para o desenvolvimento da aplicação \cite{fontelles2009}.
+
+\subsection{Tipo de Pesquisa (quanto ao desenvolvimento no tempo)}
+A pesquisa será prospectiva, visto que estima os efeitos e vantagens futuras do sistema \cite{fontelles2009}.
+
+\subsection{Processo Metodológico}
+Na Universidade de Brasília, o Trabalho de Conclusão de Curso (TCC) é dividido em duas fases: TCC 1 e TCC 2. Na primeira etapa, o objetivo é estabelecer uma base teória sólida, que servirá como base para uma proposta de solução, que por sua vez será desenvolvida na segunda fase do trabalho.
+
+Entre as atividades desenvolvidas no período de TCC 1 pela equipe, estão:
+\begin{itemize}
+    \item Definição do tema e da metodologia;
+    \item Realizar pesquisa bibliográfica;
+    \item Elaborar a proposta de solução;
+    \item Definição da arquitetura do sistema;
+    \item Desenvolver simulação do software;
+\end{itemize}
+
+\section{Metodologia de desenvolvimento}
+\subsection{Metodologias ágeis}
+o metodologias ágeis de software surgiram a partir do manifesto ágil, que foi criado por 17 desenvolvedores no ano de 2001. Esse documento foi um marco para a indústria de software pois mudou a forma como era enxergado a gestão, desenvolvimento e entrega de projetos tecnológicos. 
+Um conjunto de valores e princípios que priorizam a entrega contínua para o cliente, flexibilidade e colaboração entre a equipe formam o alicerce desse manifesto. Ele foi uma alternativa a forma que software era entendido até então por meio dos modelos tradicionais como o modelo cascata (Waterfall), que não raramente ocasionava mudanças inesperadas nas entregas e longos ciclos de desenvolvimento do projeto. Esse manifesto foi criado a partir da experiência desses desenvolvedores que estabeleceram quatro valores fundamentais: 
+
+\begin{itemize}
+    \item Indivíduos e interações mais que processos e ferramentas.
+    \item Software em funcionamento mais que documentação abrangente.
+    \item Colaboração com o cliente mais que negociação de contratos.
+    \item Responder a mudanças mais que seguir um plano.
+\end{itemize}
+
+Apesar dos itens a direita na frase terem sua relevância no processo, o foco deve ser o que se vê a esquerda afim de garantir um desenvolvimento mais dinâmico e eficiente.
+
+Além desses valores, o manifesto apresenta 12 princípios que guiam o desenvolvimento ágil: Entre eles destaca-se para esse projeto:
+
+\begin{itemize}
+    \item Construa projetos em torno de indivíduos motivados. Dê a eles o ambiente e o suporte necessário e confie neles para fazer o trabalho..
+    \item O método mais eficiente e eficaz de transmitir informações para e entre uma equipe de desenvolvimento é através de conversa face a face.
+    \item Contínua atenção à excelência técnica e bom design aumenta a agilidade.
+    \item As melhores arquiteturas, requisitos e designs emergem de equipes auto-organizáveis.
+    \item Entregar frequentemente software funcionando, de poucas semanas a poucos meses, com preferência à menor escala de tempo.
+\end{itemize}
+
+Esses princípios foram o base para as metodologias utilizadas no mercado. Algumas delas estão sendo utilizadas nesse TCC e serão abordadas posteriormente nesse capítulo.
+
+\subsubsection{Extreme Programming (XP)}
 Extreme Programming é uma metodologia ágil que valoriza os princípios de comunicação, simplicidade, feedback, respeito e coragem, com o objetivo de melhorar e desenvolver software enquanto prioriza as pessoas envolvidas no projeto \cite{extremeprogramming}. Sua abordagem iterativa e incremental permite maior adaptabilidade às mudanças, garantindo que as entregas sejam rápidas e alinhadas com os requisitos do projeto. 
 
 Diante de uma equipe enxuta composta por apenas dois desenvolvedores, foram necessárias adaptações na metodologia para que ela atendesse às necessidades específicas do projeto. Assim, algumas práticas foram enfatizadas, enquanto outras foram ajustadas ou parcialmente adotadas.
 
-\subsection{Particularidades do XP no Projeto}
+\subsubsection{Particularidades do XP no Projeto}
 Com uma pequena equipe, algumas práticas do XP foram mais valorizadas e amplamente utilizadas pela dupla idealizadora do trabalho. Entre elas, destaca-se a programação por pares, onde periodicamente os desenvolvedores realizaram o trabalho em uma chamada online, realizando a revisão do trabalho de forma cruzada quando isto não ocorria. Dessa forma, tais práticas garantiram maior qualidade ao código produzido, reduzindo a probabilidade de erros críticos.
 
 Além disso, outras práticas do XP foram adotadas, com a finalidade de garantir a eficiência durante o desenvolvimento:
@@ -17,7 +79,7 @@ Além disso, outras práticas do XP foram adotadas, com a finalidade de garantir
     \item \textbf{Simplicidade do design}: O foco foi manter a arquitetura e as implementações o mais simples possível, evitando complexidades desnecessárias, facilitando assim o processo de desenvolvimento.
 \end{itemize}
 
-\section{Kanban}
+\subsubsection{Kanban}
 O Kanban é uma metodologia ágil que tem como foco a visualização do fluxo de trabalho. A ideal central deste método de gestão é otimizar a entrega de valor otimizando e limitando o trabalho em progresso (\textit{Work in Progress - WIP}) \cite{kanban2025}. Com isso, foi possível evitar a sobrecarga de trabalho da equipe, tornando o processo de desenvolvimento mais eficiente.
 
 O Kanban, diferente de outras metodologias, permite grande flexibilidade ao adaptar o fluxo de trabalho existente sem ciclos de desenvolvimento fixos. Dentre as principais características da metodologia, a equipe de desenvolvimento fez bastante uso dos seguintes:
@@ -28,10 +90,10 @@ O Kanban, diferente de outras metodologias, permite grande flexibilidade ao adap
     \item \textbf{Gestão contínua do fluxo}: A equipe adaptou constantemente o fluxo de trabalho com base na análise dos gargalos e otimização dos processos.
 \end{itemize}
 
-\subsection{Trello}
+\subsubsection{Trello}
 O Trello é uma ferramenta de gerenciamento de projetos que tem por finalidade organizar as tarefas em um quadro visual. Ele é amplamente utilizado de forma conjunta com o método Kanban, dada sua interface intuitiva para manipulação de cartões e monitoramento do fluxo de trabalho.
 
-\subsection{Uso do Kanban com Trello}
+\subsubsection{Uso do Kanban com Trello}
 O Trello facilita a utilização do método Kanban, possibilitando a visualização e acompanhamento das tarefas do projeto de software de forma virtual \cite{campos2023trello}. Isso permite os desenvolvedores a melhor compreender aquilo que precisa ser feito, tendo uma clara visão a cerca dos gargalos do trabalho. Para garantir uma visão clara do trabalho, a equipe estruturou o quadro Kanban do projeto com as seguintes colunas principais:
 
 \begin{itemize}
@@ -61,3 +123,6 @@ Após algumas tentativas utilizando várias palavras-chave e suas combinações 
 \end{itemize}
 
 Diante das dificuldades encontradas, a equipe ampliou suas pesquisas em outras plataformas, tendo o Google como principal fonte de busca, e então obtiveram resultados mais satisfatórios. Para assegurar a qualidade e relevância dos materiais encontrados, foram selecionados os conteúdos publicados em fontes confiáveis e reconhecida autoridade acadêmica.
+
+\section{Desing}
+
