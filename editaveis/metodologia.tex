@@ -36,6 +36,27 @@ Entre as atividades desenvolvidas no período de TCC 1 pela equipe, estão:
     \item Desenvolver simulação do software;
 \end{itemize}
 
+\subsection{Busca e seleção de artigos}
+Os idealizadores do projeto tiveram uma jornada particular até encontrar os materiais necessários para construir toda a escrita do presente documento. Primeiramente, iniciaram a pesquisa utilizando o software Publish or Perish, que se trata de um software que recupera e analisa citações acadêmicas com base em uma variedade de fontes de dados particular \cite{harzing2025publish}.
+
+Após algumas tentativas utilizando várias palavras-chave e suas combinações no publish perish como filtros, os resultados alcançados não atenderam às expectativas iniciais, e não foi encontrado nenhum material de grande valia para a completude do trabalho em questão. A seguir, alguns dos termos utilizados pelos integrantes: 
+
+\begin{itemize}
+    \item Objetivos da descentralização p2p
+    \item Sistemas computacionais p2p
+    \item Importancia da descentralização computacional
+    \item P2P network
+    \item Computing decentralized system
+    \item Decentralized computing
+    \item Ipfs storage
+    \item Decentralized web ipfs
+    \item MVC architecture web
+    \item Client server
+    \item Software architecture
+\end{itemize}
+
+Diante das dificuldades encontradas, a equipe ampliou suas pesquisas em outras plataformas, tendo o Google como principal fonte de busca, e então obtiveram resultados mais satisfatórios. Para assegurar a qualidade e relevância dos materiais encontrados, foram selecionados os conteúdos publicados em fontes confiáveis e reconhecida autoridade acadêmica.
+
 \section{Metodologia de desenvolvimento}
 \subsection{Metodologias ágeis}
 o metodologias ágeis de software surgiram a partir do manifesto ágil, que foi criado por 17 desenvolvedores no ano de 2001. Esse documento foi um marco para a indústria de software pois mudou a forma como era enxergado a gestão, desenvolvimento e entrega de projetos tecnológicos. 
@@ -95,7 +116,7 @@ O Trello é uma ferramenta de gerenciamento de projetos que tem por finalidade o
 
 \subsubsection{Uso do Kanban com Trello}
 O Trello facilita a utilização do método Kanban, possibilitando a visualização e acompanhamento das tarefas do projeto de software de forma virtual \cite{campos2023trello}. Isso permite os desenvolvedores a melhor compreender aquilo que precisa ser feito, tendo uma clara visão a cerca dos gargalos do trabalho. Para garantir uma visão clara do trabalho, a equipe estruturou o quadro Kanban do projeto com as seguintes colunas principais:
-
+z
 \begin{itemize}
     \item \textbf{Backlog}: Apresenta as tarefas planejadas ainda pendentes.
     \item \textbf{Em progresso}: Atividades que estão em execução.
@@ -103,26 +124,30 @@ O Trello facilita a utilização do método Kanban, possibilitando a visualizaç
     \item \textbf{Concluído}: Atividades finalizadas e aprovadas.
 \end{itemize}
 
-\section{Busca e seleção de artigos}
-Os idealizadores do projeto tiveram uma jornada particular até encontrar os materiais necessários para construir toda a escrita do presente documento. Primeiramente, iniciaram a pesquisa utilizando o software Publish or Perish, que se trata de um software que recupera e analisa citações acadêmicas com base em uma variedade de fontes de dados particular \cite{harzing2025publish}.
 
-Após algumas tentativas utilizando várias palavras-chave e suas combinações no publish perish como filtros, os resultados alcançados não atenderam às expectativas iniciais, e não foi encontrado nenhum material de grande valia para a completude do trabalho em questão. A seguir, alguns dos termos utilizados pelos integrantes: 
+\section{Proposta de Interface}
 
-\begin{itemize}
-    \item Objetivos da descentralização p2p
-    \item Sistemas computacionais p2p
-    \item Importancia da descentralização computacional
-    \item P2P network
-    \item Computing decentralized system
-    \item Decentralized computing
-    \item Ipfs storage
-    \item Decentralized web ipfs
-    \item MVC architecture web
-    \item Client server
-    \item Software architecture
-\end{itemize}
 
-Diante das dificuldades encontradas, a equipe ampliou suas pesquisas em outras plataformas, tendo o Google como principal fonte de busca, e então obtiveram resultados mais satisfatórios. Para assegurar a qualidade e relevância dos materiais encontrados, foram selecionados os conteúdos publicados em fontes confiáveis e reconhecida autoridade acadêmica.
+\section{DevOps}
+\textit{DevOps} é uma abordagem de desenvolvimento e operações, capaz de unir pessoas, processos e tecnologias, principalmente através da integração contínua (CI) e entrega contínua (CD), para lidar com funções que anteriormante eram tratadas isoladamente, como desenvolvimento, operações de TI e engenharia de qualidade e segurança \cite{microsoftdevops}.
 
-\section{Desing}
+\subsection{CI e CD}
+A Entrega contínua é uma prática que garante que o código gerado pelo processo de integração contínua esteja pronto ser disponibilizado nos ambientes de desenvolvimento e produção. Este recurso possibilita a eficáfia, facilidade e rapizes para a entrega de novos recursos e atualizações aos usuários finais \cite{gomes2023}.
+
+% A implementação contínua é responsável por eliminar a necessidade de realizar esse processo manualmente. Após um ciclo bem sucedido de integração e entrega contínua, o artefato gerado pelo \textit{CI} é importado pelo \textit{CD}, que então identifica que existem alterações prontas para serem lançadas nos ambientes de desenvolvimento e produção, permitindo assim o uso independente de alterações de diferentes equipes, aumentando a produtividade e reduzindo os ciclos de lançamento \cite{gomes2023}.
+
+Essas duas práticas são essenciais para o fluxo \textit{DevOps}, permitindo a produção mais rápida e frequente de versões do código, criando uma conexão entre desenvolvimento e produção.
+
+\subsection{Plataforma como Serviço (\textit{PaaS})}
+A computação em nuvem consiste na entrega de recursos de TI sob demanda por meio da Internet, eliminando assim a necessidade de indivíduos e empresas gerenciarem seus próprios recursos físicos, pagando apenas pelo uso \cite{awscloudcomputing}.
+
+AWS é um exemplo de \textit{PaaS} que oferece suporte completo à abordagem DevOps, intregando escala, segurança, automações e um amplo ecossistema de parceiros para o sistema desenvolvido \cite{awsdevops}.
+
+\subsection{GitHub Actions e CI/CD}
+GitHub Actions é uma tecnologia que permite automatizar, personalizar e executar fluxos de trabalho de desenvolvimento diretamente no repositório GitHub para construir, testar e implantar o código automaticamente \cite{githubactions}. Com isso, será possível criar diversos processos de CI/CD, visando automatizar algumas tarefas, como testes e \textit{deploy}.
+
+\subsection{Docker}
+Docker é uma plataforma que possibilita a crição de aplicações em ambientes isolados, que contém os recursos necessários para a aplicação funcionar. Assim, o docker será uma ferramenta importante para garantir que o software funcione em diversos ambientens, incluindo o dos desenvolvedores, fornecendo benefícos portabilidade e isolamento dentro do projeto \cite{dockerdocs}.
+
+\subsection{Práticas Utilizadas}
 
