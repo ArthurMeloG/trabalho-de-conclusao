@@ -125,9 +125,6 @@ z
 \end{itemize}
 
 
-\section{Proposta de Interface}
-
-
 \section{DevOps}
 \textit{DevOps} é uma abordagem de desenvolvimento e operações, capaz de unir pessoas, processos e tecnologias, principalmente através da integração contínua (CI) e entrega contínua (CD), para lidar com funções que anteriormante eram tratadas isoladamente, como desenvolvimento, operações de TI e engenharia de qualidade e segurança \cite{microsoftdevops}.
 
@@ -150,4 +147,99 @@ GitHub Actions é uma tecnologia que permite automatizar, personalizar e executa
 Docker é uma plataforma que possibilita a crição de aplicações em ambientes isolados, que contém os recursos necessários para a aplicação funcionar. Assim, o docker será uma ferramenta importante para garantir que o software funcione em diversos ambientens, incluindo o dos desenvolvedores, fornecendo benefícos portabilidade e isolamento dentro do projeto \cite{dockerdocs}.
 
 \subsection{Práticas Utilizadas}
+A seguir, serão apresentadas as principais conceitos ligados as atividades realizadas dentro das metodologias propostas pela equipe.
 
+\begin{itemize}
+    \item \textbf{Programação em Par}: Sessões de programação para aumentar a qualidade do código e driblar rapidamente barreiras durante o processo de construção do software.
+    \item \textbf{Reuniões diárias}: Também chamadas de dailys, as reuniões diárias servem para discutir o progresso alcançado no dia anterior, além de identificar obstáculos para o trabalho do dia.
+    \item \textbf{Kanban}: Ferramenta para gerenciar o fluxo de trabalho de forma visual, ajudando a identificar gargalos.
+    \item \textbf{Testes funcionais}: Desenvolvidos para garantir a conformidade com as funcionalidades idealizadas do software.
+    \item \textbf{Testes unitários}: Desenvolvidos para garantir o funcionamento individual das menores partes de um software, como por exemplo funções.
+    \item \textbf{Integração e Entrega Contínua}: Integrar e testar o código frequentemente para identificar problemas o quanto antes.
+\end{itemize}
+
+\section{Requisitos}
+Os requisitos de um sistema estabelecem o que se espera do sistema. As funcionalidades e limitações acordadas com o cliente. Segundo \cite{sommerville2011} os requisitos podem ser divididos entre requisitos funcionais e não funcionais. O primeiro descreve as funcionalidades que se espera do produto, e os não funcionais que delimitam restrições sobre como o sistema deve operar.
+
+\subsection{Levantamento de requisitos}
+A elicitação de requisitos para o desenvolvimento do presente trabalho foi conduzida por meio do Design Thinking. Tal método consiste em oferecer potenciais contribuições para a solução de problemas complexos que buscam identificar, compreender e solucionar, de modo criativo, problemas presentes em diferentes contextos. Com isso, é um método eficiente para disciplinas que carregam características de interdisciplinaridade, como é exemplo a ciência da informação, que possui uma transformação acelerada de ferramentas, tecnologias, mecanismos e suportes. \cite{apocalypse2022}.
+
+Diferente de outras abordagens tradicionais de levantamento de requisitos, que tomam como base documentos formais ou especificações técnicas, o Design Thinking promove uma análise mais empática e iterativa. No contexto deste trabalho, onde a proposta inovadora é uma arquitetura descentralizada, e não funcionalidades nunca vistas antes, essa abordagem se mostrou essencial para compreender as soluções de usabilidade e experiência já consolidados no mercado de educação online. Assim, técnicas como análise de mercado e benchmarking foram utilizadas para satisfazer os requisitos do sistema, garantindo a satisfação dos usuários e um modelo arquitetural descentralizado.
+
+\subsubsection{Fase de Inpiração}
+Nesta etapa, foram elicitadas as plataformas de aprendizado online mais utilizadas, identificando as funcionalidades comuns entre as mesmas. Além disso, foi realizado um mapeamento dos pontos positivos e negativos das soluções centralizadas.
+
+\subsubsection{Análise de Benchmarking}
+O benchmarking é uma técnica que permite a comparação entre diferentes produtos ou serviços, identificando padrões de funcionalidades, boas práticas, possíveis limitações, pontos fracos e fortes e diferenciais.
+
+Para garantir que o sistema desenvolvido esteja alinhado com as expectativas do mercado, foi realizado uma análise de Benchmarking de algumas das principais soluções educacionais atuais: Hotmart e Udemy. Ambas possuem recursos consolidados para proporcionar a criação, venda e consumo de conteúdos digitais. Dessa forma, foi possível compreender quais funcionalidades são indispensáveis e quais aspectos podem ser melhorados com a arquitetura descentralizada.
+
+A tabela a seguir foi elaborada analisando os principais aspectos dessas plataformas, considerando as funcionalidades centrais.
+
+% \begin{table}[h]
+%     \centering
+%     \caption{Comparação de funcionalidades entre Hotmart e Udemy}
+%     \begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+%         \hline
+%         \textbf{Critério} & \textbf{Hotmart} & \textbf{Udemy} \\
+%         \hline
+%         \textbf{Criação de cursos} & Permite a criação e hospedagem de cursos online. & Oferece ferramentas para criação e publicação de cursos. \\
+%         \hline
+%         \textbf{Integração de Pagamentos} & Sistema de pagamento integrado (HotPay). & Sistema de pagamento próprio (Udemy Payments). \\
+%         \hline
+%         \textbf{Métodos de Monetização} & Venda direta, assinaturas, afiliados. & Venda direta, cupons de desconto, promoções \\
+%         \hline
+%         \textbf{Afiliados} & Programa de afiliados robusto. & Programa de afiliados disponível. \\
+%         \hline
+%         \textbf{Personalização} & Personalização limitada da página de vendas. & Personalização do conteúdo do curso. \\
+%         \hline
+%         \textbf{Certificados} & Personalização limitada da página de vendas. & Personalização do conteúdo do curso. \\
+%         \hline
+%         \textbf{Suporte a Vídeos} & Hospedagem de vídeos integrada. & Hospedagem de vídeos com suporte a legendas. \\
+%         \hline
+%         \textbf{Ferramentas de Marketing} & Ferramentas avançadas de marketing e automação. & Ferramentas básicas de marketing e promoção. \\
+%         \hline
+%         \textbf{Análise de Dados} & Relatórios detalhados de vendas e desempenho. & Análises de desempenho do curso e dos alunos. \\
+%         \hline
+%         \textbf{Comunidade} & Comunidade de produtores e afiliados. & Comunidade de instrutores e alunos. \\
+%         \hline
+%         \textbf{Suporte ao Instrutor} & Suporte por e-mail e chat. & Suporte por e-mail e centro de ajuda. \\
+%         \hline
+%         \textbf{Aplicativo Móvel} & Aplicativo para alunos e produtores. & Aplicativo móvel para alunos. \\
+%         \hline
+%         \textbf{Integrações} & Integração com ferramentas de e-mail e CRM. & Integração com ferramentas de terceiros via API. \\
+%         \hline
+%         \textbf{Segurança} & Proteção contra pirataria e fraudes. & Proteção básica contra pirataria. \\
+%         \hline
+%         \textbf{Gamificação} & Recursos limitados de gamificação. & Recursos de gamificação (badges, quizzes). \\
+%         \hline
+%         \textbf{Acessibilidade} & Recursos básicos de acessibilidade. & Legendas e transcrições para vídeos. \\
+%         \hline
+%         \textbf{Idiomas} & Suporte a múltiplos idiomas. & Suporte a múltiplos idiomas. \\
+%         \hline
+%         \textbf{Preços} & Taxas sobre vendas e planos de assinatura. & Taxas sobre vendas e compartilhamento de receita. \\
+%         \hline
+%     \end{tabular}
+%     \label{tab:comparacao_hotmart_udemy}
+%     \vspace{5mm}
+%     {\footnotesize Fonte: Autores} 
+% \end{table}
+
+
+\subsubsection{Fase de Definição}
+
+
+\subsection{Sessões de Brainstorming}
+
+O brainstorming é uma das técnicas utilizadas durante a concepção de um software que consiste na geração de ideias pelos participantes sem preocução com julgamentos, não importando a validez ou o quão desurptiva esssa ideia possa ser. Segundo \cite{osborn1953}, precursor da técnica, esta é a chave para a eficácia da técnica. 
+Essa abordagem permite que esse grupo aborde diferentes faces do problema, promovendo ideias criativas e soluções eficazes. Segundo \cite{miro2025}, alguns dos benéficios dessa técnica são:
+
+\begin{itemize}
+    \item \textbf{Encoraja a criatividade}: Como dito anteriormente, as sessões de brainstoorming incentivam o pensamento livre e criativo em um ambiente livre. As ideias de vários participantes juntas, podem gerar uma solução, diferente para o problema.
+    \item \textbf{Incentiva a colaboração e trabalho em equipe}: Além da solução de problemas, ele permite que os membros entendam o processo criativo de cada um, auxiliando no entrosamento da equipe.
+    \item \textbf{Introduz muitas ideias rapidamente}: O brainstoorming encoraja os membros apresentarem muitas ideias em um período de tempo curto. Todas as ideias postas são documentadas, e após algum crivo, pode resultar na solução perfeita.
+\end{itemize}
+
+Foi realizada 2 sessões de brainstoorming, a primeira presencialmente e a segunda no Discord. O princípio do encontro, foi marcado por um alinhamento a respeito do problema a ser resolvido. Durante as sessões, foi utilizado o uso de notas adesivas digitais na plataforma, e uso de papel e caneta para registro presencialmente. As notas foram agrupadas por proximidade dos temas. Os resultados obtidos através desse processo está exibido no apêndice desse trabalho. 
+
+Diante dos resultados dessa técnica e dos levantamento de requisitos, foi possível visualizar com mais segurança quais seriam as funcinalidades principais para que a plataforma se adaquasse ao que se espera, diante do mercado.
