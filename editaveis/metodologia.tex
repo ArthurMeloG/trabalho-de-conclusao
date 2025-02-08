@@ -174,11 +174,12 @@ O benchmarking é uma técnica que permite a comparação entre diferentes produ
 
 Para garantir que o sistema desenvolvido esteja alinhado com as expectativas do mercado, foi realizado uma análise de Benchmarking de algumas das principais soluções educacionais atuais: Hotmart e Udemy. Ambas possuem recursos consolidados para proporcionar a criação, venda e consumo de conteúdos digitais. Dessa forma, foi possível compreender quais funcionalidades são indispensáveis e quais aspectos podem ser melhorados com a arquitetura descentralizada.
 
-A tabela a seguir foi elaborada analisando os principais aspectos dessas plataformas, considerando as funcionalidades centrais.
+A tabela \ref{tab:comparacao_hotmart_udemy}, foi elaborada analisando os principais aspectos dessas plataformas, considerando as funcionalidades centrais.
 
 \begin{table}[h]
     \centering
     \caption{Comparação de funcionalidades entre Hotmart e Udemy}
+    \label{tab:comparacao_hotmart_udemy}
     \begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
         \hline
         \textbf{Critério} & \textbf{Hotmart} & \textbf{Udemy} \\
@@ -203,22 +204,22 @@ A tabela a seguir foi elaborada analisando os principais aspectos dessas platafo
         \hline
         \textbf{Comunidade} & Comunidade de produtores e afiliados. & Comunidade de instrutores e alunos. \\
         \hline
-        % \textbf{Suporte ao Instrutor} & Suporte por e-mail e chat. & Suporte por e-mail e centro de ajuda. \\
-        % \hline
-        % \textbf{Aplicativo Móvel} & Aplicativo para alunos e produtores. & Aplicativo móvel para alunos. \\
-        % \hline
-        % \textbf{Integrações} & Integração com ferramentas de e-mail e CRM. & Integração com ferramentas de terceiros via API. \\
-        % \hline
-        % \textbf{Segurança} & Proteção contra pirataria e fraudes. & Proteção básica contra pirataria. \\
-        % \hline
-        % \textbf{Gamificação} & Recursos limitados de gamificação. & Recursos de gamificação (badges, quizzes). \\
-        % \hline
-        % \textbf{Acessibilidade} & Recursos básicos de acessibilidade. & Legendas e transcrições para vídeos. \\
-        % \hline
-        % \textbf{Idiomas} & Suporte a múltiplos idiomas. & Suporte a múltiplos idiomas. \\
-        % \hline
-        % \textbf{Preços} & Taxas sobre vendas e planos de assinatura. & Taxas sobre vendas e compartilhamento de receita. \\
-        % \hline
+        \textbf{Suporte ao Instrutor} & Suporte por e-mail e chat. & Suporte por e-mail e centro de ajuda. \\
+        \hline
+        \textbf{Aplicativo Móvel} & Aplicativo para alunos e produtores. & Aplicativo móvel para alunos. \\
+        \hline
+        \textbf{Integrações} & Integração com ferramentas de e-mail e CRM. & Integração com ferramentas de terceiros via API. \\
+        \hline
+        \textbf{Segurança} & Proteção contra pirataria e fraudes. & Proteção básica contra pirataria. \\
+        \hline
+        \textbf{Gamificação} & Recursos limitados de gamificação. & Recursos de gamificação (badges, quizzes). \\
+        \hline
+        \textbf{Acessibilidade} & Recursos básicos de acessibilidade. & Legendas e transcrições para vídeos. \\
+        \hline
+        \textbf{Idiomas} & Suporte a múltiplos idiomas. & Suporte a múltiplos idiomas. \\
+        \hline
+        \textbf{Preços} & Taxas sobre vendas e planos de assinatura. & Taxas sobre vendas e compartilhamento de receita. \\
+        \hline
     \end{tabular}
     \label{tab:comparacao_hotmart_udemy}
     \vspace{5mm}
@@ -247,7 +248,7 @@ Na fase de definição encontra-se a análise dos resultados da comparação ent
 
 \subsubsubsection{Priorização de requisitos}
 
-% Haja vista a quantidade de funcionalidades elencadas através do levantamento de requisitos e do brainstorming, será utilizado a técnica de priorização de requisitos \cite{MoSCoW}, que é uma abordagem eficaz para classificação com base na importância de cada requisito. Ela divide em 4 categorias:
+Haja vista a quantidade de funcionalidades elencadas através do levantamento de requisitos e do brainstorming, será utilizado a técnica de priorização de requisitos \cite{cottrell1999}, que é uma abordagem eficaz para classificação com base na importância de cada requisito. Ela divide em 4 categorias:
 
 \begin{itemize}
     \item \textbf{Must Have}: "Must have" (Precisa
@@ -263,4 +264,11 @@ Na fase de definição encontra-se a análise dos resultados da comparação ent
 \subsubsubsection{Resultados dos Requisitos}
 
 \subsubsubsection{Requisitos Não Funcionais}
-Os Requisitos Não Funcionais (RNF) descrevem os atributos de Desempenho, Escalabilidade, Segurança,  que são esperadas do sistema, 
+Os Requisitos Não Funcionais (RNF) descrevem os atributos de desempenho, escalabilidade, segurança, disponibilidade, usabilidade e compatibilidade que são esperadas do sistema. A seguir estão os principais requisitos não funcionais para o sistema:
+
+\begin{itemize}
+    \item \textbf{RNF01}: \textbf{Interface Intuitiva} - A interface do usuário deve ser de fácil aprendizagem e responsiva, garantindo facilidade no uso em diferentes dispositivos.
+    \item \textbf{RNF02}: \textbf{Disponibilidade e Resiliência} - O conteúdo armazenado no IPFS deve continuar disponível mesmo quando os servidores tradicionais saírem do ar.
+    \item \textbf{RNF03}: \textbf{Segurança e Privacidade} - O sistema deve garantir que apenas usuários autorizados possam acessar determinados conteúdos utilizando criptografia.
+    \item \textbf{RNF04}: \textbf{Interoperabilidade e Compatibilidade} - A plataforma deve ser acessível pelos principais navegadores modernos.
+\end{itemize}
