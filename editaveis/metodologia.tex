@@ -158,117 +158,485 @@ A seguir, serão apresentadas as principais conceitos ligados as atividades real
     \item \textbf{Integração e Entrega Contínua}: Integrar e testar o código frequentemente para identificar problemas o quanto antes.
 \end{itemize}
 
-\section{Requisitos}
-Os requisitos de um sistema estabelecem o que se espera do sistema. As funcionalidades e limitações acordadas com o cliente. Segundo \cite{sommerville2011} os requisitos podem ser divididos entre requisitos funcionais e não funcionais. O primeiro descreve as funcionalidades que se espera do produto, e os não funcionais que delimitam restrições sobre como o sistema deve operar.
+\section{Design Thinking}
 
-\subsection{Levantamento de requisitos}
-A elicitação de requisitos para o desenvolvimento do presente trabalho foi conduzida por meio do Design Thinking. Tal método consiste em oferecer potenciais contribuições para a solução de problemas complexos que buscam identificar, compreender e solucionar, de modo criativo, problemas presentes em diferentes contextos. Com isso, é um método eficiente para disciplinas que carregam características de interdisciplinaridade, como é exemplo a ciência da informação, que possui uma transformação acelerada de ferramentas, tecnologias, mecanismos e suportes. \cite{apocalypse2022}.
+O Design Thinking é uma técnica utilizada para a solução de problemas de forma criativa e iterativa, por meio de etapas cíclicas, com o objetivo de atender às necessidades do ponto central: o usuário. A metodologia adotada para o levantamento de requisitos seguiu os princípios do Design Thinking, avançando até a fase de prototipação, enquanto a última fase, de testes com clientes, será realizada no Trabalho de Conclusão 2.
 
-Diferente de outras abordagens tradicionais de levantamento de requisitos, que tomam como base documentos formais ou especificações técnicas, o Design Thinking promove uma análise mais empática e iterativa. No contexto deste trabalho, onde a proposta inovadora é uma arquitetura descentralizada, e não funcionalidades nunca vistas antes, essa abordagem se mostrou essencial para compreender as soluções de usabilidade e experiência já consolidados no mercado de educação online. Assim, técnicas como análise de mercado e benchmarking foram utilizadas para satisfazer os requisitos do sistema, garantindo a satisfação dos usuários e um modelo arquitetural descentralizado.
+    \subsection{Fase de Imersão}
+    Nesta etapa, é fundamental compreender o cenário do mercado e as soluções já existentes no setor de educação online. Para isso, foram selecionadas as plataformas Udemy e Hotmart como objeto de análise, considerando os seguintes aspectos:
 
-\subsubsection{Fase de Inpiração}
-Nesta etapa, foram elicitadas as plataformas de aprendizado online mais utilizadas, identificando as funcionalidades comuns entre as mesmas. Além disso, foi realizado um mapeamento dos pontos positivos e negativos das soluções centralizadas.
+        \begin{itemize}
+            \item \textbf{Relavância no mercado}: Ambas as plataformas possuem alcance internacional. No momento da escrita deste trabalho, a Udemy conta com mais de 75 milhões de alunos e mais de 250 mil cursos. Já a Hotmart possui mais de 35 milhões de usuários e realiza vendas em mais de 188 países.
+            \item \textbf{Funcionalidades}: Ambas oferecem recursos essenciais para a criação, venda e gestão de cursos online. Esses aspectos são fundamentais para compreender as necessidades dos usuários e definir os requisitos funcionais da aplicação descentralizada proposta neste trabalho.
+        \end{itemize}
 
-\subsubsubsection{Análise de Benchmarking}
-O benchmarking é uma técnica que permite a comparação entre diferentes produtos ou serviços, identificando padrões de funcionalidades, boas práticas, possíveis limitações, pontos fracos e fortes e diferenciais.
+    \subsection{Fase de Definição}
+    Na fase de definição encontra-se a análise dos resultados da comparação entre as plataformas escolhidas a partir da fase de imersão. Após a coleta de dados, a equipe analisou as informações para que fossem identificados os padrões de funcionalidade entre as plataformas, e por fim realizar a definição dos requisitos do projeto Learn Chain.
 
-Para garantir que o sistema desenvolvido esteja alinhado com as expectativas do mercado, foi realizado uma análise de Benchmarking de algumas das principais soluções educacionais atuais: Hotmart e Udemy. Ambas possuem recursos consolidados para proporcionar a criação, venda e consumo de conteúdos digitais. Dessa forma, foi possível compreender quais funcionalidades são indispensáveis e quais aspectos podem ser melhorados com a arquitetura descentralizada.
+        \subsubsection{Requisitos}
+        Os requisitos de um sistema estabelecem o que se espera do sistema. As funcionalidades e limitações acordadas com o cliente. Segundo \cite{sommerville2011} os requisitos podem ser divididos entre requisitos funcionais e não funcionais. O primeiro descreve as funcionalidades que se espera do produto, e os não funcionais que delimitam restrições sobre como o sistema deve operar.
 
-A tabela \ref{tab:comparacao_hotmart_udemy}, foi elaborada analisando os principais aspectos dessas plataformas, considerando as funcionalidades centrais.
+        \subsubsubsection{Levantamento de requisitos}
+        A elicitação de requisitos para o desenvolvimento do presente trabalho foi conduzida por meio do Design Thinking. Tal método consiste em oferecer potenciais contribuições para a solução de problemas complexos que buscam identificar, compreender e solucionar, de modo criativo, problemas presentes em diferentes contextos. Com isso, é um método eficiente para disciplinas que carregam características de interdisciplinaridade, como é exemplo a ciência da informação, que possui uma transformação acelerada de ferramentas, tecnologias, mecanismos e suportes. \cite{apocalypse2022}.
 
-\begin{table}[h]
+        Diferente de outras abordagens tradicionais de levantamento de requisitos, que tomam como base documentos formais ou especificações técnicas, o Design Thinking promove uma análise mais empática e iterativa. No contexto deste trabalho, onde a proposta inovadora é uma arquitetura descentralizada, e não funcionalidades nunca vistas antes, essa abordagem se mostrou essencial para compreender as soluções de usabilidade e experiência já consolidados no mercado de educação online. Assim, técnicas como análise de mercado e benchmarking foram utilizadas para satisfazer os requisitos do sistema, garantindo a satisfação dos usuários e um modelo arquitetural descentralizado.
+
+        \subsubsubsection{Análise de Benchmarking}
+        O benchmarking é uma técnica que permite a comparação entre diferentes produtos ou serviços, identificando padrões de funcionalidades, boas práticas, possíveis limitações, pontos fracos e fortes e diferenciais.
+
+        Para garantir que o sistema desenvolvido esteja alinhado com as expectativas do mercado, foi realizado uma análise de Benchmarking de algumas das principais soluções educacionais atuais: Hotmart e Udemy. Ambas possuem recursos consolidados para proporcionar a criação, venda e consumo de conteúdos digitais. Dessa forma, foi possível compreender quais funcionalidades são indispensáveis e quais aspectos podem ser melhorados com a arquitetura descentralizada.
+
+        A tabela \ref{tab:comparacao_hotmart_udemy} e \ref{tab:comparacao_hotmart_udemy2}, foram elaboradas analisando os principais aspectos dessas plataformas, considerando as funcionalidades centrais.
+
+        Observando as comparações realizadas nas tabelas referenciadas, percebe-se que ambas as plataformas oferecem diversas funcionalidades em comum. Com base nisso, a equipe separou as funcionalidades, que serão elencadas na seção de \textbf{priorização de requisitos}.
+
+    \subsection{Fase de Ideação}
+    Nesta fase a equipe busca gerar ideias no contexto de uma aplicação descentralizada, baseando-se no que se espera de uma aplicação de educação online, Com base nos resultados obtidos na fase de definição. Para isso, foram realizadas sessões de brainstorming, permitindo a exploração de diferentes perspectivas e a identificação de possíveis soluções inovadoras.
+
+        \subsubsection{Sessões de Brainstorming}
+        \label{brainstorming}
+        O brainstorming é uma das técnicas utilizadas durante a concepção de um software que consiste na geração de ideias pelos participantes sem preocução com julgamentos, não importando a validez ou o quão desurptiva esssa ideia possa ser. Segundo \cite{osborn1953}, precursor da técnica, esta é a chave para a eficácia da técnica. 
+        Essa abordagem permite que esse grupo aborde diferentes faces do problema, promovendo ideias criativas e soluções eficazes. Segundo \cite{miro2025}, alguns dos benéficios dessa técnica são:
+
+        \begin{itemize}
+            \item \textbf{Encoraja a criatividade}: Como dito anteriormente, as sessões de brainstorming incentivam o pensamento livre e criativo em um ambiente livre. As ideias de vários participantes juntas, podem gerar uma solução, diferente para o problema.
+            \item \textbf{Incentiva a colaboração e trabalho em equipe}: Além da solução de problemas, ele permite que os membros entendam o processo criativo de cada um, auxiliando no entrosamento da equipe.
+            \item \textbf{Introduz muitas ideias rapidamente}: O brainstorming encoraja os membros apresentarem muitas ideias em um período de tempo curto. Todas as ideias postas são documentadas, e após algum crivo, pode resultar na solução perfeita.
+        \end{itemize}
+
+        Foi realizada 2 sessões de brainstorming, a primeira presencialmente e a segunda no Discord. O princípio do encontro, foi marcado por um alinhamento a respeito do problema a ser resolvido. Durante as sessões, foi utilizado o uso de notas adesivas digitais na plataforma, e uso de papel e caneta para registro presencialmente. As notas foram agrupadas por proximidade dos temas. Os resultados obtidos através desse processo está exibido no apêndice desse trabalho. 
+
+        Diante dos resultados dessa técnica e dos levantamento de requisitos, foi possível visualizar com mais segurança quais seriam as funcinalidades principais para que a plataforma se adaquasse ao que se espera, diante do mercado.
+
+
+        \subsubsection{Priorização de requisitos e Resultados dos Requisitos Funcionais}
+        \label{sec:priorizacao}
+        Haja vista a quantidade de funcionalidades elencadas através do levantamento de requisitos e do brainstorming, será utilizado a técnica de priorização de requisitos MoSCoW, que é uma abordagem eficaz para classificação com base na importância de cada requisito \cite{cottrell1999}. Ela divide em 4 categorias:
+
+        \begin{itemize}
+            \item \textbf{Must Have}: "Must have" (Precisa
+            ter), são essenciais para o sucesso do projeto
+            \item \textbf{Should Have}: "Should have" (Deve ter), são requisitos desejáveis para o sistema, apesar de ser possível a existência do projeto sem eles, mesmo que temporariamente.
+            \item \textbf{Could Have}: "Could have" (Pode ter), funcionalidades adicionais que podem ser priorizadas, caso haja tempo.
+            \item \textbf{Won’t Have}: "Won’t have" (não terá agora), requisitos que não terão prioridade durante o desenvolvimento do projeto.
+        \end{itemize}
+
+        É importante destacar que o desenvolvimento contará com funcionalidades até o nível de should have.
+        As tabelas \ref{tab:priorizacao_moscow}, \ref{tab:priorizacao_moscow2}, \ref{tab:priorizacao_moscow3} listam os requisitos resultantes da análise com base em sua classificação no MoSCoW.
+
+        \subsubsection{Requisitos Não Funcionais}
+        Os Requisitos Não Funcionais (RNF) descrevem os atributos de desempenho, escalabilidade, segurança, disponibilidade, usabilidade e compatibilidade que são esperadas do sistema. A seguir estão os principais requisitos não funcionais para o sistema:
+
+        \begin{itemize}
+            \item \textbf{RNF01}: \textbf{Interface Intuitiva} - A interface do usuário deve ser de fácil aprendizagem e responsiva, garantindo facilidade no uso em diferentes dispositivos.
+            \item \textbf{RNF02}: \textbf{Disponibilidade e Resiliência} - O conteúdo armazenado no IPFS deve continuar disponível mesmo quando os servidores tradicionais saírem do ar.
+            \item \textbf{RNF03}: \textbf{Segurança e Privacidade} - O sistema deve garantir que apenas usuários autorizados possam acessar determinados conteúdos utilizando criptografia.
+            \item \textbf{RNF04}: \textbf{Interoperabilidade e Compatibilidade} - A plataforma deve ser acessível pelos principais navegadores modernos.
+        \end{itemize}
+
+    \subsection{Fase de Prototipação}
+
+        \subsubsection{Casos de uso}
+        Casos de uso (UC) é uma técnica utilizada em engenharia de software ajudar o entendimento dos requisitos funcionais de um sitema, o diagrama mostra diferentes maneiras que o usuário pode interagir com o sistema \cite{lucidchart2025}.
+
+        Para fins deste projeto, os Casos de Usos têm a finalidade de mostrar de forma gráfica a interação dos usuários (atores) com as funcionalidades descritas nos tópicos acima. Foram identificados, dois tipos de atores:
+        
+        \begin{itemize}
+            \item \textbf{Instrutor}: Usuário da aplicação que tem interesse em divulgar algum conhecimento por meio de um curso.
+            \item \textbf{Aluno}: Usuário que deseja consumir algum curso de um instrutor.
+        \end{itemize}
+
+        A partir da identificação desses atores e da elicitação dos requisitos definidos na etapa de ideação, foi construído um diagrama de Casos de Usos, ilustrado na figura abaixo, que mostra a interação do aluno e do intrutor com as funcionalidades do sistema.
+
+        \begin{figure}[h]
+            \centering
+            \caption{Diagrama de Casos de Uso}
+            \includegraphics[width=0.8\textwidth]{figuras/uml.png}
+            \begin{center}
+                {\footnotesize Fonte: Autores}
+            \end{center}
+            \label{fig:exemplo}
+        \end{figure}
+        
+        \subsubsection{Especificação dos casos de uso}
+
+        Nesta seção estão listados os casos de uso obtidos ao elicitar os requisitos do sitema, e brainstorming, sujeito a alterações ao longo do desenvolvimento do projeto.
+
+        \section*{UC01: Gerenciar Perfil}
+
+        \begin{itemize}
+            \item \textbf{Descrição:} Permite que um instrutor ou aluno cadastre, edite e exclua sua conta, além de realizar login e logout.
+            
+            \item \textbf{Ator Principal:} Instrutor e Aluno
+            
+            \item \textbf{Prioridade:} Alta
+            
+            \item \textbf{Pré-condição:} Usuário deve estar cadastrado na plataforma.
+            
+            \item \textbf{Fluxo Principal:}
+            \begin{enumerate}
+                \item Usuário se cadastra na plataforma.
+                \item Sistema valida os dados e os salva.
+                \item Usuário acessa a aba de gerenciamento de perfil.
+                \item Usuário edita suas informações e clica em "Salvar".
+                \item Usuário realiza logout.
+                \item Sistema encerra a sessão do usuário.
+            \end{enumerate}
+
+            \item \textbf{Fluxo Alternativo:}
+            \begin{itemize}
+                \item \textit{Dados Inválidos:}
+                \begin{enumerate}
+                    \item Caso os dados sejam inválidos, o sistema exibe uma mensagem de erro.
+                    \item O sistema oferece a opção "Esqueci minha senha".
+                    \item Usuário utiliza o e-mail para recuperação de senha.
+                    \item O sistema envia um e-mail com instruções para redefinição de senha.
+                \end{enumerate}
+            \end{itemize}
+        \end{itemize}
+
+        \section*{UC02: Inscrever-se em Cursos Gratuitos}
+
+        \begin{itemize}
+            \item \textbf{Descrição:} Permite que um aluno se inscreva em cursos gratuitos disponíveis na plataforma.
+            
+            \item \textbf{Ator Principal:} Aluno
+            
+            \item \textbf{Prioridade:} Alta
+            
+            \item \textbf{Pré-condição:} Usuário deve estar cadastrado na plataforma.
+            
+            \item \textbf{Fluxo Principal:}
+            \begin{enumerate}
+                \item Aluno visualiza a lista de cursos disponíveis.
+                \item Sistema exibe os cursos gratuitos disponíveis.
+                \item Usuário se inscreve no curso desejado.
+                \item Sistema registra a inscrição do usuário no curso.
+            \end{enumerate}
+
+            \item \textbf{Fluxo Alternativo:}
+            \begin{itemize}
+                \item \textit{Usuário já inscrito:}
+                \begin{enumerate}
+                    \item Aluno tenta se inscrever em um curso no qual já está matriculado.
+                    \item Sistema exibe mensagem informando que o aluno já está registrado no curso.
+                \end{enumerate}
+            \end{itemize}
+        \end{itemize}
+
+        \section*{UC03: Inscrever-se em Cursos Privados}
+
+        \begin{itemize}
+            \item \textbf{Descrição:} Permite que um aluno se inscreva em cursos privados mediante pagamento.
+            
+            \item \textbf{Ator Principal:} Aluno
+            
+            \item \textbf{Prioridade:} Baixa
+            
+            \item \textbf{Pré-condição:} Usuário deve estar cadastrado na plataforma.
+            
+            \item \textbf{Fluxo Principal:}
+            \begin{enumerate}
+                \item Aluno visualiza a lista de cursos disponíveis.
+                \item Sistema exibe os cursos privados disponíveis.
+                \item Usuário se inscreve no curso desejado e realiza o pagamento.
+                \item Sistema confirma o pagamento, registra a inscrição e disponibiliza o conteúdo.
+            \end{enumerate}
+
+            \item \textbf{Fluxo Alternativo:}
+            \begin{itemize}
+                \item \textit{Pagamento não realizado:}
+                \begin{enumerate}
+                    \item Aluno tenta se inscrever sem concluir o pagamento.
+                    \item Sistema impede a inscrição até que o pagamento seja efetuado.
+                \end{enumerate}
+            \end{itemize}
+        \end{itemize}
+
+        \section*{UC04: Gerenciar Cursos Adquiridos}
+
+        \begin{itemize}
+            \item \textbf{Descrição:} Permite que um aluno gerencie os cursos adquiridos e acompanhe seu progresso.
+            
+            \item \textbf{Ator Principal:} Aluno
+            
+            \item \textbf{Prioridade:} Alta
+            
+            \item \textbf{Pré-condição:} Usuário deve ter adquirido pelo menos um curso.
+            
+            \item \textbf{Fluxo Principal:}
+            \begin{enumerate}
+                \item Aluno acessa a seção "Meus Cursos".
+                \item Sistema exibe a lista de cursos adquiridos e o progresso de cada um.
+            \end{enumerate}
+
+            \item \textbf{Fluxo Alternativo:}
+            \begin{itemize}
+                \item \textit{Nenhum curso adquirido:}
+                \begin{enumerate}
+                    \item Aluno acessa "Meus Cursos", mas não possui nenhum curso.
+                    \item Sistema exibe mensagem informando que o usuário não possui cursos.
+                \end{enumerate}
+            \end{itemize}
+        \end{itemize}
+
+        \section*{UC05: Consumir Cursos}
+
+        \begin{itemize}
+            \item \textbf{Descrição:} Permite que um aluno consuma o conteúdo dos cursos adquiridos.
+            
+            \item \textbf{Ator Principal:} Aluno
+            
+            \item \textbf{Prioridade:} Alta
+            
+            \item \textbf{Pré-condição:} Usuário deve ter adquirido pelo menos um curso.
+            
+            \item \textbf{Fluxo Principal:}
+            \begin{enumerate}
+                \item Aluno acessa a seção "Meus Cursos".
+                \item Sistema exibe os cursos adquiridos e o progresso.
+                \item Aluno seleciona um curso.
+                \item Sistema exibe o conteúdo do curso (vídeo ou texto).
+                \item Aluno consome o conteúdo.
+            \end{enumerate}
+        \end{itemize}
+
+        \section*{UC06: Criar Cursos}
+
+        \begin{itemize}
+            \item \textbf{Descrição:} Permite que um instrutor crie novos cursos na plataforma.
+            
+            \item \textbf{Ator Principal:} Instrutor
+            
+            \item \textbf{Prioridade:} Alta
+            
+            \item \textbf{Pré-condição:} Instrutor deve estar cadastrado.
+            
+            \item \textbf{Fluxo Principal:}
+            \begin{enumerate}
+                \item Instrutor acessa a opção "Criar Curso".
+                \item Sistema exibe os campos necessários para criação do curso.
+                \item Instrutor preenche os campos obrigatórios.
+                \item Sistema permite o upload de vídeos e textos.
+                \item Instrutor adiciona conteúdos conforme necessário.
+                \item Sistema salva o curso criado.
+            \end{enumerate}
+
+            \item \textbf{Fluxo Alternativo:}
+            \begin{itemize}
+                \item \textit{Campos obrigatórios não preenchidos:}
+                \begin{enumerate}
+                    \item Instrutor tenta criar o curso sem preencher os campos obrigatórios.
+                    \item Sistema impede a criação e exibe mensagem de erro.
+                \end{enumerate}
+            \end{itemize}
+        \end{itemize}
+
+        \section*{UC07: Gerenciar Cursos Criados}
+
+        \begin{itemize}
+            \item \textbf{Descrição:} Permite que um instrutor gerencie os cursos criados, podendo editá-los ou removê-los.
+            
+            \item \textbf{Ator Principal:} Instrutor
+            
+            \item \textbf{Prioridade:} Média
+            
+            \item \textbf{Pré-condição:} Instrutor deve ter criado pelo menos um curso.
+            
+            \item \textbf{Fluxo Principal:}
+            \begin{enumerate}
+                \item Instrutor acessa a seção "Meus Cursos Criados".
+                \item Sistema exibe os cursos criados pelo instrutor.
+                \item Instrutor pode editar ou excluir cursos conforme necessário.
+                \item Sistema salva as alterações realizadas.
+            \end{enumerate}
+
+            \item \textbf{Fluxo Alternativo:}
+            \begin{itemize}
+                \item \textit{Nenhum curso criado:}
+                \begin{enumerate}
+                    \item Instrutor acessa a seção "Meus Cursos Criados", mas não possui cursos.
+                    \item Sistema exibe mensagem informando que o instrutor não possui cursos.
+                \end{enumerate}
+            \end{itemize}
+        \end{itemize}
+
+        \section*{UC08: Instrutor solicitar suporte}
+
+        \begin{itemize}
+            \item \textbf{Descrição:} Permite que o instrutor solicite ajuda quanto ao uso da plataforma ou algum problema.
+            
+            \item \textbf{Ator Principal:} Instrutor
+            
+            \item \textbf{Prioridade:} Alta
+            
+            \item \textbf{Pré-condição:} Instrutor deve ter efetuado cadastro na plataforma.
+            
+            \item \textbf{Fluxo Principal:}
+            \begin{enumerate}
+                \item Instrutor acessa a seção "Ajuda".
+                \item Sistema disponibiliza área de comentários para instrutor enviar mensagem.
+                \item Instrutor escreve mensagem e clica em enviar.
+                \item Sistema recebe notificação e notifica a equipe de desenvolvimento.
+                \item Equipe trata da situação via email com instrutor.
+            \end{enumerate}
+        \end{itemize}
+
+        \section*{UC09: Aluno interagir na comunidade}
+
+        \begin{itemize}
+            \item \textbf{Descrição:} Permite que aluno interaja na comunidade, expressando-se com outros usuários a respeito do conteúdo do curso.
+            
+            \item \textbf{Ator Principal:} Alunos.
+            
+            \item \textbf{Prioridade:} Baixa
+            
+            \item \textbf{Pré-condição:} Usuário deve possuir um curso.
+            
+            \item \textbf{Fluxo Principal:}
+            \begin{enumerate}
+                \item Usuário acessa sessão de comunidade.
+                \item Sistema disponibiliza área para escrita.
+                \item Usuário escreve alguma dúvida, observação ou informação pertinente.
+                \item Sistema salva comentário e notifica instrutor.
+            \end{enumerate}
+        \end{itemize}
+
+        \section*{UC10: Instrutor interagir na comunidade}
+
+        \begin{itemize}
+            \item \textbf{Descrição:} Permite que instrutor interaja na comunidade, ajudando os alunos do curso.
+            
+            \item \textbf{Ator Principal:} Instrutor.
+            
+            \item \textbf{Prioridade:} Baixa
+            
+            \item \textbf{Pré-condição:} Instrutor deve ter criado um curso.
+            
+            \item \textbf{Fluxo Principal:}
+            \begin{enumerate}
+                \item Instrutor acessa sessão de comunidade.
+                \item Sistema disponibiliza os comentários realizados pelos alunos.
+                \item Intrutor interaje com os alunos.
+                \item Sistema salva comentário e notifica alunos.
+            \end{enumerate}
+        \end{itemize}
+
+
+        \subsubsection{Prototipação}
+
+        Protótipo ficará aqui
+        
+\section{Arquitetura do Software}
+
+A arquitetura proposta segue o modelo Cliente-Servidor, mostrando-se ideal para o gerenciamento de usuários, bem como pelo servidor para a geração de páginas estáticas de conteúdo, que serão armazenadas na rede IPFS.
+
+A Figura \ref{fig:arquitetura_sistema} apresenta a arquitetura do sistema projetada para o desenvolvimento da aplicação. Essa arquitetura foi concebida para garantir escalabilidade, segurança e descentralização, alinhando-se aos requisitos definidos na proposta.
+
+\begin{figure}[h]
     \centering
-    \caption{Comparação de funcionalidades entre Hotmart e Udemy}
-    \label{tab:comparacao_hotmart_udemy}
-    \begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
-        \hline
-        \textbf{Critério} & \textbf{Hotmart} & \textbf{Udemy} \\
-        \hline
-        \textbf{Criação de cursos} & Permite a criação e hospedagem de cursos online. & Oferece ferramentas para criação e publicação de cursos. \\
-        \hline
-        \textbf{Integração de Pagamentos} & Sistema de pagamento integrado (HotPay). & Sistema de pagamento próprio (Udemy Payments). \\
-        \hline
-        \textbf{Métodos de Monetização} & Venda direta, assinaturas, afiliados. & Venda direta, cupons de desconto, promoções \\
-        \hline
-        \textbf{Afiliados} & Programa de afiliados robusto. & Programa de afiliados disponível. \\
-        \hline
-        \textbf{Personalização} & Personalização limitada da página de vendas. & Personalização do conteúdo do curso. \\
-        \hline
-        \textbf{Certificados} & Personalização limitada da página de vendas. & Personalização do conteúdo do curso. \\
-        \hline
-        \textbf{Suporte a Vídeos} & Hospedagem de vídeos integrada. & Hospedagem de vídeos com suporte a legendas. \\
-        \hline
-        \textbf{Ferramentas de Marketing} & Ferramentas avançadas de marketing e automação. & Ferramentas básicas de marketing e promoção. \\
-        \hline
-        \textbf{Análise de Dados} & Relatórios detalhados de vendas e desempenho. & Análises de desempenho do curso e dos alunos. \\
-        \hline
-        \textbf{Comunidade} & Comunidade de produtores e afiliados. & Comunidade de instrutores e alunos. \\
-        \hline
-        \textbf{Suporte ao Instrutor} & Suporte por e-mail e chat. & Suporte por e-mail e centro de ajuda. \\
-        \hline
-        \textbf{Aplicativo Móvel} & Aplicativo para alunos e produtores. & Aplicativo móvel para alunos. \\
-        \hline
-        \textbf{Integrações} & Integração com ferramentas de e-mail e CRM. & Integração com ferramentas de terceiros via API. \\
-        \hline
-        \textbf{Segurança} & Proteção contra pirataria e fraudes. & Proteção básica contra pirataria. \\
-        \hline
-        \textbf{Gamificação} & Recursos limitados de gamificação. & Recursos de gamificação (badges, quizzes). \\
-        \hline
-        \textbf{Acessibilidade} & Recursos básicos de acessibilidade. & Legendas e transcrições para vídeos. \\
-        \hline
-        \textbf{Idiomas} & Suporte a múltiplos idiomas. & Suporte a múltiplos idiomas. \\
-        \hline
-        \textbf{Preços} & Taxas sobre vendas e planos de assinatura. & Taxas sobre vendas e compartilhamento de receita. \\
-        \hline
-    \end{tabular}
-    \label{tab:comparacao_hotmart_udemy}
-    \vspace{5mm}
-    {\footnotesize Fonte: Autores} 
-\end{table}
+    \caption{Arquitetura do sistema}
+    \includegraphics[width=0.8\textwidth]{figuras/arquitetura.png}
+    \begin{center}
+        {\footnotesize Fonte: Autores}
+    \end{center}
+    \label{fig:arquitetura_sistema}
+\end{figure}
 
-% Observando as comparações realizadas na tabela acima, percebe-se que ambas as plataformas oferecem diversas funcionalidades em comum. Com base nisso, a equipe separou as funcionalidades, que serão elencadas na seção de \hyperref[Priorização de requisitos:minha_subsecao]{subseção específica}.
+\subsection{Desenvolvimento Cliente-Servidor}
 
-\subsubsubsection{Sessões de Brainstorming}
+A construção de uma aplicação percorre várias etapas, desde a concepção da ideia e validação até a prototipação e, seguidamente, codificação resultando em uma solução. Para atingir esse objetivo de maneira eficiente, é necessário escolher ferramentas e tecnologias que suportem  o tamanho e robustez que a aplicação se propõe. No projeto Learn Chain, serão utilizadas tecnologias que atendam esses critérios.
 
-O brainstorming é uma das técnicas utilizadas durante a concepção de um software que consiste na geração de ideias pelos participantes sem preocução com julgamentos, não importando a validez ou o quão desurptiva esssa ideia possa ser. Segundo \cite{osborn1953}, precursor da técnica, esta é a chave para a eficácia da técnica. 
-Essa abordagem permite que esse grupo aborde diferentes faces do problema, promovendo ideias criativas e soluções eficazes. Segundo \cite{miro2025}, alguns dos benéficios dessa técnica são:
+Do lado do servidor, a aplicação será escrita a partir do framework NestJS, que se destaca por seu conjunto de ferramentas integradas capazes de comunicar-se com o banco de dados e construção de APIs rapidamente. É uma ferramenta contruída em JavaScript / TypeScript que proporcionará uma integração boa com o OrbitDB, haja visto que este é escrito na mesma linguagem.
+
+Para o desenvolvimento do lado do cliente será adotado o nextJS, que atualmente é um framework amplamente utilizado por conta de suas facilidades no desenvolvimento web.
+
+\subsection{Arquitetura de desenvolvimento web}
+
+A arquitetura \textit{cliente-servidor} será adotada no desenvolvimento da aplicação, devido à sua robustez e flexibilidade no gerenciamento de interações entre usuários e servidores. Nesse modelo, os clientes fazem requisições a um servidor centralizado, que processa as solicitações e retorna as respostas adequadas. A utilização dessa abordagem oferece uma série de benefícios importantes para o desenvolvimento de sistemas distribuídos. A seguir, estão algumas vantagens deste modelo arquitetural.
+
+\subsection{Principais vantagens do modelo Cliente-Servidor}
 
 \begin{itemize}
-    \item \textbf{Encoraja a criatividade}: Como dito anteriormente, as sessões de brainstoorming incentivam o pensamento livre e criativo em um ambiente livre. As ideias de vários participantes juntas, podem gerar uma solução, diferente para o problema.
-    \item \textbf{Incentiva a colaboração e trabalho em equipe}: Além da solução de problemas, ele permite que os membros entendam o processo criativo de cada um, auxiliando no entrosamento da equipe.
-    \item \textbf{Introduz muitas ideias rapidamente}: O brainstoorming encoraja os membros apresentarem muitas ideias em um período de tempo curto. Todas as ideias postas são documentadas, e após algum crivo, pode resultar na solução perfeita.
+    \item \textbf{Controle:} Apesar do cerne dessa aplicação ser a descentralização e democratização dos dados, a gestão dos usuários, bem como o controle do meio de pagamento via rede lightning foi pensado em uma aplicação centralizada. Com esse modelo é possível garantir a integridade e a consistência das informações. 
+    Isso permite que a administração tenha maior controle, minimizando riscos de dados corrompidos ou acesso não autorizado\cite{coulouris2011}.
+    
+    \item \textbf{Escalabilidade:} A arquitetura cliente-servidor comporta um grande número de usuários. As aplicações nessa estrutura podem ser aprimoradas com mais recursos de acordo com a demanda \cite{coulouris2011}.
+    
+    \item \textbf{Desempenho e Eficiência:} A separação clara entre duas entidades corrobora com a performance da aplicação. O cliente foca na interação com o usuário e como esse dado será apresentado a ele. O servidor lida com processamento e armazenamento de dados. \cite{coulouris2011}.
+    
+    \item \textbf{Facilidade de Manutenção e Atualização:} Como o processamento centralizado ocorre no servidor, qualquer atualização ou manutenção do sistema pode ser realizada em um único ponto. Isso facilita a implementação de novos recursos, correção de falhas ou melhorias no sistema sem a necessidade de alterar os clientes \cite{coulouris2011}.
+    
+    \item \textbf{Flexibilidade e Compatibilidade:} Com essa arquitetura é possível distribuir a aplicação para uma gama de plataformas e alcançar um número maior de clintes, como aplicativos móveis, web ou desktop. \cite{coulouris2011}. 
 \end{itemize}
 
-Foi realizada 2 sessões de brainstoorming, a primeira presencialmente e a segunda no Discord. O princípio do encontro, foi marcado por um alinhamento a respeito do problema a ser resolvido. Durante as sessões, foi utilizado o uso de notas adesivas digitais na plataforma, e uso de papel e caneta para registro presencialmente. As notas foram agrupadas por proximidade dos temas. Os resultados obtidos através desse processo está exibido no apêndice desse trabalho. 
+\section{Tecnologias da aplicação}
 
-Diante dos resultados dessa técnica e dos levantamento de requisitos, foi possível visualizar com mais segurança quais seriam as funcinalidades principais para que a plataforma se adaquasse ao que se espera, diante do mercado.
+\subsection{O \textit{InterPlanetary File System} (IPFS)}
 
-\subsubsection{Fase de Definição}
-Na fase de definição encontra-se a análise dos resultados da comparação entre as plataformas. Após a coleta de dados, a equipe analisou as informações para que fossem identificados os padrões de funcionalidade entre as plataformas, e por fim realizar a definição dos requisitos do projeto Learn Chain. 
+Neste projeto, o foco é desenvolver uma plataforma descentralizada para cursos e materiais educativos utilizando o IPFS para garantir que os dados permaneçam sob o controle direto de seus criadores. A aplicação será responsável por gerenciar os dados dos usuários e no controle dos meios de pagamento através da rede \textit{Lightning Network} \cite{lightningnetwork} para os conteúdos privados criptografados. Tanto os materiais públicos quanto os privados serão persistidos na rede IPFS. Dessa forma, mesmo que eventualmente essa aplicação saia de circulação ou seja bloqueada, os dados permanecerão disponíveis globalmente ao público.
 
-\subsubsubsection{Priorização de requisitos}
+O IPFS é um protocolo distribuído para armazenamento e compartilhamento de dados, que organiza arquivos em uma estrutura baseada em conteúdo, tornando a web mais eficiente e resistente a falhas \cite{ipfs2025}. Com ele é possível persistir os dados da aplicação entre os nós da rede. Isso o torna público, de fato, e replicável por quaisquer usuários que quiserem. Diferente do HTTP, que carrega arquivos de um servidor, o IPFS utiliza um modelo de endereçamento de conteúdo, em que os dados não desacoplados de sua localização e tratados a partir da hash única gerada pelo conteúdo do mesmo.
 
-Haja vista a quantidade de funcionalidades elencadas através do levantamento de requisitos e do brainstorming, será utilizado a técnica de priorização de requisitos \cite{cottrell1999}, que é uma abordagem eficaz para classificação com base na importância de cada requisito. Ela divide em 4 categorias:
+Entre suas principais características, destacam-se:
 
 \begin{itemize}
-    \item \textbf{Must Have}: "Must have" (Precisa
-    ter), são essenciais para o sucesso do projeto
-    \item \textbf{Should Have}: "Should have" (Deve ter), são requisitos desejáveis para o sistema, apesar de ser possível a existência do projeto sem eles, mesmo que temporariamente.
-    \item \textbf{Could Have}: "Could have" (Pode ter), funcionalidades adicionais que podem ser priorizadas, caso haja tempo.
-    \item \textbf{Won’t Have}: "Won’t have" (não terá agora), requisitos que não terão prioridade durante o desenvolvimento do projeto.
+    \item \textbf{Identificadores de Conteúdo (CIDs - Content Identifiers)}: cada conteúdo ou arquivo é associado a um endereço único baseado em um hash criptográfico, garantindo sua integridade e imutabilidade.
+    
+    \item \textbf{Rede Peer-to-Peer (P2P)}: milhares de nós interconectados facilitam a localização e recuperação dos dados distribuídos na rede.
+    
+    \item \textbf{Armazenamento em Cache}: os dados são armazenados temporariamente na memória cache dos nós, otimizando a largura de banda e melhorando a eficiência na redistribuição de conteúdos.
 \end{itemize}
 
-É importante destacar que o desenvolvimento contará com funcionalidades até o nível de could have.  
+\subsection{OrbitDB: Banco de Dados Distribuído}
 
+O OrbitDB é um banco de dados \textit{serverless} e ponto a ponto (\textit{peer-to-peer}), distribuído. Construído para atuar em aplicações descentralizadas, ele utiliza o IPFS para o armazenamento e sincronia dos dados entre os diferentes nós. Ele será utilizado no projeto para realizar a comunicação e persistência dos dados com a rede IPFS.
 
-\subsubsubsection{Resultados dos Requisitos}
+Escrito em \textit{JavaScript}, o \textit{OrbitDB} o oferece uma integração perfeita com o NestJS, facilitando o desenvolvimento do Software e possibilitando escalabilidade e flexibilidade no acesso offline entre os nós da aplicação.
 
-\subsubsubsection{Requisitos Não Funcionais}
-Os Requisitos Não Funcionais (RNF) descrevem os atributos de desempenho, escalabilidade, segurança, disponibilidade, usabilidade e compatibilidade que são esperadas do sistema. A seguir estão os principais requisitos não funcionais para o sistema:
-
+\subsubsection*{Pontos Fortes do OrbitDB:}
 \begin{itemize}
-    \item \textbf{RNF01}: \textbf{Interface Intuitiva} - A interface do usuário deve ser de fácil aprendizagem e responsiva, garantindo facilidade no uso em diferentes dispositivos.
-    \item \textbf{RNF02}: \textbf{Disponibilidade e Resiliência} - O conteúdo armazenado no IPFS deve continuar disponível mesmo quando os servidores tradicionais saírem do ar.
-    \item \textbf{RNF03}: \textbf{Segurança e Privacidade} - O sistema deve garantir que apenas usuários autorizados possam acessar determinados conteúdos utilizando criptografia.
-    \item \textbf{RNF04}: \textbf{Interoperabilidade e Compatibilidade} - A plataforma deve ser acessível pelos principais navegadores modernos.
+    \item \textbf{Descentralização}: Dispensa a necessidade de servidores centralizados.
+    \item \textbf{Alta disponibilidade}: Suporta replicação automática e sincronização entre nós.
+    \item \textbf{Desempenho escalável}: Ideal para aplicações distribuídas que requerem persistência de dados em tempo real.
+    \item \textbf{Fácil integração}: Compatível com tecnologias baseadas em JavaScript.
+\end{itemize}
+
+\subsection{NestJS}
+
+NestJS é uma estrutura para construir aplicativos Node.js eficientes e escaláveis. Ele utiliza JavaScript progressivo, sendo construído com e oferecendo suporte total a TypeScript (mas ainda permitindo que os desenvolvedores codifiquem em JavaScript puro). Ele combina elementos de POO (Programação Orientada a Objetos), FP (Programação Funcional) e FRP (Programação Reativa Funcional) \cite{nestjs2025}.
+
+\subsubsection*{Pontos Fortes do NestJS:}
+\begin{itemize}
+    \item \textbf{Modularidade}: Arquitetura que facilita a divisão da aplicação em módulos reutilizáveis.
+    \item \textbf{Integração simples com bancos de dados}: Compatível com ORM populares, como TypeORM e Prisma.
+    \item \textbf{Injeção de Dependência}: Simplifica o gerenciamento de dependências e aumenta a testabilidade.
+    \item \textbf{Flexibilidade}: Suporta diversos paradigmas, como programação reativa e microsserviços.
+\end{itemize}
+
+\subsection{Next.js}
+
+O \textbf{Next.js} é um framework \textit{React} para desenvolvimento de aplicações no lado do cliente. Ele oferece recursos como renderização no lado do servidor (\textit{Server-Side Rendering} - SSR) e geração de sites estáticos (\textit{Static Site Generation} - SSG), que permitem criar interfaces modernas com excelente desempenho.
+
+\subsubsection*{Pontos Fortes do Next.js:}
+\begin{itemize}
+    \item \textbf{Renderização otimizada}: Suporte a SSR e SSG, melhorando o desempenho e SEO.
+    \item \textbf{Rotas automáticas}: Simplifica a estrutura de navegação com rotas baseadas em arquivos.
+    \item \textbf{Desenvolvimento eficiente}: Hot reloading e compilação automática durante o desenvolvimento.
+    \item \textbf{API Routes}: Permite criar APIs no mesmo projeto do front-end.
+    \item \textbf{Suporte ativo da comunidade}: Grande número de extensões e soluções prontas.
+\end{itemize}
+
+\subsection{PostgreSQL}
+
+O \textbf{PostgreSQL} é um banco de dados relacional muito utilizado no desenvolvimento web. Conhecido por sua flexibilidade e robustez em diagramas relacionais. 
+
+\subsubsection*{Pontos Fortes do PostgreSQL:}
+\begin{itemize}
+    \item \textbf{Suporte Avançado a Dados}: Compatível com tipos complexos, como JSON, arrays, e dados geoespaciais (\textit{PostGIS}).
+    \item \textbf{Alta Conformidade com Padrões SQL}: Facilita a portabilidade de aplicações entre diferentes bancos de dados.
+    \item \textbf{Extensibilidade}: Suporte a funções definidas pelo usuário, tipos de dados customizados e linguagens de programação adicionais.
+    \item \textbf{Desempenho e Escalabilidade}: Otimizações para consultas complexas e grandes volumes de dados, com suporte a replicação e particionamento.
+    \item \textbf{Segurança}: Autenticação robusta, criptografia e controle granular de permissões.
+    \item \textbf{Comunidade Ativa}: Grande quantidade de documentação e suporte da comunidade global.
 \end{itemize}
