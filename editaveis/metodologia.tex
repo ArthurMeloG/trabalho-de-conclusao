@@ -596,11 +596,12 @@ O Design Thinking é uma técnica utilizada para a solução de problemas de for
 
         O processo de prototipação é fundamental para o sucesso de um software, pois é por ele que é possível validar o design, a usabilidade e a experiência do usuário antes da implementação inicial. Neste projeto, o protótipo de alta fidelidade foi dividido em duas (2) etapas: elaboração do guia de estilo, contento cores, espaços e tipografia, e desenvolvimento das telas da interface propriamente dita. 
 
-        
-        
-\section{Arquitetura do Software}
+        A figura \ref{fig:guia-de-estilo} representa o guia de estilo do projeto, enquanto as figuras \ref{fig:Registro}, \ref{fig:main}, \ref{fig:detalhamento_do_curso}, \ref{fig:Criar_conteudo_didatico}, \ref{fig:meus_cursos}, \ref{fig:Criando_curso}
 
-A arquitetura proposta segue o modelo Cliente-Servidor, mostrando-se ideal para o gerenciamento de usuários, bem como pelo servidor para a geração de páginas estáticas de conteúdo, que serão armazenadas na rede IPFS.
+\section{Arquitetura do Software}
+A construção de uma aplicação percorre várias etapas, desde a concepção da ideia e validação até a prototipação e, seguidamente, codificação resultando em uma solução. Para atingir esse objetivo de maneira eficiente, é necessário escolher ferramentas e tecnologias que suportem  o tamanho e robustez que a aplicação se propõe. No projeto Learn Chain, serão utilizadas tecnologias que atendam esses critérios.
+
+A arquitetura proposta segue o modelo Cliente-Servidor com adaptação para uso da rede IPFS. Essa arquitetura visa utilizar as vantagens do cliente-servidor para gerenciamento dos clientes da aplicação e referência das chaves únicas do conteúdo dos cursos que serão persistidos no sistema distribuído, fazendo assim com que o ponto chave desse projeto, que são os cursos, fiquem acessíveis nesta rede.
 
 A Figura \ref{fig:arquitetura_sistema} apresenta a arquitetura do sistema projetada para o desenvolvimento da aplicação. Essa arquitetura foi concebida para garantir escalabilidade, segurança e descentralização, alinhando-se aos requisitos definidos na proposta.
 
@@ -614,22 +615,14 @@ A Figura \ref{fig:arquitetura_sistema} apresenta a arquitetura do sistema projet
     \label{fig:arquitetura_sistema}
 \end{figure}
 
-\subsection{Desenvolvimento Cliente-Servidor}
-
-A construção de uma aplicação percorre várias etapas, desde a concepção da ideia e validação até a prototipação e, seguidamente, codificação resultando em uma solução. Para atingir esse objetivo de maneira eficiente, é necessário escolher ferramentas e tecnologias que suportem  o tamanho e robustez que a aplicação se propõe. No projeto Learn Chain, serão utilizadas tecnologias que atendam esses critérios.
-
-Do lado do servidor, a aplicação será escrita a partir do framework NestJS, que se destaca por seu conjunto de ferramentas integradas capazes de comunicar-se com o banco de dados e construção de APIs rapidamente. É uma ferramenta contruída em JavaScript / TypeScript que proporcionará uma integração boa com o OrbitDB, haja visto que este é escrito na mesma linguagem.
-
-Para o desenvolvimento do lado do cliente será adotado o nextJS, que atualmente é um framework amplamente utilizado por conta de suas facilidades no desenvolvimento web.
-
 \subsection{Arquitetura de desenvolvimento web}
 
-A arquitetura \textit{cliente-servidor} será adotada no desenvolvimento da aplicação, devido à sua robustez e flexibilidade no gerenciamento de interações entre usuários e servidores. Nesse modelo, os clientes fazem requisições a um servidor centralizado, que processa as solicitações e retorna as respostas adequadas. A utilização dessa abordagem oferece uma série de benefícios importantes para o desenvolvimento de sistemas distribuídos. A seguir, estão algumas vantagens deste modelo arquitetural.
+A arquitetura \textit{cliente-servidor} será adotada no desenvolvimento da aplicação, devido à sua robustez e flexibilidade no gerenciamento de interações entre usuários e servidores. Nesse modelo, os clientes fazem requisições a um servidor centralizado, que processa as solicitações e retorna as respostas adequadas. A utilização dessa abordagem oferece uma série de benefícios importantes para o desenvolvimento do sistema. A seguir, estão algumas vantagens deste modelo arquitetural.
 
 \subsection{Principais vantagens do modelo Cliente-Servidor}
 
 \begin{itemize}
-    \item \textbf{Controle:} Apesar do cerne dessa aplicação ser a descentralização e democratização dos dados, a gestão dos usuários, bem como o controle do meio de pagamento via rede lightning foi pensado em uma aplicação centralizada. Com esse modelo é possível garantir a integridade e a consistência das informações. 
+    \item \textbf{Controle:} Apesar do cerne dessa aplicação ser a descentralização e democratização dos dados, a gestão dos usuários, foi pensadoa em uma aplicação centralizada. Com esse modelo é possível garantir a integridade e a consistência das informações. 
     Isso permite que a administração tenha maior controle, minimizando riscos de dados corrompidos ou acesso não autorizado\cite{coulouris2011}.
     
     \item \textbf{Escalabilidade:} A arquitetura cliente-servidor comporta um grande número de usuários. As aplicações nessa estrutura podem ser aprimoradas com mais recursos de acordo com a demanda \cite{coulouris2011}.
@@ -644,10 +637,8 @@ A arquitetura \textit{cliente-servidor} será adotada no desenvolvimento da apli
 \section{Tecnologias da aplicação}
 
 \subsection{O \textit{InterPlanetary File System} (IPFS)}
-
-Neste projeto, o foco é desenvolver uma plataforma descentralizada para cursos e materiais educativos utilizando o IPFS para garantir que os dados permaneçam sob o controle direto de seus criadores. A aplicação será responsável por gerenciar os dados dos usuários e no controle dos meios de pagamento através da rede \textit{Lightning Network} \cite{lightningnetwork} para os conteúdos privados criptografados. Tanto os materiais públicos quanto os privados serão persistidos na rede IPFS. Dessa forma, mesmo que eventualmente essa aplicação saia de circulação ou seja bloqueada, os dados permanecerão disponíveis globalmente ao público.
-
-O IPFS é um protocolo distribuído para armazenamento e compartilhamento de dados, que organiza arquivos em uma estrutura baseada em conteúdo, tornando a web mais eficiente e resistente a falhas \cite{ipfs2025}. Com ele é possível persistir os dados da aplicação entre os nós da rede. Isso o torna público, de fato, e replicável por quaisquer usuários que quiserem. Diferente do HTTP, que carrega arquivos de um servidor, o IPFS utiliza um modelo de endereçamento de conteúdo, em que os dados não desacoplados de sua localização e tratados a partir da hash única gerada pelo conteúdo do mesmo.
+\label{sec:ipfs}
+O IPFS é um protocolo distribuído para armazenamento e compartilhamento de dados, que organiza arquivos em uma estrutura baseada em conteúdo, tornando a web mais eficiente e resistente a falhas \cite{ipfs2025}. Com ele é possível persistir os dados da aplicação entre os nós da rede. Isso o torna acessível, de fato, e replicável por quaisquer usuários que quiserem. Diferente do HTTP, que carrega arquivos de um servidor, o IPFS utiliza um modelo de endereçamento de conteúdo, em que os dados não desacoplados de sua localização e tratados a partir da hash única gerada pelo conteúdo do mesmo.
 
 Entre suas principais características, destacam-se:
 
@@ -659,11 +650,12 @@ Entre suas principais características, destacam-se:
     \item \textbf{Armazenamento em Cache}: os dados são armazenados temporariamente na memória cache dos nós, otimizando a largura de banda e melhorando a eficiência na redistribuição de conteúdos.
 \end{itemize}
 
+\subsubsection{Justificativa da escolha da tecnologia}
+Neste projeto, o foco é desenvolver uma plataforma descentralizada para cursos e materiais educativos utilizando o IPFS para garantir que os dados permaneçam sob o controle direto de seus criadores. Ele será utilizado para o armazenamento descentralizado de conteúdos de aprendizagem, permitindo que os dados sejam acessados de maneira eficiente, sem depender de um único servidor. Através da identificação utilizando hashs únicas, o IPFS garante a integridade do conteúdo, evitando duplicação desnecessária de arquivos na rede, além de tornar o sistema resistente a falhas e censura, uma vez que os dados podem ser distribuídos entre múltiplos nós na rede. A rede IPFS armazenará os dados dos cursos, tanto os públicos quanto os privados. Dessa forma, mesmo que eventualmente essa aplicação saia de circulação ou seja bloqueada, os dados permanecerão disponíveis globalmente ao público. O uso desta tecnologia elimina a dependência de servidores centrais, garantindo que seja alcançado o objetivo central deste projeto.
+
 \subsection{OrbitDB: Banco de Dados Distribuído}
 
 O OrbitDB é um banco de dados \textit{serverless} e ponto a ponto (\textit{peer-to-peer}), distribuído. Construído para atuar em aplicações descentralizadas, ele utiliza o IPFS para o armazenamento e sincronia dos dados entre os diferentes nós. Ele será utilizado no projeto para realizar a comunicação e persistência dos dados com a rede IPFS.
-
-Escrito em \textit{JavaScript}, o \textit{OrbitDB} o oferece uma integração perfeita com o NestJS, facilitando o desenvolvimento do Software e possibilitando escalabilidade e flexibilidade no acesso offline entre os nós da aplicação.
 
 \subsubsection*{Pontos Fortes do OrbitDB:}
 \begin{itemize}
@@ -672,6 +664,9 @@ Escrito em \textit{JavaScript}, o \textit{OrbitDB} o oferece uma integração pe
     \item \textbf{Desempenho escalável}: Ideal para aplicações distribuídas que requerem persistência de dados em tempo real.
     \item \textbf{Fácil integração}: Compatível com tecnologias baseadas em JavaScript.
 \end{itemize}
+
+\subsubsection{Justificativa da escolha da tecnologia}
+Ele foi escolhido por ser escrito em \textit{JavaScript}, portanto sendo possível a integração com a NestJS, tecnologia que será utilizada no desenvolvimento do backend, além de facilitar a manipulação dos dados na rede IPFS.
 
 \subsection{NestJS}
 
@@ -684,6 +679,9 @@ NestJS é uma estrutura para construir aplicativos Node.js eficientes e escaláv
     \item \textbf{Injeção de Dependência}: Simplifica o gerenciamento de dependências e aumenta a testabilidade.
     \item \textbf{Flexibilidade}: Suporta diversos paradigmas, como programação reativa e microsserviços.
 \end{itemize}
+
+\subsubsection{Justificativa da escolha da tecnologia}
+NestJS foi escolhido para a estrutura do backend da aplicação por sua compatibilidade com JavaScript e TypeScript, além de sua arquitetura modular e suporte a injeção de dependências. Sua integração nativa com o OrbitDB permite uma comunicação eficiente com o banco de dados distribuído, enquanto seu suporte ao PostgreSQL garante um armazenamento seguro e estruturado para os dados dos usuários.
 
 \subsection{Next.js}
 
@@ -698,9 +696,12 @@ O \textbf{Next.js} é um framework \textit{React} para desenvolvimento de aplica
     \item \textbf{Suporte ativo da comunidade}: Grande número de extensões e soluções prontas.
 \end{itemize}
 
+\subsubsection{Justificativa da escolha da tecnologia}
+No contexto deste trabalho, o Next.js foi escolhido para desenvolver a interface da aplicação, garantindo carregamento eficiente e uma experiência fluida para os usuários. Além disso, o Next.js traz recursos como otimização automática de imagens, roteamento intuitivo e suporte integrado a APIs, facilitando a implementação de uma interface interativa e responsiva para o projeto (TEAM, 2025). 
+
 \subsection{PostgreSQL}
 
-O \textbf{PostgreSQL} é um banco de dados relacional muito utilizado no desenvolvimento web. Conhecido por sua flexibilidade e robustez em diagramas relacionais. 
+O \textbf{PostgreSQL} é um Sistema de Gerenciamento de Banco de Dados (SGBD) muito utilizado no desenvolvimento web. Conhecido por sua flexibilidade e robustez em diagramas relacionais. É um dos sistemas de armazenamento de dados mais seguros e confiáveis da atualidade, promovendo segurança e integridade dos dados, principalmente por sua conformidade com os princípios ACID (Atomicidade, onsistência, Isolamento e Durabilidade). 
 
 \subsubsection*{Pontos Fortes do PostgreSQL:}
 \begin{itemize}
@@ -710,4 +711,26 @@ O \textbf{PostgreSQL} é um banco de dados relacional muito utilizado no desenvo
     \item \textbf{Desempenho e Escalabilidade}: Otimizações para consultas complexas e grandes volumes de dados, com suporte a replicação e particionamento.
     \item \textbf{Segurança}: Autenticação robusta, criptografia e controle granular de permissões.
     \item \textbf{Comunidade Ativa}: Grande quantidade de documentação e suporte da comunidade global.
+\end{itemize}
+
+\subsubsection{Justificativa da escolha da tecnologia}
+O PostgreSQL está sendo utilizado para armazenar os usuários da plataforma, e também dos metadados dos materiais de aprendizagem da plataforma. Além das características de confiabilidade, sua escolha também foi influenciada pela experiência dos membros desenvolvedores com tal tecnologia. Outro aspecto relevante para a escolha do PostgreSQL é sua compatibilidade com diferentes arquiteturas computacionais, incluindo os sistemas distribuídos. Ele é uma ótima opção para lidar com otimicações de indexação, que garante maior eficiência na busca por informações, oferecendo melhor experiência aos usuário utilizadores do sistema por uma vantagem no tempo de carregamento. Por fim, a experiência prévia da equipe de desenvolvimento com essa tecnologia também influenciou a decisão, assegurando maior agilidade e segurança na implementação do banco de dados.
+
+\subsubsection{Diagrama lógico de dados}
+o Diagrama lógico de dados (DLD) é um diagrama que se propõe a ser um modelo de dados de um sistema a partir de tabelas, colunas, dados e relacionamentos a fim de facilitar a implemtao no banco PostgreSQL \cite{lucidchart2025}.
+
+A imagem \ref{fig:dld} apresenta o Diagrama Lógico de Dados (DLD) proposto para a solução Learn Chain, detalhando os relacionamentos entre as tabelas e os atributos de cada uma. Vale ressaltar que este diagrama não inclui a modelagem que estará presente na rede IPFS, pois todos os dados serão armazenados no formato JSON. A interface entre os dados armazenados no IPFS e o banco de dados é realizada por meio da tabela ContentIPFSRef, a qual armazena o CID – um hash que serve como chave de acesso aos dados no IPFS. Essa estrutura permite a comunicação eficiente entre o banco de dados e a rede descentralizada, conforme discutido na subseção \ref{sec:ipfs}.
+
+\section{Ferramentas de suporte técnico}
+Para o auxílio durante o desenvolvimento do presente trabalho, estão sendo utilizada as ferramentas citadas abaixo:
+
+\begin{itemize}
+    \item \textbf{Discord}: Plataforma de comunicação com canais de texto e voz. Utilizada principalmente para comunicação síncrona entre os desenvolvedores, sendo fundamental para realizar a prática de \textit{pair programming}.
+    \item \textbf{Git e GitHub}: Git é uma tecnologia de controle de versões de artefatos, e GitHub é a hospedagem de repositórios. Utilizados para gerenciar as versões do documento escrito.
+    \item \textbf{Trello}: Ferramenta de gerenciamento de projetos baseada em Kanban. Utilizado para organizar tarefas e acompanhar o progresso do projeto.
+    \item \textbf{LaTeX}: É uma linguagem de marcação uilizada para a formatação de documentos. Ela foi utilizada para a criação de toda a redação do presente trabalho
+    \item \textbf{Visual Studio Code}: Editor de código-fonte gratuito, multiplataforma e personalizável. Desenvolvido pela microsoft, está sendo utilizado no presente trabalho como suporte para interpretação da linguagem LaTeX.
+    \item \textbf{Lucichart}: É uma ferramenta online que permite criar diagramas, fluxogramas, wireframes e mapas de processos. Tal tecnologia está sendo utilizada para a construção de diagramas de casos de uso.
+    \item \textbf{Figma}: Tipo de ferramenta do design gratuita que permite criar protótipos e interfaces de aplicações. Está sendo utilizada para desenvolver o protótipo de alta fidelidade.
+    \item \textbf{dbdiagram}: É uma ferramenta de criação de diagramas e scripts de banco de dados. Foi utilizada para a construção do DLD.
 \end{itemize}
