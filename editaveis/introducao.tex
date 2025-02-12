@@ -6,13 +6,13 @@ O objetivo principal da indtrodução é dar um contexto geral sobre o tema abor
 
 \section{Contexto Tecnológico}
 
-A Web (World Wide Web) foi concebida como uma plataforma aberta e acessível para todos, promovendo liberdade de acesso e compartilhamento de informações de qualquer lugar e hora. Em novembro de 2007, 5 anos após o surgimento da Web 2.0, a WWW inicia suas operações com uma série de objetivos, como a criação de um fórum para a comunidade interessada em padrões web, tradução para português de conteúdos que fossem do interesse regional, entre outros \cite{vieira2014}.
+A Web (\textit{World Wide Web}) foi concebida como uma plataforma aberta e acessível para todos, promovendo liberdade de acesso e compartilhamento de informações de qualquer lugar e hora. Em novembro de 2007, 5 anos após o surgimento da Web 2.0, a WWW inicia suas operações com uma série de objetivos, como a criação de um fórum para a comunidade interessada em padrões web, tradução para português de conteúdos que fossem do interesse regional, entre outros \cite{vieira2014}.
 
-Desde então, a W3C tem evoluído cada vez mais, transformando não só como as informações são acessadas e compartilhadas, mas também o estilo de vida dos seres humanos, uma vez que afetou os padrões de interação social, comunicação, consumo, trabalho e muitos outros fatores, em todo o mundo.
+Desde então, a W3C tem evoluído cada vez mais, transformando não só como as informações são acessadas e compartilhadas, mas também o estilo de vida dos seres humanos, uma vez que afetou os padrões de interação social, comunicação, consumo, trabalho e de muitos outros fatores em todo o mundo.
 
-A Web possui vantagens, desvantagens e características particulares. Uma das principais peculiaridades é que seu funcionamento está atrelado ao modelo cliente-servidor, e como consequência, a maioria das máquinas que participam do processo de compartilhamento e acesso de informações são apenas coadjuvantes, consumindo serviços de outras máquinas servidoras \cite{rocha2004p2p}. Dentre as desvantagens, observa-se o risco de centralização, onde os usuários estão sob uma entidade central, que pode gerar preocupações, como privacidade e censura. 
+A Web possui vantagens, desvantagens e características particulares. Uma de suas principais peculiaridades, é que seu funcionamento está atrelado ao modelo cliente-servidor e, como consequência, a maioria das máquinas que participam do processo de compartilhamento e acesso de informações são apenas coadjuvantes, consumindo serviços de outras máquinas servidoras \cite{rocha2004p2p}. Já no que concerne às desvantagens, observa-se o risco de centralização, em que os usuários estão sob uma entidade central, o que pode gerar preocupações referentes à privacidade e censura. 
 
-Para contrapor tais limitações e desvantagens, o presente trabalho tem por finalidade desenvolver uma aplicação segura e descentralizada, ainda utilizando o paradigma cliente-servidor, mas atrelando em sua arquitetura tecnologias cujo funcionamento baseia-se no paradigma \textit{Peer-to-peer}, para aprendizado comunitário de assuntos gerais, onde o proprietário do material possui total controle sobre seu conteúdo, sendo capaz de acessá-lo e distribuí-lo da forma como quiser, protegendo o material contra acessos não autorizados e manipulações, promovendo segurança e confiança no ambiente online.
+Para contrapor tais limitações e desvantagens, o presente trabalho tem por finalidade desenvolver uma aplicação segura e descentralizada, para aprendizado comunitário de assuntos gerais, onde o proprietário do material possui total controle sobre seu conteúdo, sendo capaz de acessá-lo e distribuí-lo da forma como quiser, protegendo o conteúdo contra acessos não autorizados e manipulações, promovendo segurança e confiança no ambiente online. Isso será feito por meio da utilização do modelo arquitetural cliente-servidor, atrelado à sua arquitetura, tecnologias cujo funcionamento baseia-se no paradigma \textit{Peer-to-peer}.
 
 \section{Questão de Pesquisa}
 Diante desse contexto, o ponto chave que orienta este trabalho é:
@@ -21,11 +21,11 @@ Como criar uma solução de software, para aprendizado online, sem a dependênci
 
 \section{Problema e Justificativa}
 
-Grande parte dos conteúdos educativos da Web estão disponíveis em plataformas centralizadas, como, por exemplo, blogs e comunidades, onde seus colaboradores desenvolvem o conteúdo em diversos formatos, e então o publicam. No entanto, como consequência da utilização do modelo tradicional cliente-servidor, as plataformas podem gerar perda de autonomia sobre o material publicado e dependência da infraestrutura da empresa responsável. Além disso, problemas como vulnerabilidade dos dados, a privacidade dos usuários e a censura também são algumas preocupações nesse tipo de arquitetura, podendo ocasionar problemas de confiabilidade e segurança \cite{wanner2024}. Ainda por cima, é simples concluir que, por várias destas questões, a resultante alcançada é a indisponibilidade do conteúdo, comprometendo o acesso de usuários que dependem dessas informações. 
+Grande parte dos conteúdos educativos da Web estão disponíveis em plataformas centralizadas, como, blogs e comunidades, onde seus colaboradores desenvolvem o conteúdo em diversos formatos, e então o publicam. No entanto, como consequência da utilização do modelo tradicional cliente-servidor, as plataformas podem gerar perda de autonomia sobre o material publicado e dependência da infraestrutura da empresa responsável. Além disso, problemas como vulnerabilidade dos dados, a privacidade dos usuários e a censura também são algumas preocupações nesse tipo de arquitetura, podendo ocasionar problemas de confiabilidade e segurança \cite{wanner2024}. Nesse sentido, cabe ressaltar que, por essas e outras questões, a resultante alcançada é a indisponibilidade do conteúdo, o que compromete o acesso de usuários que dependem dessas informações. 
 
-A centralização também levanta preocupações com a privacidade dos dados, uma vez que as plataformas podem rastrear e utilizar informações dos usuários para fins comerciais sem consentimento explícito \cite{beiro2020}. Assim, surge a necessidade de explorar alternativas inovadoras e descentralizadas que garantam maior resiliência, privacidade e controle aos criadores e consumidores de conteúdos educativos, redefinindo a forma como o aprendizado online acontece.
+A centralização também levanta preocupações com a privacidade dos dados, uma vez que as plataformas podem rastrear e utilizar informações dos usuários para fins comerciais sem consentimento explícito \cite{beiro2020}. Assim, surge a necessidade de explorar alternativas inovadoras e descentralizadas que garantam maior resiliência, privacidade e controle aos criadores e consumidores de conteúdos educativos, redefinindo a forma como o aprendizado online acontece ordienamente.
 
-A partir dessas questões, identifica-se a oportunidade de atuar nesse cenário, construindo uma aplicação, com o uso da tecnologia com ferramenta principal, que seja capaz de oferecer um sistema de aprendizado online descentralizado.
+A partir dessas questões, identifica-se a oportunidade de atuar nesse cenário, construindo uma aplicação, com o uso da tecnologia descentralizada como ferramenta principal, que seja capaz de oferecer um sistema de aprendizado online.
 
 \section{Objetivos}
 
@@ -40,7 +40,7 @@ Desenvolver uma plataforma de aprendizado comunitário que utilize uma arquitetu
 \begin{itemize}
     \item Implementar uma arquitetura back-end eficiente e escalável utilizando o framework NestJS integrado com banco de dados Postgres e outras soluções como OrbitDB e Helia, para o gerenciamento seguro dos dados.
     \item Garantir a privacidade e segurança dos dados dos usuários por meio de técnicas de criptografia, armazenando apenas informações necessárias e sensíveis de forma protegida.
-    \item Utilizar o IPFS (InterPlanetary File System) para o armazenamento descentralizado de materiais de curso, otimizando a disponibilidade e a proteção dos arquivos.
+    \item Utilizar o IPFS (\textit{InterPlanetary File System}) para o armazenamento descentralizado de materiais de curso, otimizando a disponibilidade e a proteção dos arquivos.
     \item Implementar um sistema de controle de acesso robusto que permita o compartilhamento seletivo de materiais com base nos níveis de permissão dos usuários, assegurando que conteúdos privados sejam acessíveis apenas para os usuários autorizados.
     \item Fornecer uma interface amigável e responsiva para os administradores e alunos, desenvolvida com NextJS, que facilite o acesso aos cursos e materiais disponibilizados na plataforma.
     \item Documentar e testar a solução para validar a conformidade da plataforma com os requisitos funcionais e de segurança estabelecidos.
@@ -83,7 +83,7 @@ Com isso, as devidas classificações podem ser observadas na Tabela 1, que ser�
 
 \subsection{Metodologia de desenvolvimento}
 
-Para a elaboração do projeto serão utilizadas metodologias ágeis, apoiando-se em técnicas de desenvolvimento como Extreme Programming (XP), kanban, além da utilização de ferramentas de DevOps para uso de containers como Docker. A partir disso é possível estabelecer um ambiente de trabalho previsível, e facilitado para possíveis mudanças e refatorações do projeto. também será empregado algumas técnicas do Scrum em conjunto com o XP servirão de base para o Backlog.
+Para a elaboração do projeto serão utilizadas metodologias ágeis, apoiando-se em técnicas de desenvolvimento como \textit{Extreme Programming} (XP), kanban, além da utilização de ferramentas de DevOps para uso de containers como Docker. A partir disso é possível estabelecer um ambiente de trabalho previsível e facilitado para possíveis mudanças e refatorações do projeto. Ademais, serão empregadas algumas técnicas do Scrum em conjunto com o XP servirão de base para o Backlog.
 
 \subsection{Estrutura do trabalho}
 
@@ -93,6 +93,6 @@ Capítulo \ref{cap:introducao}: Introdução: Este capítulo faz uma levantament
 
 Caítulo \ref{cap:fundamentacao}: Fundamentação Teórica: Aqui será aprofundado o etendimento das tecnologias utilizadas bem como a razão de uso de cada uma delas no contexto do desenvolvimento distribuído.
 
-Capítulo \ref{cap:proposta}: Proposta de Solução: Este capítulo ajuda a entender as metodologias de pesquisa e desenvolvimento para o trabalho, e detalha os requisitos, a arquitetura e as atividades que serão desenvolvidas no fluxo de trabalho do desenvolvimento do software.
+Capítulo \ref{cap:metodologia}: Proposta de Solução: Este capítulo ajuda a entender as metodologias de pesquisa e desenvolvimento para o trabalho, e detalha os requisitos, a arquitetura e as atividades que serão desenvolvidas no fluxo de trabalho do desenvolvimento do software.
 
-% Capítulo \ref{cap:consideracoes}: Considerações Finais: Este capítulo finaliza a o Trabalho de Conclusão de Curso (TCC 1).
+Capítulo \ref{cap:consideracoes}: Considerações Finais: Este capítulo finaliza a o Trabalho de Conclusão de Curso (TCC 1).
