@@ -113,17 +113,17 @@ O cronograma para o TCC 2 será desenvolvido a partir das funcionalidades aprese
     \caption{Cronograma das Atividades do TCC 2.}
     \label{tab:cronograma}
     \begin{adjustbox}{width=\textwidth}
-    \begin{tabular}{|l|c|c|c|c|}
-        \hline
-        \textbf{Atividade} & \textbf{Abr} & \textbf{Mai} & \textbf{Jun} & \textbf{Jul} \\
-        \hline
-        Revisão após análise da banca examinadora & X &  &  &  \\
-        Desenvolvimento da solução & X & X & X & X \\
-        Testes de solução &  &  & X & X \\
-        Gerar MVP (Produto Mínimo Viável) &  &  &  & X \\
-        Apresentação do TCC 2 &  &  &  & X \\
-        \hline
-    \end{tabular}
+        \begin{tabular}{|l|c|c|c|c|}
+            \hline
+            \textbf{Atividade} & \textbf{Abr} & \textbf{Mai} & \textbf{Jun} & \textbf{Jul} \\
+            \hline
+            Revisão após análise da banca examinadora & X &  &  &  \\
+            Desenvolvimento da solução & X & X & X & X \\
+            Testes de solução &  &  & X & X \\
+            Gerar MVP (Produto Mínimo Viável) &  &  &  & X \\
+            Apresentação do TCC 2 &  &  &  & X \\
+            \hline
+        \end{tabular}
     \end{adjustbox}
     \vspace{5mm}
     {\footnotesize Fonte: Autores}
@@ -273,7 +273,7 @@ O \textit{Design Thinking} é uma técnica utilizada para a solução de problem
             \item \textbf{Introduz muitas ideias rapidamente}: O \textit{brainstorming} encoraja os membros apresentarem muitas ideias em um período de tempo curto. Todas as ideias postas são documentadas, e após algum crivo, pode resultar na solução perfeita \cite{miro2025}.
         \end{itemize}
 
-        Foram realizadas 2 sessões de \textit{brainstorming}, a primeira presencialmente e a segunda no Discord. O princípio do encontro, foi marcado por um alinhamento a respeito do problema a ser resolvido. Durante as sessões, foi utilizado o uso de notas adesivas digitais na plataforma, e uso de papel e caneta para registro presencialmente. As notas foram agrupadas por proximidade dos temas. Os resultados obtidos através desse processo está exibido no apêndice desse trabalho. 
+        Foram realizadas 2 sessões de \textit{brainstorming}, a primeira presencialmente e a segunda no Discord. O princípio do encontro, foi marcado por um alinhamento a respeito do problema a ser resolvido. Durante as sessões, foi utilizado o uso de notas adesivas digitais na plataforma, e uso de papel e caneta para registro presencialmente. As notas foram agrupadas por proximidade dos temas. Os resultados obtidos através desse processo está exibido no \ref{cap:brainstorming} desse trabalho. 
 
         Diante dos resultados dessa técnica e dos levantamento de requisitos, foi possível visualizar com mais segurança quais seriam as funcinalidades principais para que a plataforma se adequasse ao esperado, diante do mercado.
 
@@ -700,7 +700,7 @@ No contexto deste trabalho, o Next.js foi escolhido para desenvolver a interface
 
 \subsection{PostgreSQL}
 
-O \textbf{PostgreSQL} é um Sistema de Gerenciamento de Banco de Dados (SGBD) muito utilizado no desenvolvimento web. Conhecido por sua flexibilidade e robustez em diagramas relacionais. É um dos sistemas de armazenamento de dados mais seguros e confiáveis da atualidade, promovendo segurança e integridade dos dados, principalmente por sua conformidade com os princípios ACID (Atomicidade, onsistência, Isolamento e Durabilidade). 
+O \textbf{PostgreSQL} é um Sistema de Gerenciamento de Banco de Dados (SGBD) muito utilizado no desenvolvimento web, sendo conhecido por sua flexibilidade e robustez em diagramas relacionais. É um dos sistemas de armazenamento de dados mais seguros e confiáveis da atualidade, promovendo segurança e integridade dos dados, principalmente por sua conformidade com os princípios ACID (Atomicidade, Consistência, Isolamento e Durabilidade). 
 
 \subsubsection*{Pontos Fortes do PostgreSQL:}
 \begin{itemize}
@@ -716,7 +716,7 @@ O \textbf{PostgreSQL} é um Sistema de Gerenciamento de Banco de Dados (SGBD) mu
 O PostgreSQL está sendo utilizado para armazenar os usuários da plataforma, e também dos metadados dos materiais de cursos da plataforma. Além das características de confiabilidade, sua escolha também foi influenciada pela experiência dos membros desenvolvedores com tal tecnologia. Outro aspecto relevante para a escolha do PostgreSQL é sua compatibilidade com diferentes arquiteturas computacionais, incluindo os sistemas distribuídos. Ele é uma ótima opção para lidar com otimicações de indexação, que garante maior eficiência na busca por informações, oferecendo melhor experiência aos usuários utilizadores do sistema por uma vantagem no tempo de carregamento. Por fim, a experiência prévia da equipe de desenvolvimento com essa tecnologia também influenciou a decisão, assegurando maior agilidade e segurança na implementação do banco de dados.
 
 \subsubsection{Diagrama lógico de dados}
-o Diagrama lógico de dados (DLD) é um diagrama que se propõe a ser um modelo de dados de um sistema a partir de tabelas, colunas, dados e relacionamentos a fim de facilitar a implemtao no banco PostgreSQL \cite{lucidchart2025}.
+O diagrama lógico de dados (DLD) se propõe a ser um modelo de dados de um sistema a partir de tabelas, colunas, dados e relacionamentos a fim de facilitar a implementação no banco PostgreSQL \cite{lucidchart2025}.
 
 A imagem \ref{fig:dld} apresenta o Diagrama Lógico de Dados (DLD) proposto para a solução Learn Chain, detalhando os relacionamentos entre as tabelas e os atributos de cada uma. Vale ressaltar que este diagrama não inclui a modelagem que estará presente na rede IPFS, pois todos os dados serão armazenados no formato JSON. A interface entre os dados armazenados no IPFS e o banco de dados é realizada por meio da tabela ContentIPFSRef, a qual armazena o CID, um hash que serve como chave de acesso aos dados no IPFS. Essa estrutura permite a comunicação eficiente entre o banco de dados e a rede descentralizada, conforme discutido na subseção \ref{sec:ipfs}.
 
@@ -729,7 +729,8 @@ Para o auxílio durante o desenvolvimento do presente trabalho, estão sendo uti
     \item \textbf{Trello}: Ferramenta de gerenciamento de projetos baseada em Kanban. Utilizado para organizar tarefas e acompanhar o progresso do projeto.
     \item \textbf{LaTeX}: É uma linguagem de marcação uilizada para a formatação de documentos. Ela foi utilizada para a criação de toda a redação deste trabalho.
     \item \textbf{Visual Studio Code}: Editor de código-fonte gratuito, multiplataforma e personalizável. Desenvolvido pela microsoft, está sendo utilizado como suporte para interpretação da linguagem LaTeX.
-    \item \textbf{Lucichart}: É uma ferramenta online que permite criar diagramas, fluxogramas, wireframes e mapas de processos. Tal tecnologia está sendo utilizada para a construção de diagramas de casos de uso.
+    \item \textbf{Lucidchart}: É uma ferramenta online que permite criar diagramas, fluxogramas, wireframes e mapas de processos. Tal tecnologia está sendo utilizada para a construção de diagramas de casos de uso.
     \item \textbf{Figma}: Tipo de ferramenta do design gratuita que permite criar protótipos e interfaces de aplicações. Está sendo utilizada para desenvolver o protótipo.
     \item \textbf{Dbdiagram}: É uma ferramenta de criação de diagramas e scripts de banco de dados. Foi utilizada para a construção do DLD.
+    \item \textbf{Google Meet}: Plataforma de videoconferência desenvolvida pelo Google. Foi utilizada para a realização do \textit{brainstorming}.
 \end{itemize}
