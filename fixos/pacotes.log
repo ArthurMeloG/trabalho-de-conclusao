@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.1.15)  11 FEB 2025 22:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.10)  1 APR 2025 20:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/workspaces/trabalho-de-conclusao/fixos/pacotes.tex
-(/workspaces/trabalho-de-conclusao/fixos/pacotes.tex
+**/root/trabalho-de-conclusao/fixos/pacotes.tex
+(/root/trabalho-de-conclusao/fixos/pacotes.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
@@ -476,7 +476,7 @@ Package: babel 2024/01/07 v24.1 The Babel package
  (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language30). Reported on input line 111.
+(babel)             (\language48). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 )) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
@@ -642,19 +642,63 @@ Package: bold-extra 2001/11/13 v0.1 Use fonts from cm/mf-extra/bold
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \ESO@tempdima=\dimen195
 \ESO@tempdimb=\dimen196
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+ (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks29
+\XKV@tempa@toks=\toks30
+)
+\XKV@depth=\count344
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+ (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box58
+)
+\tc@llx=\dimen197
+\tc@lly=\dimen198
+\tc@urx=\dimen199
+\tc@ury=\dimen256
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
+\adjbox@Width=\dimen257
+\adjbox@Height=\dimen258
+\adjbox@Depth=\dimen259
+\adjbox@Totalheight=\dimen260
+\adjbox@pwidth=\dimen261
+\adjbox@pheight=\dimen262
+\adjbox@pdepth=\dimen263
+\adjbox@ptotalheight=\dimen264
+ (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count345
+LaTeX Info: Redefining \checkoddpage on input line 45.
+) (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box59
+\sift@deathcycles=\count346
+\@vwid@loff=\dimen265
+\@vwid@roff=\dimen266
+)))
 ! Emergency stop.
-<*> ...ces/trabalho-de-conclusao/fixos/pacotes.tex
-                                                  
+<*> /root/trabalho-de-conclusao/fixos/pacotes.tex
+                                                 
 *** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 14797 strings out of 474222
- 234333 string characters out of 5748733
+ 15882 strings out of 474222
+ 253696 string characters out of 5748733
  1923975 words of memory out of 5000000
- 36877 multiletter control sequences out of 15000+600000
+ 37928 multiletter control sequences out of 15000+600000
  561666 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,1n,107p,294b,105s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,1n,107p,288b,105s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!
