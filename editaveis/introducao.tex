@@ -14,7 +14,7 @@ Com o avanço da tecnologia e a popularização da internet, o setor educacional
 
 A internet permitiu que o ensino extrapolasse os limites físicos da sala de aula, promovendo a educação a distância e o aprendizado autodirigido. Isso ampliou o alcance das instituições de ensino, democratizou o acesso ao saber e contribuiu para a formação contínua de indivíduos em diferentes contextos sociais e geográficos. Segundo Habowski (2019), o uso das tecnologias na educação deve ser orientado por valores humanos e éticos, evitando uma apropriação meramente técnica ou automatizada desses recursos.
 
-Nesse contexto, o presente trabalho tem como finalidade o desenvolvimento de uma ferramenta voltada para o ensino e o aprendizado online, permitindo a oferta de cursos sobre temas diversos. A aplicação abrangerá tanto conteúdos gratuitos quanto pagos, com o diferencial de utilizar uma abordagem descentralizada para o armazenamento dos dados relacionados aos cursos.
+Nesse contexto, o presente trabalho tem como finalidade o desenvolvimento de uma ferramenta voltada para o ensino e o aprendizado online, permitindo a oferta de cursos sobre temas diversos. A aplicação abrangerá tanto conteúdos gratuitos, com o diferencial de utilizar uma abordagem descentralizada para o armazenamento dos dados relacionados aos cursos.
 
 Essa abordagem apresenta diversas vantagens, como a maior resiliência no armazenamento de dados, já que os conteúdos educacionais são replicados em múltiplos nós da rede; a redução da dependência de servidores centralizados, o que pode diminuir custos de infraestrutura; e a possibilidade de garantir a disponibilidade dos materiais mesmo em situações de falhas locais ou restrições institucionais.
 
@@ -27,30 +27,27 @@ Com do avanço das tecnologias descentralizadas, surge a oportunidade de integr�
 
 \section{Problema e Justificativa}
 
+Com o crescimento da educação online, torna-se cada vez mais relevante o desenvolvimento de soluções tecnológicas que ofereçam estabilidade, segurança e acessibilidade no compartilhamento de conteúdos educacionais. As plataformas de ensino atuais, em sua maioria, adotam arquiteturas baseadas no modelo cliente-servidor, o qual oferece vantagens significativas, como centralização do controle, autenticação estruturada, gerenciamento eficiente de usuários e integração facilitada com serviços externos. Essa abordagem já se consolidou como sólida e confiável para o desenvolvimento de aplicações educacionais.
 
-Grande parte dos conteúdos educativos da Web estão disponíveis em plataformas centralizadas, como, \textit{blogs} e comunidades, em que seus colaboradores desenvolvem o conteúdo em diversos formatos, e então o publicam. No entanto, como consequência da utilização do modelo tradicional cliente-servidor, as plataformas podem gerar perda de autonomia sobre o material publicado e dependência da infraestrutura da empresa responsável. Além disso, problemas como vulnerabilidade dos dados, a privacidade dos usuários e a censura também são algumas preocupações nesse tipo de arquitetura, podendo ocasionar problemas de confiabilidade e segurança \cite{wanner2024}. Nesse sentido, cabe ressaltar que, por essas e outras questões, a resultante alcançada é a indisponibilidade do conteúdo, o que compromete o acesso de usuários que dependem dessas informações. 
+No entanto, muitas dessas plataformas não oferecem aos usuários a possibilidade de manter os conteúdos educacionais localmente em seus dispositivos de forma gratuita e acessível. Uma alternativa para viabilizar esse tipo de funcionalidade está na integração entre o modelo cliente-servidor e tecnologias descentralizadas, especificamente voltadas à persistência dos conteúdos dos cursos. Essa combinação possibilita preservar os benefícios do controle centralizado, fundamentais para operações como autenticação, gerenciamento de cursos e acompanhamento do progresso, ao mesmo tempo em que distribui de forma mais eficiente, resiliente e autônoma os materiais educacionais.
 
-A centralização também levanta preocupações com a privacidade dos dados, uma vez que as plataformas podem rastrear e utilizar informações dos usuários para fins comerciais sem consentimento explícito \cite{beiro2020}. Assim, surge a necessidade de explorar alternativas inovadoras e descentralizadas que garantam maior resiliência, privacidade e controle aos criadores e consumidores de conteúdos educativos, redefinindo a forma como o aprendizado \textit{online} acontece hordienamente.
-
-A partir dessas questões, identifica-se a oportunidade de atuar nesse cenário, construindo uma aplicação, com o uso da tecnologia descentralizada como ferramenta principal, que seja capaz de oferecer um sistema de aprendizado \textit{online}.
+A partir dessas questões, identifica-se a oportunidade de atuar nesse cenário, construindo uma aplicação, que usa do modelo cliente-servidor juntamente com o uso da tecnologia descentralizada, oferecendo um sistema de aprendizado \textit{online}.
 
 \section{Objetivos}
 
-A descentralização surge como uma alternativa, promovendo resiliência, maior privacidade e autonomia dos usuários ao permitir que dados sejam distribuídos e armazenados em redes ponto a ponto, sem depender de servidores centralizados. Com isso, o projeto Learn Chain foi arquitetado para garantir a integridade e privacidade dos dados sensíveis do material didático. 
+O presente trabalho tem como objetivo geral desenvolver uma plataforma de ensino online que combine a robustez do modelo cliente-servidor com os benefícios de uma estrutura descentralizada para a persistência dos conteúdos educacionais. A proposta visa explorar essa integração como uma forma de proporcionar maior acessibilidade, disponibilidade e autonomia aos usuários, permitindo que materiais de cursos gratuitos possam ser distribuídos de maneira eficiente e segura.
 
 \subsection{Objetivo Geral}
 
-Desenvolver uma plataforma de aprendizado comunitário que utilize uma arquitetura moderna e segura, garantindo integridade e privacidade dos dados sensíveis através de técnicas de criptografia e tecnologias descentralizadas.
+Desenvolver uma plataforma de aprendizado comunitário que utilize uma arquitetura mista, garantindo integridade e privacidade dos dados sensíveis através tecnologias descentralizadas.
 
 \subsection{Objetivos Específicos}
 
 \begin{itemize}
     \item Implementar uma arquitetura /textit{back-end} eficiente e escalável utilizando o \textit{framework} NestJS integrado com banco de dados Postgres e outras soluções como OrbitDB para o gerenciamento seguro dos dados.
-    \item Garantir a privacidade e segurança dos dados dos usuários por meio de técnicas de criptografia, armazenando apenas informações necessárias e sensíveis de forma protegida.
     \item Utilizar o IPFS (\textit{InterPlanetary File System}) para o armazenamento descentralizado de materiais de curso, otimizando a disponibilidade e a proteção dos arquivos.
     \item Implementar um sistema de controle de acesso robusto que permita o compartilhamento seletivo de materiais com base nos níveis de permissão dos usuários, assegurando que conteúdos privados sejam acessíveis apenas para os usuários autorizados.
     \item Fornecer uma interface amigável e responsiva para os administradores e alunos, desenvolvida com NextJS, que facilite o acesso aos cursos e materiais disponibilizados na plataforma.
-    \item Documentar e testar a solução para validar a conformidade da plataforma com os requisitos funcionais e de segurança estabelecidos.
 \end{itemize}
 
 \section{Metodologia}
