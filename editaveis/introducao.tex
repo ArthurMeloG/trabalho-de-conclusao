@@ -2,7 +2,7 @@
 \label{cap:introducao}
 \addcontentsline{toc}{chapter}{Introdução}
 
-O objetivo principal da indtrodução é dar um contexto geral sobre o tema abordado neste Trabalho de Conclusão de Curso (TCC). Para isso, será apresentado um panorama geral da metodologia científica utilizada, para obtenção dos resultados esperados. Além disso, será evidenciado os principais problemas que motivaram a realização deste estudo, destacando sua relevância e impacto dentro do contexto em que estão inseridos. 
+O objetivo principal da introdução é dar um contexto geral sobre o tema abordado neste Trabalho de Conclusão de Curso (TCC). Para isso, será apresentado um panorama geral da metodologia científica utilizada para obtenção dos resultados esperados. Além disso, será evidenciado os principais problemas que motivaram a realização deste estudo, destacando sua relevância e impacto dentro do contexto em que estão inseridos. 
 
 \section{Contexto Tecnológico}
 
@@ -10,16 +10,23 @@ A Web (\textit{World Wide Web}) foi concebida como uma plataforma aberta e acess
 
 Desde então, a W3C (organização internacional que define padrões para a Web) tem evoluído cada vez mais, transformando não só como as informações são acessadas e compartilhadas, mas também o estilo de vida dos seres humanos, uma vez que afetou os padrões de interação social, comunicação, consumo, trabalho e de muitos outros fatores em todo o mundo.
 
-A Web possui vantagens, desvantagens e características particulares. Uma de suas principais peculiaridades, é que seu funcionamento está atrelado ao modelo cliente-servidor e, como consequência, a maioria das máquinas que participam do processo de compartilhamento e acesso de informações são apenas coadjuvantes, consumindo serviços de outras máquinas servidoras \cite{rocha2004p2p}. Já no que concerne às desvantagens, observa-se o risco de centralização, em que os usuários estão sob uma entidade central, o que pode gerar preocupações referentes à privacidade e censura. 
+Com o avanço da tecnologia e a popularização da internet, o setor educacional passou por uma profunda transformação. A digitalização do ensino trouxe novas possibilidades pedagógicas, facilitando o acesso ao conhecimento, a personalização do aprendizado e a ampliação de recursos didáticos. Ambientes virtuais de aprendizagem, plataformas de cursos online, bibliotecas digitais e ferramentas de videoconferência são apenas alguns exemplos de como a tecnologia remodelou a prática educativa nas últimas décadas.
 
-Para contrapor tais limitações e desvantagens, o presente trabalho tem por finalidade desenvolver uma aplicação segura e descentralizada, para aprendizado comunitário de assuntos gerais, em que o proprietário do material possui total controle sobre seu conteúdo, sendo capaz de acessá-lo e distribuí-lo da forma como quiser, protegendo o conteúdo contra acessos não autorizados e manipulações, promovendo segurança e confiança no ambiente \textit{online}. Isso será feito por meio da utilização do modelo arquitetural cliente-servidor, atrelado à sua arquitetura, tecnologias cujo funcionamento baseia-se no paradigma \textit{Peer-to-peer}.
+A internet permitiu que o ensino extrapolasse os limites físicos da sala de aula, promovendo a educação a distância e o aprendizado autodirigido. Isso ampliou o alcance das instituições de ensino, democratizou o acesso ao saber e contribuiu para a formação contínua de indivíduos em diferentes contextos sociais e geográficos. Segundo Habowski (2019), o uso das tecnologias na educação deve ser orientado por valores humanos e éticos, evitando uma apropriação meramente técnica ou automatizada desses recursos.
+
+Nesse contexto, o presente trabalho tem como finalidade o desenvolvimento de uma ferramenta voltada para o ensino e o aprendizado online, permitindo a oferta de cursos sobre temas diversos. A aplicação abrangerá tanto conteúdos gratuitos quanto pagos, com o diferencial de utilizar uma abordagem descentralizada para o armazenamento dos dados relacionados aos cursos.
+
+Essa abordagem apresenta diversas vantagens, como a maior resiliência no armazenamento de dados, já que os conteúdos educacionais são replicados em múltiplos nós da rede; a redução da dependência de servidores centralizados, o que pode diminuir custos de infraestrutura; e a possibilidade de garantir a disponibilidade dos materiais mesmo em situações de falhas locais ou restrições institucionais.
+
+Por outro lado, essa mesma abordagem impõe uma série de desafios técnicos e conceituais, como o controle de acesso aos materiais pagos, a integridade e autenticidade dos conteúdos distribuídos, e a usabilidade da plataforma em um ambiente descentralizado. Tais questões serão discutidas com maior profundidade ao longo do capítulo de Fundamentação Tecnológica, que embasará as escolhas e decisões de arquitetura adotadas neste trabalho.
 
 \section{Questão de Pesquisa}
 Diante desse contexto, o ponto chave que orienta este trabalho é:
 
-Com o avanço das tecnologias descentralizadas, surge a possibilidade de desenvolver plataformas de ensino \textit{online} que não dependam de servidores centralizados para armazenar e distribuir conteúdos educacionais. No entanto, a adoção desse modelo traz desafios significativos, como escalabilidade, segurança, usabilidade e governança dos dados. Assim, este estudo busca investigar: Como desenvolver uma solução de ensino \textit{online} que utilize tecnologia descentralizada para armazenamento de dados dos cursos, garantindo a integridade, acessibilidade e eficiência, ao mesmo tempo em que mitiga os desafios inerentes às arquiteturas descentralizadas?
+Com do avanço das tecnologias descentralizadas, surge a oportunidade de integrá-las a modelos tradicionais de arquitetura, como o cliente-servidor, com o objetivo de ampliar a eficiência, segurança e acessibilidade de sistemas educacionais. Nesse contexto, a questão que orienta este trabalho é: Como conciliar a arquitetura cliente-servidor com o uso de tecnologias descentralizadas para o desenvolvimento de uma plataforma de ensino online que atenda aos requisitos de integridade, controle de acesso, escalabilidade e usabilidade?
 
 \section{Problema e Justificativa}
+
 
 Grande parte dos conteúdos educativos da Web estão disponíveis em plataformas centralizadas, como, \textit{blogs} e comunidades, em que seus colaboradores desenvolvem o conteúdo em diversos formatos, e então o publicam. No entanto, como consequência da utilização do modelo tradicional cliente-servidor, as plataformas podem gerar perda de autonomia sobre o material publicado e dependência da infraestrutura da empresa responsável. Além disso, problemas como vulnerabilidade dos dados, a privacidade dos usuários e a censura também são algumas preocupações nesse tipo de arquitetura, podendo ocasionar problemas de confiabilidade e segurança \cite{wanner2024}. Nesse sentido, cabe ressaltar que, por essas e outras questões, a resultante alcançada é a indisponibilidade do conteúdo, o que compromete o acesso de usuários que dependem dessas informações. 
 
@@ -79,12 +86,12 @@ Com isso, as devidas classificações podem ser observadas na Tabela 1, que ser�
     \end{tabular}
     \label{tab:tipo_pesquisa}
     \vspace{5mm} \\ 
-    {\footnotesize Fonte: Autores} 
+    {\footnotesize Fonte: Autores}
 \end{table}
 
 \subsection{Metodologia de desenvolvimento}
 
-Para a elaboração do projeto serão utilizadas metodologias ágeis, apoiando-se em técnicas de desenvolvimento como \textit{Extreme Programming} (XP), kanban, além da utilização de ferramentas de DevOps para uso de \textit{containers} como Docker. A partir disso é possível estabelecer um ambiente de trabalho previsível e facilitado para possíveis mudanças e refatorações do projeto. Ademais, serão empregadas algumas técnicas do Scrum em conjunto com o XP servirão de base para o \textit{Backlog}.
+Para a elaboração do projeto serão utilizadas metodologias ágeis, apoiando-se em técnicas de desenvolvimento como \textit{Extreme Programming} (XP), Kanban, além da utilização de ferramentas de DevOps para uso de \textit{containers} como Docker. A partir disso é possível estabelecer um ambiente de trabalho previsível e facilitado para possíveis mudanças e refatorações do projeto. Ademais, serão empregadas algumas técnicas do Scrum em conjunto com o XP servirão de base para o \textit{Backlog}.
 
 \subsection{Estrutura do trabalho}
 
