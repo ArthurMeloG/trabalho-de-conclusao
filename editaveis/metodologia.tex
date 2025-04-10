@@ -250,7 +250,7 @@ O \textit{Design Thinking} é uma técnica utilizada para a solução de problem
         \subsubsubsection{Levantamento de requisitos}
         A elicitação de requisitos para o desenvolvimento do presente trabalho foi conduzida por meio do \textit{Design Thinking}. Tal método consiste em oferecer potenciais contribuições para a solução de problemas complexos que buscam identificar, compreender e solucionar, de modo criativo, problemas presentes em diferentes contextos. Com isso, é um método eficiente para disciplinas que carregam características de interdisciplinaridade, como é exemplo a ciência da informação, que possui uma transformação acelerada de ferramentas, tecnologias, mecanismos e suportes \cite{apocalypse2022}.
 
-        Diferentemente das abordagens tradicionais de levantamento de requisitos, que se baseiam predominantemente em documentos formais ou especificações técnicas, o Design Thinking promove uma análise centrada no ser humano, com foco na empatia e na iteração contínua. No contexto deste trabalho, que propõe uma solução sustentada por uma arquitetura mista, aliando o modelo cliente-servidor a tecnologias descentralizadas, essa abordagem mostrou-se essencial para compreender e incorporar práticas consolidadas de usabilidade e experiência do usuário no mercado de educação online. Dessa forma, técnicas como análise de mercado e benchmarking foram aplicadas para levantar requisitos de forma mais alinhada às expectativas reais dos usuários, assegurando tanto a funcionalidade esperada de uma plataforma de ensino quanto a viabilidade da arquitetura proposta.
+        Diferentemente das abordagens tradicionais de levantamento de requisitos, que se baseiam predominantemente em documentos formais ou especificações técnicas, o \textif{Design Thinking} promove uma análise centrada no ser humano, com foco na empatia e na iteração contínua. No contexto deste trabalho, que propõe uma solução sustentada por uma arquitetura mista, aliando o modelo cliente-servidor a tecnologias descentralizadas, essa abordagem mostrou-se essencial para compreender e incorporar práticas consolidadas de usabilidade e experiência do usuário no mercado de educação online. Dessa forma, técnicas como análise de mercado e \textit{benchmarking} foram aplicadas para levantar requisitos de forma mais alinhada às expectativas reais dos usuários, assegurando tanto a funcionalidade esperada de uma plataforma de ensino quanto a viabilidade da arquitetura proposta.
 
         \subsubsubsection{Análise de \textit{Benchmarking}}
         O \textit{benchmarking} é uma técnica que permite a comparação entre diferentes produtos ou serviços, identificando padrões de funcionalidades, boas práticas, possíveis limitações, pontos fracos e fortes e diferenciais.
@@ -358,8 +358,8 @@ O \textit{Design Thinking} é uma técnica utilizada para a solução de problem
                 \begin{enumerate}
                     \item Caso os dados sejam inválidos, o sistema exibe uma mensagem de erro.
                     \item O sistema oferece a opção "Esqueci minha senha".
-                    \item Usuário utiliza o /textit{e-mail} para recuperação de senha.
-                    \item O sistema envia um /textit{e-mail} com instruções para redefinição de senha.
+                    \item Usuário utiliza o \textit{e-mail} para recuperação de senha.
+                    \item O sistema envia um \textit{e-mail} com instruções para redefinição de senha.
                 \end{enumerate}
             \end{itemize}
         \end{itemize}
@@ -422,26 +422,26 @@ O \textit{Design Thinking} é uma técnica utilizada para a solução de problem
         %     \end{itemize}
         % \end{itemize}
 
-        \section*{UC03: Gerenciar Cursos Adquiridos}
+        \section*{UC03: Gerenciar Cursos inscritos}
 
         \begin{itemize}
-            \item \textbf{Descrição:} Permite que um aluno gerencie os cursos adquiridos e acompanhe seu progresso.
+            \item \textbf{Descrição:} Permite que um aluno gerencie os cursos inscritos e acompanhe seu progresso.
             
             \item \textbf{Ator Principal:} Aluno
             
             \item \textbf{Prioridade:} Alta
             
-            \item \textbf{Pré-condição:} Usuário deve ter adquirido pelo menos um curso.
+            \item \textbf{Pré-condição:} Usuário deve ter se inscrito em pelo menos um curso.
             
             \item \textbf{Fluxo Principal:}
             \begin{enumerate}
                 \item Aluno acessa a seção "Meus Cursos".
-                \item Sistema exibe a lista de cursos adquiridos e o progresso de cada um.
+                \item Sistema exibe a lista de cursos inscritos e o progresso de cada um.
             \end{enumerate}
 
             \item \textbf{Fluxo Alternativo:}
             \begin{itemize}
-                \item \textit{Nenhum curso adquirido:}
+                \item \textit{Nenhum curso inscrito:}
                 \begin{enumerate}
                     \item Aluno acessa "Meus Cursos", mas não possui nenhum curso.
                     \item Sistema exibe mensagem informando que o usuário não possui cursos.
@@ -452,18 +452,18 @@ O \textit{Design Thinking} é uma técnica utilizada para a solução de problem
         \section*{UC04: Consumir Cursos}
 
         \begin{itemize}
-            \item \textbf{Descrição:} Permite que um aluno consuma o conteúdo dos cursos adquiridos.
+            \item \textbf{Descrição:} Permite que um aluno consuma o conteúdo dos cursos inscritos.
             
             \item \textbf{Ator Principal:} Aluno
             
             \item \textbf{Prioridade:} Alta
             
-            \item \textbf{Pré-condição:} Usuário deve ter adquirido pelo menos um curso.
+            \item \textbf{Pré-condição:} Usuário deve ter se inscrito em pelo menos um curso.
             
             \item \textbf{Fluxo Principal:}
             \begin{enumerate}
                 \item Aluno acessa a seção "Meus Cursos".
-                \item Sistema exibe os cursos adquiridos e o progresso.
+                \item Sistema exibe os cursos inscritos e o progresso.
                 \item Aluno seleciona um curso.
                 \item Sistema exibe o conteúdo do curso (vídeo ou texto).
                 \item Aluno consome o conteúdo.
