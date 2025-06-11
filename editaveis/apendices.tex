@@ -116,8 +116,6 @@
             \hline
             RF11 & Acessibilidade & \textit{Should Have} & Importante para garantir inclusão, permitindo que pessoas com deficiência utilizem a plataforma sem barreiras. \\
             \hline
-            RF12 & Preços & \textit{Should Have} & Permite que os criadores definam diferentes modelos de precificação, garantindo maior flexibilidade ao criador do material. \\
-            \hline
         \end{tabular}
     \end{adjustbox}
     \vspace{5mm}
@@ -256,6 +254,50 @@
         \label{fig:dld}
     \end{figure}
 
+    \begin{table}[h]
+        \centering
+        \caption{Estrutura lógica dos dados armazenados em JSON no IPFS}
+        \label{tab:json-schema-ipfs}
+        \begin{adjustbox}{width=\textwidth}
+            \begin{tabular}{|p{3cm}|p{3cm}|p{8cm}|}
+                \hline
+                \textbf{Campo} & \textbf{Tipo} & \textbf{Descrição} \\
+                \hline
+                \_id & String (UUID) & Identificador único do conteúdo da aula. \\
+                \hline
+                title & String & Título da aula. \\
+                \hline
+                text & String & Texto do conteúdo da aula, podendo estar em Markdown ou HTML. \\
+                \hline
+                video & Objeto JSON & Informações do vídeo vinculado à aula, contendo os campos: \textit{hash} (CID no IPFS), \textit{type} (ex: "ipfs"), e \textit{format} (ex: "mp4"). \\
+                \hline
+                attachments & Lista de Objetos & Lista de arquivos adicionais. Cada item possui: \textit{title} (nome), \textit{type} (ex: PDF, imagem) e \textit{hash} (CID no IPFS). \\
+                \hline
+                created\_at & String (ISO 8601) & Data e hora da criação do conteúdo. \\
+                \hline
+            \end{tabular}
+        \end{adjustbox}
+    \end{table}
+    
+    \begin{table}[h]
+        \centering
+        \caption{Estrutura do objeto de vídeo em JSON no IPFS}
+        \label{tab:json-schema-video}
+        \begin{adjustbox}{width=\textwidth}
+            \begin{tabular}{|p{4cm}|p{3cm}|p{8cm}|}
+                \hline
+                \textbf{Campo} & \textbf{Tipo} & \textbf{Descrição} \\
+                \hline
+                hash & String & CID do vídeo armazenado na rede IPFS. Serve como identificador único e link para recuperação do conteúdo. \\
+                \hline
+                format & String & Define o formato do vídeo. \\
+                \hline
+                duration & Number (opcional) & Duração do vídeo em segundos. Útil para exibição e controle de progresso. \\
+                \hline
+            \end{tabular}
+        \end{adjustbox}
+    \end{table}
+    
 \chapter{Brainstorming}
 \label{cap:brainstorming}
     \begin{figure}[h]

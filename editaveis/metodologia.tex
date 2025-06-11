@@ -671,7 +671,7 @@ Ele foi escolhido por ser escrito em JavaScript, sendo possível a integração 
 
 \subsection{NestJS}
 
-NestJS é uma \textit{framework} para construir aplicativos Node.js eficientes e escaláveis. Ele utiliza JavaScript progressivo, sendo construído com e oferecendo suporte total a TypeScript (mas ainda permitindo que os desenvolvedores codifiquem em JavaScript puro). Ele combina elementos de POO (Programação Orientada a Objetos), FP (Programação Funcional) e FRP (Programação Reativa Funcional) \cite{nestjs2025}.
+NestJS é uma \textit{framework} para construir aplicativos NodeJS eficientes e escaláveis. Ele utiliza JavaScript progressivo, sendo construído com e oferecendo suporte total a TypeScript (mas ainda permitindo que os desenvolvedores codifiquem em JavaScript puro). Ele combina elementos de POO (Programação Orientada a Objetos), FP (Programação Funcional) e FRP (Programação Reativa Funcional) \cite{nestjs2025}.
 
 \subsubsection*{Pontos Fortes do NestJS:}
 \begin{itemize}
@@ -684,11 +684,11 @@ NestJS é uma \textit{framework} para construir aplicativos Node.js eficientes e
 \subsubsection{Justificativa da escolha da tecnologia}
 NestJS foi escolhido para a estrutura do \textit{backend} da aplicação por sua compatibilidade com JavaScript e TypeScript, além de sua arquitetura modular e suporte a injeção de dependências. Sua integração nativa com o OrbitDB permite uma comunicação eficiente com o banco de dados distribuído, enquanto seu suporte ao PostgreSQL garante um armazenamento seguro e estruturado para os dados dos usuários.
 
-\subsection{Next.js}
+\subsection{NextJS}
 
-O \textbf{Next.js} é um \textit{framework} React para desenvolvimento de aplicações no lado do cliente. Ele oferece recursos como renderização no lado do servidor (\textit{Server-Side Rendering} - SSR) e geração de \textit{sites} estáticos (\textit{Static Site Generation} - SSG), que permitem criar interfaces modernas com excelente desempenho.
+O \textbf{NextJS} é um \textit{framework} React para desenvolvimento de aplicações no lado do cliente. Ele oferece recursos como renderização no lado do servidor (\textit{Server-Side Rendering} - SSR) e geração de sites estáticos (\textit{Static Site Generation} - SSG), que permitem criar interfaces modernas com excelente desempenho.
 
-\subsubsection*{Pontos Fortes do Next.js:}
+\subsubsection*{Pontos Fortes do NextJS:}
 \begin{itemize}
     \item \textbf{Renderização otimizada}: Suporte a SSR e SSG, melhorando o desempenho e SEO.
     \item \textbf{Rotas automáticas}: Simplifica a estrutura de navegação com rotas baseadas em arquivos.
@@ -698,7 +698,7 @@ O \textbf{Next.js} é um \textit{framework} React para desenvolvimento de aplica
 \end{itemize}
 
 \subsubsection{Justificativa da escolha da tecnologia}
-No contexto deste trabalho, o Next.js foi escolhido para desenvolver a interface da aplicação, garantindo carregamento eficiente e uma experiência fluida para os usuários. Além disso, o Next.js traz recursos como otimização automática de imagens, roteamento intuitivo e suporte integrado a APIs, facilitando a implementação de uma interface interativa e responsiva para o projeto \cite{nextjs2025}. 
+No contexto deste trabalho, o NextJS foi escolhido para desenvolver a interface da aplicação, garantindo carregamento eficiente e uma experiência fluida para os usuários. Além disso, o NextJS traz recursos como otimização automática de imagens, roteamento intuitivo e suporte integrado a APIs, facilitando a implementação de uma interface interativa e responsiva para o projeto \cite{nextjs2025}. 
 
 \subsection{PostgreSQL}
 
@@ -721,6 +721,10 @@ O PostgreSQL está sendo utilizado para armazenar os usuários da plataforma, e 
 O diagrama lógico de dados (DLD) se propõe a ser um modelo de dados de um sistema a partir de tabelas, colunas, dados e relacionamentos a fim de facilitar a implementação no banco PostgreSQL \cite{lucidchart2025}.
 
 A Figura \ref{fig:dld} apresenta o Diagrama Lógico de Dados (DLD) proposto para a solução Learn Chain, detalhando os relacionamentos entre as tabelas e os atributos de cada uma. Vale ressaltar que este diagrama não inclui a modelagem que estará presente na rede IPFS, pois todos os dados serão armazenados no formato JSON. A interface entre os dados armazenados no IPFS e o banco de dados é realizada por meio da tabela ContentIPFSRef, a qual armazena o CID, um \textit{hash} que serve como chave de acesso aos dados no IPFS. Essa estrutura permite a comunicação eficiente entre o banco de dados e a rede descentralizada, conforme discutido na subseção \ref{sec:ipfs}.
+
+Complementando o modelo relacional, a parte descentralizada da arquitetura, composta pela rede IPFS integrada ao OrbitDB, será responsável por armazenar os conteúdos educacionais relacionados às aulas, tais como textos, vídeos, anexos e metadados. Esses dados serão persistidos em documentos no formato JSON, permitindo flexibilidade na representação, característica importante em ambientes distribuídos.
+
+Cada conteúdo de aula será representado como um objeto JSON com uma estrutura definida, que padroniza os principais campos esperados para garantir interoperabilidade e facilitar o consumo pelos sistemas cliente. As tabelas \ref{tab:json-schema-ipfs} e \ref{tab:json-schema-video} apresentam o esquema lógico adotado para esses dados no IPFS.
 
 \section{Ferramentas de suporte técnico}
 Para o auxílio durante o desenvolvimento do presente trabalho, estão sendo utilizadas as ferramentas:

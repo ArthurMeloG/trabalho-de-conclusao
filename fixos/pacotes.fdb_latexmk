@@ -1,7 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1744060329.77535 "/root/trabalho-de-conclusao/fixos/pacotes.tex" "pacotes.pdf" "pacotes" 1744060330.20181 2
-  "/etc/texmf/web2c/texmf.cnf" 1739216267.01587 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/root/trabalho-de-conclusao/fixos/pacotes.tex" 1743537162.02652 408 ed0fb34ca663523fb107f77607181c27 ""
+["pdflatex"] 1744294888.71979 "/workspaces/trabalho-de-conclusao/fixos/pacotes.tex" "pacotes.pdf" "pacotes" 1744294892.01118 2
+  "/etc/texmf/web2c/texmf.cnf" 1736940897 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -100,9 +99,10 @@
   "/usr/share/texmf/tex/latex/lm/lmodern.sty" 1616454256 1608 b00724785a9e9c599e5181bb8729160b ""
   "/usr/share/texmf/tex/latex/lm/t1lmr.fd" 1616454256 1867 996fe743d88a01aca041ed22cc10e1bb ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1739216318 8212377 a0f4976fc0f8ecfa9b3b601d12597831 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1736941059 8215828 0f198fa46ab4ae3f567f7ddf3e207617 ""
+  "/workspaces/trabalho-de-conclusao/fixos/pacotes.tex" 1739384556.73751 408 ed0fb34ca663523fb107f77607181c27 ""
   "pacotes.aux" 0 -1 0 "pdflatex"
-  "pacotes.tex" 1743537162.02652 408 ed0fb34ca663523fb107f77607181c27 ""
+  "pacotes.tex" 1739384556.73751 408 ed0fb34ca663523fb107f77607181c27 ""
   (generated)
   "pacotes.aux"
   "pacotes.log"
