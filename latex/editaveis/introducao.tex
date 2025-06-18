@@ -1,0 +1,104 @@
+\chapter[Introdução]{Introdução}
+\label{cap:introducao}
+\addcontentsline{toc}{chapter}{Introdução}
+
+O objetivo principal da introdução é dar um contexto geral sobre o tema abordado neste Trabalho de Conclusão de Curso (TCC). Para isso, será apresentado um panorama geral da metodologia científica utilizada para obtenção dos resultados esperados. Além disso, será evidenciado os principais problemas que motivaram a realização deste estudo, destacando sua relevância e impacto dentro do contexto em que estão inseridos. 
+
+\section{Contexto Tecnológico}
+
+A Web (\textit{World Wide Web}) foi concebida como uma plataforma aberta e acessível para todos, promovendo liberdade de acesso e compartilhamento de informações de qualquer lugar e hora. Em novembro de 2007, 5 anos após o surgimento da Web 2.0, a WWW inicia suas operações com uma série de objetivos, como a criação de um fórum para a comunidade interessada em padrões web, tradução para português de conteúdos que fossem do interesse regional, entre outros \cite{vieira2014}.
+
+Desde então, a W3C (organização internacional que define padrões para a Web) tem evoluído cada vez mais, transformando não só como as informações são acessadas e compartilhadas, mas também o estilo de vida dos seres humanos, uma vez que afetou os padrões de interação social, comunicação, consumo, trabalho e de muitos outros fatores em todo o mundo.
+
+Com o avanço da tecnologia e a popularização da internet, o setor educacional passou por uma profunda transformação. A digitalização do ensino trouxe novas possibilidades pedagógicas, facilitando o acesso ao conhecimento, a personalização do aprendizado e a ampliação de recursos didáticos. Ambientes virtuais de aprendizagem, plataformas de cursos online, bibliotecas digitais e ferramentas de videoconferência são apenas alguns exemplos de como a tecnologia remodelou a prática educativa nas últimas décadas.
+
+A internet permitiu que o ensino extrapolasse os limites físicos da sala de aula, promovendo a educação a distância e o aprendizado autodirigido. Isso ampliou o alcance das instituições de ensino, democratizou o acesso ao saber e contribuiu para a formação contínua de indivíduos em diferentes contextos sociais e geográficos. Segundo Habowski (2019), o uso das tecnologias na educação deve ser orientado por valores humanos e éticos, evitando uma apropriação meramente técnica ou automatizada desses recursos.
+
+Nesse contexto, o presente trabalho tem como finalidade o desenvolvimento de uma ferramenta voltada para o ensino e o aprendizado online, permitindo a oferta de cursos sobre temas diversos. A aplicação abrangerá tanto conteúdos gratuitos, com o diferencial de utilizar uma abordagem descentralizada para o armazenamento dos dados relacionados aos cursos.
+
+Essa abordagem apresenta diversas vantagens, como a maior resiliência no armazenamento de dados, já que os conteúdos educacionais são replicados em múltiplos nós da rede; a redução da dependência de servidores centralizados, o que pode diminuir custos de infraestrutura; e a possibilidade de garantir a disponibilidade dos materiais mesmo em situações de falhas locais ou restrições institucionais.
+
+Por outro lado, essa mesma abordagem impõe uma série de desafios técnicos e conceituais, como o controle de acesso aos materiais pagos, a integridade e autenticidade dos conteúdos distribuídos, e a usabilidade da plataforma em um ambiente descentralizado. Tais questões serão discutidas com maior profundidade ao longo do capítulo de Fundamentação Tecnológica, que embasará as escolhas e decisões de arquitetura adotadas neste trabalho.
+
+\section{Questão de Pesquisa}
+Diante desse contexto, o ponto chave que orienta este trabalho é:
+
+Com do avanço das tecnologias descentralizadas, surge a oportunidade de integrá-las a modelos tradicionais de arquitetura, como o cliente-servidor, com o objetivo de ampliar a eficiência, segurança e acessibilidade de sistemas educacionais. Nesse contexto, a questão que orienta este trabalho é: Como conciliar a arquitetura cliente-servidor com o uso de tecnologias descentralizadas para o desenvolvimento de uma plataforma de ensino online que atenda aos requisitos de integridade, controle de acesso, escalabilidade e usabilidade?
+
+\section{Problema e Justificativa}
+
+Com o crescimento da educação online, torna-se cada vez mais relevante o desenvolvimento de soluções tecnológicas que ofereçam estabilidade, segurança e acessibilidade no compartilhamento de conteúdos educacionais. As plataformas de ensino atuais, em sua maioria, adotam arquiteturas baseadas no modelo cliente-servidor, o qual oferece vantagens significativas, como centralização do controle, autenticação estruturada, gerenciamento eficiente de usuários e integração facilitada com serviços externos. Essa abordagem já se provou sólida e confiável para o desenvolvimento de aplicações educacionais.
+
+No entanto, muitas dessas plataformas não oferecem aos usuários a possibilidade de manter os conteúdos educacionais localmente em seus dispositivos de forma gratuita e acessível. Uma alternativa para viabilizar esse tipo de funcionalidade está na integração entre o modelo cliente-servidor e tecnologias descentralizadas, especificamente voltadas à persistência dos conteúdos dos cursos. Essa combinação possibilita preservar os benefícios do controle centralizado, fundamentais para operações como autenticação, gerenciamento de cursos e acompanhamento do progresso, ao mesmo tempo em que distribui de forma mais eficiente, resiliente e autônoma os materiais educacionais.
+
+A partir dessas questões, identifica-se a oportunidade de atuar nesse cenário, construindo uma aplicação que usa do modelo cliente-servidor juntamente com o uso da tecnologia descentralizada, oferecendo um sistema de aprendizado \textit{online}.
+
+\section{Objetivos}
+
+O presente trabalho tem como objetivo geral desenvolver uma plataforma de ensino online que combine a robustez do modelo cliente-servidor com os benefícios de uma estrutura descentralizada para a persistência dos conteúdos educacionais. A proposta visa explorar essa integração como uma forma de proporcionar maior acessibilidade, disponibilidade e autonomia aos usuários, permitindo que materiais de cursos gratuitos possam ser distribuídos de maneira eficiente e segura.
+
+\subsection{Objetivo Geral}
+
+Desenvolver uma plataforma de aprendizado comunitário que utilize uma arquitetura mista, garantindo integridade e privacidade dos dados sensíveis através tecnologias descentralizadas.
+
+\subsection{Objetivos Específicos}
+
+\begin{itemize}
+    \item Implementar uma arquitetura \textit{back-end} eficiente e escalável utilizando o \textit{framework} NestJS integrado com banco de dados PostgreSQL e outras soluções como OrbitDB para o gerenciamento seguro dos dados.
+    \item Utilizar o IPFS (\textit{InterPlanetary File System}) para o armazenamento descentralizado de materiais de curso, otimizando a disponibilidade e a proteção dos arquivos.
+    \item Implementar um sistema de controle de acesso robusto que permita o compartilhamento seletivo de materiais com base nos níveis de permissão dos usuários, assegurando que conteúdos privados sejam acessíveis apenas para os usuários autorizados.
+    \item Fornecer uma interface amigável e responsiva para os administradores e alunos, desenvolvida com NextJS, que facilite o acesso aos cursos e materiais disponibilizados na plataforma.
+\end{itemize}
+
+\section{Metodologia}
+
+Durante a elaboração deste trabalho serão empregadas duas metodologias, sendo uma de pesquisa e outra de desenvolvimento.
+
+\subsection{Metodologia de Pesquisa}
+
+A metodologia de pesquisa descreve os métodos utilizados para construir a fundamentação teórica deste projeto. Com ela, é possível classificar este trabalho quanto à sua natureza, finalidade, forma de abordagem, objetivos e procedimentos técnicos.
+
+Com isso, as devidas classificações podem ser observadas na Tabela 1, que será melhor explorada no capítulo \ref{cap:metodologia}.
+
+\setlength{\extrarowheight}{5pt}
+
+\begin{table}
+    \centering
+    \caption{Classificações de Metodologia de pesquisa.}
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Classificação}            & \textbf{Tipo de Pesquisa}\\ 
+        \hline
+        Quanto à finalidade               & Pesquisa tecnológica \\ 
+        \hline
+        Quanto à natureza                 & Pesquisa experimental \\ 
+        \hline
+        Quanto à forma de abordagem       & Pesquisa qualitativa \\
+        \hline
+        Quanto aos objetivos              & Pesquisa exploratória \\
+        \hline
+        Quanto aos procedimentos técnicos & Pesquisa laboratorial \\        
+        \hline
+        Quanto ao desenvolvimento no tempo & Pesquisa prospectiva \\
+        \hline   
+    \end{tabular}
+    \label{tab:tipo_pesquisa}
+    \vspace{5mm} \\ 
+    {\footnotesize Fonte: Autores}
+\end{table}
+
+\subsection{Metodologia de desenvolvimento}
+
+Para a elaboração do projeto serão utilizadas metodologias ágeis, apoiando-se em técnicas de desenvolvimento como \textit{Extreme Programming} (XP), Kanban, além da utilização de ferramentas de DevOps para uso de \textit{containers} como Docker. A partir disso é possível estabelecer um ambiente de trabalho previsível e facilitado para possíveis mudanças e refatorações do projeto. Ademais, serão empregadas algumas técnicas do Scrum em conjunto com o XP servirão de base para o \textit{Backlog}.
+
+\subsection{Estrutura do trabalho}
+
+Este trabalho está disposto da seguinte maneira:
+
+Capítulo \ref{cap:introducao}: Introdução: Este capítulo faz um levantamento geral das ideias, ferramentas, metodologias utilizadas para o desenvolvimento do projeto.
+
+Caítulo \ref{cap:fundamentacao}: Fundamentação Teórica: Aqui será aprofundado o entendimento das tecnologias utilizadas bem como a razão de uso de cada uma delas no contexto do desenvolvimento distribuído.
+
+Capítulo \ref{cap:metodologia}: Proposta de Solução: Este capítulo ajuda a entender as metodologias de pesquisa e desenvolvimento para o trabalho, e detalha os requisitos, a arquitetura e as atividades que serão desenvolvidas no fluxo de trabalho do desenvolvimento do software.
+
+Capítulo \ref{cap:consideracoes}: Considerações Finais: Este capítulo finaliza o Trabalho de Conclusão de Curso (TCC 1).

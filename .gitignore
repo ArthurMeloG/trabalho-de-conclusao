@@ -1,2 +1,21 @@
-main.*
-!main.tex
+#linux backup files
+*~
+*.swp
+*.dvi
+*.ps
+*.backup
+*.aux
+
+#logs
+*.log
+
+#PDFs
+*.pdf
+
+*.lof
+*.lot
+*.bbl
+*.blg
+*.brf
+*.toc
+*.idx
