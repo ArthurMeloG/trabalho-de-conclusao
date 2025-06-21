@@ -1,0 +1,86 @@
+\chapter[Metodologia]{Metodologia}
+
+Esta seção descreve os métodos e procedimentos adotados para a realização deste trabalho de conclusão de curso, desde a investigação do problema até a proposta e desenvolvimento da solução. A metodologia foi estruturada em duas etapas, sendo a primeira a concepção da metodologia de pesquisa, e a segunda a elaboração da metodologia de desenvolvimento, com o objetivo de garantir que o produto final atendesse às reais necessidades dos estudantes da Universidade de Brasília (UnB).
+
+\section{Metodologia de Pesquisa}
+
+A metodologia de pesquisa descreve os métodos utilizados para construir a fundamentação teórica deste projeto. Com ela, é possível classificar este trabalho quanto à sua natureza, finalidade, forma de abordagem, objetivos e procedimentos técnicos.
+
+Com isso, as devidas classificações podem ser observadas na Tabela~\ref{tab:tipo_pesquisa}.
+
+\setlength{\extrarowheight}{5pt}
+
+% \begin{table}[H]
+%     \centering
+%     \caption{Classificações de Metodologia de pesquisa.}
+%     \begin{tabular}{|l|l|}
+%         \hline
+%         \textbf{Classificação}            & \textbf{Tipo de Pesquisa}\\ 
+%         \hline
+%         Quanto à finalidade               & Pesquisa tecnológica \\ 
+%         \hline
+%         Quanto à natureza                 & Pesquisa experimental \\ 
+%         \hline
+%         Quanto à forma de abordagem       & Pesquisa qualitativa \\
+%         \hline
+%         Quanto aos objetivos              & Pesquisa exploratória \\
+%         \hline
+%         Quanto aos procedimentos técnicos & Pesquisa laboratorial \\        
+%         \hline
+%         Quanto ao desenvolvimento no tempo & Pesquisa prospectiva \\
+%         \hline   
+%     \end{tabular}
+%     \label{tab:tipo_pesquisa}
+%     \vspace{5mm} \\ 
+%     {\footnotesize Fonte: Autores}
+% \end{table}
+
+\subsection{Tipo de Pesquisa (quanto à finalidade)}
+O objetivo deste trabalho é a produção de conhecimento científico por meio de uma aplicação prática, isto é, um software capaz de orientar alunos da UnB. Por essa razão, o presente trabalho classifica-se como uma pesquisa aplicada ou tecnológica \cite{fontelles2009}.
+
+\subsection{Tipo de Pesquisa (quanto à natureza)} o presente trabalho é de natureza experimental, visto que o foco está em testar a solução de chatBot para esclarecer dúvidas dos alunos da Universidade de Brasília. \cite{fontelles2009}.
+
+\subsection{Tipo de Pesquisa (quanto à forma de abordagem)}
+A presente pesquisa será de abordagem predominantemente qualitativa, tendo em vista que busca compreender as necessidades, experiências e desejos de alunos da Universidade. Porém, também pode incorporar elementos quantitativos, especialmente na análise de questões do questionário aplicado\cite{fontelles2009}.
+
+\subsection{Tipo de Pesquisa (quanto aos objetivos)}
+A presente pesquisa é exploratória, visto que tem-se por finalidade levantar informações, compreender comportamentos, identificar padrões e dificuldades que poderão servir de base para o desenvolvimento de uma aplicação. \cite{fontelles2009}.
+
+\subsection{Tipo de Pesquisa (quanto aos procedimentos técnicos)}
+A pesquisa é classificada como laboratorial, visto que possui o desenvolvimento de um protótipo funcional do sistema \cite{fontelles2009}.
+
+\subsection{Tipo de Pesquisa (quanto ao desenvolvimento no tempo)}
+A pesquisa será prospectiva, visto que estima os efeitos e vantagens futuras do sistema \cite{fontelles2009}.
+
+\section{Etapas da Pesquisa e Desenvolvimento}
+
+A metodologia foi dividida nas seguintes etapas:
+
+\begin{enumerate}
+    \item \textbf{Levantamento de necessidades:} realização de uma pesquisa por meio do Google Forms com estudantes da UnB, com o intuito de identificar as principais dificuldades relacionadas ao acesso às informações institucionais.
+    
+    \item \textbf{Coleta e organização de documentos:} levantamento de editais, normas, resoluções e documentos oficiais disponíveis nos canais da universidade, com posterior categorização e organização dos dados em uma base estruturada.
+    
+    \item \textbf{Modelagem da solução:} definição da arquitetura do sistema, fluxos de interação do bot, estrutura de dados e regras de busca de informação.
+    
+    \item \textbf{Desenvolvimento do protótipo:} implementação de um bot funcional com integração às plataformas WhatsApp e Telegram, utilizando ferramentas específicas para cada ambiente.
+    
+    \item \textbf{Validação da ferramenta:} aplicação de testes com usuários reais, analisando a efetividade da solução e coletando sugestões de melhorias.
+\end{enumerate}
+
+\section{Ferramentas e Tecnologias Utilizadas}
+
+Para o desenvolvimento do bot e da base de dados, serão utilizadas as seguintes tecnologias:
+
+\begin{itemize}
+    \item \textbf{Linguagem de Programação:} Python ou JavaScript (Node.js), conforme definido na etapa de modelagem;
+    \item \textbf{APIs de integração:} WhatsApp Business API e Telegram Bot API;
+    \item \textbf{Banco de Dados:} PostgreSQL ou Firebase, para armazenamento das informações extraídas dos documentos;
+    \item \textbf{Google Forms:} para aplicação do questionário de levantamento de necessidades;
+    \item \textbf{Frameworks e bibliotecas:} poderão ser utilizados frameworks como Flask ou Express, além de bibliotecas de NLP (Processamento de Linguagem Natural), caso haja necessidade de melhorar a compreensão das mensagens dos usuários.
+\end{itemize}
+
+\section{Justificativa da Abordagem}
+
+A adoção de uma metodologia em etapas permite uma abordagem iterativa, em que o desenvolvimento da solução pode ser ajustado conforme os dados coletados com os usuários. Além disso, a escolha por bots em aplicativos de mensagens visa reduzir a curva de aprendizado do usuário e integrar a solução a ferramentas já utilizadas no cotidiano dos estudantes.
+
