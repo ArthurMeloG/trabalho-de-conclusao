@@ -97,6 +97,57 @@ Agrupa elementos que conferem uma \textbf{identidade ao chatbot}, influenciando 
     \item \textbf{Identidade}: clareza quanto ao propósito do chatbot, seu papel dentro do sistema e os próximos passos que o usuário pode seguir.
 \end{itemize}
 
+\section{Gestão de Níveis de Serviço com base no ITIL v4}
+
+\subsection{Visão geral do ITIL v4}
+
+O Information Technology Infrastructure Library (ITIL) é um conjunto de boas práticas para a gestão de serviços de tecnologia da informação, amplamente adotado por organizações públicas e privadas em todo o mundo. A versão mais recente, o \emph{ITIL v4}, foi lançada em 2019 pela Axelos, trazendo uma abordagem mais moderna e alinhada aos princípios de agilidade, integração e foco no valor entregue ao cliente~\cite{axelos2019itil}.
+
+O ITIL v4 é estruturado em torno do \emph{Service Value System} (SVS), um modelo que descreve como todos os componentes e atividades da organização trabalham juntos para facilitar a criação de valor por meio de serviços. Dentro do SVS, destaca-se a \emph{Service Value Chain}, que representa um modelo operacional flexível e adaptável às diferentes necessidades dos provedores de serviço. A cadeia de valor é composta por seis atividades principais: \textit{plan}, \textit{improve}, \textit{engage}, \textit{design \& transition}, \textit{obtain \& build}, e \textit{deliver \& support}~\cite{axelos2019itil}.
+
+Além disso, o ITIL v4 estabelece 34 práticas de gerenciamento, entre as quais destacam-se aquelas diretamente relacionadas à prestação de suporte por meio de serviços digitais, como é o caso deste trabalho. As práticas de \textit{Service Request Management}, \textit{Incident Management}, \textit{Problem Management} e \textit{Service Level Management} são fundamentais para garantir que serviços como o chatbot proposto sejam operados com eficiência, qualidade e alinhamento às expectativas dos usuários.
+
+O \emph{Service Level Management}, em particular, é responsável por garantir que todos os serviços sejam entregues dentro de parâmetros definidos e acordados, com base em métricas claras como tempo de resposta, disponibilidade e resolução de falhas. Essa prática é diretamente conectada ao conceito de \emph{Service Level Agreements} (SLAs), os quais formalizam o compromisso entre o provedor do serviço e seus usuários~\cite{axelos2019itil}.
+
+A adoção do ITIL v4 no contexto do presente trabalho permite não apenas estruturar o serviço prestado pelo chatbot de forma mais profissional, como também estabelecer critérios objetivos para mensuração de sua efetividade, além de facilitar sua integração com eventuais estruturas de atendimento humano nos níveis superiores.
+
+\subsection{Níveis de atendimento}
+
+No contexto do gerenciamento de serviços de TI, a adoção de uma estrutura hierarquizada de suporte técnico é uma prática consolidada e amplamente recomendada pelo ITIL v4. Essa estrutura é comumente dividida em três níveis de atendimento, os quais visam organizar a resolução de incidentes e requisições com base na complexidade do problema e no nível de especialização necessário para sua solução~\cite{axelos2019itil}.
+
+O \textbf{Nível 1} de atendimento, também conhecido como \emph{primeira linha de suporte}, é responsável por fornecer respostas imediatas às dúvidas mais recorrentes dos usuários, além de realizar triagens iniciais, registrar ocorrências e encaminhar solicitações que excedam seu escopo. Esse nível é caracterizado por sua alta disponibilidade e capacidade de lidar com questões padronizadas e rotineiras. Nesse sentido, chatbots baseados em regras ou com integração a bancos de dados institucionais têm se mostrado ferramentas eficazes para a automatização parcial ou total desse atendimento inicial.
+
+O \textbf{Nível 2} compreende técnicos ou analistas com maior grau de especialização, sendo acionado quando o primeiro nível não é capaz de solucionar o problema ou quando se trata de situações que exigem julgamento humano, análise contextual ou acesso a sistemas mais restritos. Nesse estágio, as solicitações são aprofundadas e tratadas com maior rigor técnico.
+
+Por fim, o \textbf{Nível 3} representa o suporte de última instância, geralmente composto por equipes de desenvolvimento, engenheiros de sistemas ou fornecedores. Esse nível lida com falhas críticas, demandas estruturais e alterações de configuração que fogem do escopo dos níveis anteriores.
+
+A correta definição desses níveis de atendimento permite não apenas uma melhor alocação de recursos e agilidade na resposta ao usuário, como também a definição de SLAs específicos por nível, possibilitando uma gestão de serviços mais eficaz e mensurável. No escopo do presente trabalho, o chatbot proposto se posiciona como uma ferramenta de apoio ao atendimento de \textbf{nível 1}, responsável por fornecer informações institucionais com agilidade, de maneira automatizada e escalável. Casos mais complexos ou fora do escopo do bot devem ser redirecionados para os níveis superiores, em consonância com as boas práticas de gestão de serviços de TI.
+
+\subsection{SLA e o atendimento automatizado no contexto do ITIL v4}
+
+O \textit{Service Level Agreement} (SLA), ou Acordo de Nível de Serviço, é um elemento central na gestão de serviços conforme definido pelo ITIL v4. Trata-se de um compromisso formal entre o provedor do serviço e seus usuários, que estabelece padrões mensuráveis de desempenho, como tempo de resposta, disponibilidade, frequência de falhas e tempo médio de resolução~\cite{axelos2019itil}.
+
+A prática de \textit{Service Level Management}, prevista no ITIL v4, tem por objetivo assegurar que todos os serviços, incluindo os automatizados, sejam entregues de acordo com critérios acordados de qualidade. Essa prática também é responsável por garantir que os SLAs estejam alinhados com as necessidades reais dos usuários e os objetivos da organização~\cite{axelos2019itil}.
+
+No escopo deste trabalho, o chatbot desenvolvido para a Universidade de Brasília atua predominantemente no \textbf{Nível 1 de atendimento}, respondendo a dúvidas recorrentes e orientações acadêmicas baseadas em documentos institucionais. Nesse nível, os SLAs podem prever, por exemplo, que 95\% das respostas sejam entregues em até 10 segundos e que pelo menos 90\% das solicitações sejam resolvidas sem necessidade de encaminhamento. Esses indicadores refletem os objetivos de agilidade, disponibilidade e acessibilidade — critérios especialmente relevantes em ambientes educacionais, onde a informação oportuna impacta diretamente a tomada de decisão dos estudantes.
+
+Contudo, reconhecendo que nem todas as demandas podem ser tratadas de forma automatizada, o sistema prevê o \textbf{encaminhamento para o Nível 2 de atendimento}, composto por setores como secretarias, coordenações de curso e professores. O chatbot, ao identificar limitações no escopo da sua atuação — como casos excepcionais, dúvidas contextuais ou situações que envolvam julgamento humano —, deverá direcionar o usuário para os canais adequados, respeitando os fluxos institucionais existentes. Esse mecanismo de transição entre níveis de atendimento é coerente com as boas práticas de escalonamento definidas pelo ITIL v4, que preveem a resolução de incidentes e requisições por meio de uma cadeia estruturada de suporte~\cite{axelos2019itil}.
+
+Dessa forma, a implementação do chatbot alinhada ao modelo de SLAs e à estrutura de atendimento do ITIL v4 contribui para a profissionalização do suporte acadêmico, garantindo previsibilidade, eficiência e controle na entrega das informações institucionais aos estudantes.
+
+\subsection{O chatbot no contexto do ITIL}
+
+A aplicação do ITIL v4 como estrutura de apoio para o desenvolvimento e operação de sistemas de atendimento baseados em chatbots permite alinhar os objetivos técnicos da solução às melhores práticas de gestão de serviços de TI. No escopo deste trabalho, o chatbot proposto atua diretamente nas práticas de \textit{Service Request Management} e \textit{Service Level Management}, previstas no modelo ITIL, promovendo atendimento automatizado de dúvidas frequentes com base em documentos oficiais da Universidade de Brasília.
+
+De acordo com o ITIL v4, a prática de \textit{Service Request Management} tem como objetivo lidar com solicitações de serviço de rotina — aquelas que não são incidentes —, como pedidos de informação, acesso a documentos ou orientações institucionais~\cite{axelos2019itil}. Essa prática é especialmente compatível com o propósito do chatbot, uma vez que o sistema automatiza o fornecimento de respostas padronizadas relacionadas a prazos, trancamentos, cargas horárias, normas e procedimentos acadêmicos.
+
+Adicionalmente, o chatbot está vinculado à prática de \textit{Service Level Management}, responsável por garantir que os serviços atendam a critérios mensuráveis de desempenho definidos em Acordos de Nível de Serviço (SLAs). Como agente automatizado de primeiro atendimento (nível 1), o chatbot pode ser configurado para garantir indicadores como tempo médio de resposta e taxa de resolução, monitorando sua própria efetividade conforme metas previamente estabelecidas.
+
+No modelo de atendimento hierarquizado do ITIL, o chatbot também exerce um papel crucial na triagem e no redirecionamento de casos mais complexos para o \textbf{Nível 2 de atendimento}, que será realizado por humanos, como membros da secretaria ou professores orientadores. Essa função de escalonamento segue as diretrizes de transição previstas no ITIL, que indicam a transferência de responsabilidade entre níveis de suporte quando há necessidade de maior especialização ou julgamento humano~\cite{axelos2019itil}.
+
+Dessa forma, a estrutura de atendimento proposta — baseada em chatbot com capacidade de encaminhamento — permite à instituição oferecer suporte acadêmico contínuo, padronizado, rastreável e escalável. A incorporação do ITIL v4 no projeto não apenas confere maior aderência a modelos profissionais de prestação de serviço, como também estabelece uma base sólida para futuras expansões, como o monitoramento sistemático de SLAs e a integração com sistemas institucionais de atendimento.
+
+
 \section{Tecnologias e Ferramentas Utilizadas}
 
 O desenvolvimento do assistente virtual proposto será realizado com base em tecnologias modernas e acessíveis. Dentre as ferramentas e linguagens consideradas, destacam-se:
