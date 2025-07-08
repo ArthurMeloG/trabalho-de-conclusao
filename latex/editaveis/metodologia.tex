@@ -72,6 +72,12 @@ A metodologia foi dividida nas seguintes etapas:
 
 Com o objetivo de embasar o desenvolvimento da solução proposta neste trabalho, foi realizada uma pesquisa de caráter exploratório junto aos discentes da Faculdade do Gama da Universidade de Brasília (FGA/UnB). A intenção da investigação é compreender as principais dificuldades enfrentadas pelos estudantes no acesso a informações acadêmicas institucionais, bem como mapear suas necessidades e expectativas quanto à adoção de ferramentas digitais de suporte, como um chatbot automatizado.
 
+A escolha pela realização de uma pesquisa de natureza exploratória está alinhada ao estágio inicial do desenvolvimento da solução proposta e à escassez de dados estruturados sobre o comportamento informacional dos estudantes da Universidade de Brasília. A pesquisa exploratória permite ao pesquisador familiarizar-se com o problema, levantar hipóteses iniciais e identificar padrões que possam orientar as fases subsequentes do trabalho.
+
+De acordo com Gil~\cite{gil2008como}, esse tipo de pesquisa é particularmente indicado quando o tema estudado é pouco conhecido ou quando se pretende obter uma visão preliminar sobre determinada situação. Fontelles~\cite{fontelles2009} acrescenta que pesquisas exploratórias são fundamentais para identificar variáveis relevantes e refinar abordagens metodológicas em projetos aplicados.
+
+No contexto deste trabalho, a pesquisa realizada com os discentes da FCTE/UnB visa compreender suas dificuldades na obtenção de informações acadêmicas, os canais mais utilizados para essa finalidade e suas percepções quanto à adoção de ferramentas digitais, como um chatbot. Esses dados exploratórios serão essenciais para subsidiar a definição dos requisitos do sistema e orientar decisões de projeto de forma fundamentada.
+
 O instrumento de coleta foi estruturado por meio de um questionário eletrônico, distribuído via formulários online, e amplamente divulgado em canais de comunicação frequentes entre os estudantes, como grupos de WhatsApp e Telegram. O questionário foi dividido em quatro seções temáticas.
 
 Na \textbf{primeira seção}, foram coletados dados de identificação acadêmica dos respondentes, incluindo o curso de graduação, o vínculo com a universidade (regular, mobilidade ou especial) e o período atual de matrícula. Esses dados possibilitam segmentar as respostas e analisar variações de percepção entre diferentes perfis acadêmicos.
@@ -84,7 +90,37 @@ Por fim, a \textbf{quarta seção} explorou a aceitação e as preferências dos
 
 As respostas serão analisadas de forma quantitativa e qualitativa, com foco em identificar padrões, lacunas informacionais e oportunidades de automação. Esses dados subsidiarão diretamente o levantamento de requisitos da aplicação, a modelagem dos fluxos de atendimento e a definição dos conteúdos a serem incorporados ao sistema.
 
+% os resultados da pesquisa devem ser analisados, explorados e explicados em na sessão de resultados e discussões, com uma estrutura parecida com o seguinte:
+% \section{Análise dos resultados da pesquisa}
+% \subsection{Perfil dos respondentes}
+% Curso, período, tipo de vínculo
+% \subsection{Comportamentos de busca por informação}
+% Onde os alunos procuram, frequência, dificuldade
+% \subsection{Tópicos que geram mais dúvidas}
+% Quais temas mais mencionados, o que foi deixado de fazer por falta de informação
+% \subsection{Interesse e aceitação do chatbot}
+% Se usariam, por onde acessariam, sugestões de recursos
+
 \subsection{Levantamento e análise documental}
+
+Além da pesquisa com os estudantes, este trabalho adota o levantamento e a análise documental como estratégia metodológica para identificar, extrair e organizar as informações acadêmicas relevantes que servirão de base para a construção do conteúdo do chatbot.
+
+O levantamento documental consiste na coleta sistemática de documentos oficiais produzidos pela Universidade de Brasília (UnB), com ênfase em normativas institucionais, resoluções da Câmara de Ensino de Graduação (CEG), regulamentos internos da FCTE, Projetos Pedagógicos de Curso (PPCs), manuais acadêmicos e orientações publicadas nos sistemas institucionais, como o SIGAA. Esses documentos representam a fonte primária de informações que fundamentam os processos acadêmicos e administrativos vivenciados pelos estudantes da universidade.
+
+A análise documental será conduzida com enfoque qualitativo e organizacional, buscando mapear temas recorrentes, regras formais, prazos relevantes e terminologias específicas que frequentemente geram dúvidas entre os discentes. A partir dessa análise, serão extraídos os conteúdos pertinentes para a construção da base de dados do chatbot, organizados por assunto e associados a palavras-chave que favoreçam a indexação e a recuperação da informação em interações conversacionais.
+
+A escolha pela adoção da análise documental com abordagem qualitativa e organizacional neste trabalho se justifica pela natureza normativa das fontes utilizadas e pela necessidade de extrair delas não apenas dados objetivos, mas também significados, padrões e orientações aplicáveis ao contexto acadêmico dos estudantes.
+
+Segundo Bowen~\cite{bowen2009}, a análise documental qualitativa é uma estratégia robusta de investigação, caracterizada por sua não intrusividade, baixo custo e capacidade de fornecer contexto histórico e institucional aos dados estudados. Essa abordagem permite, ainda, realizar triangulações com outras técnicas de coleta, como questionários, reforçando a validade metodológica da pesquisa.
+
+Morgan~\cite{morgan2022} complementa que esse tipo de análise envolve etapas rigorosas, como seleção intencional dos documentos, codificação temática e interpretação reflexiva. Tais etapas se alinham ao objetivo deste trabalho de identificar e estruturar conteúdos relevantes a partir de regulamentos, resoluções e documentos oficiais da Universidade de Brasília, visando a organização de uma base de dados confiável e acessível para uso em interações automatizadas via chatbot.
+
+Dessa forma, a análise documental adotada nesta pesquisa não se limita a uma extração literal de informações, mas propõe uma reorganização semântica e temática dos conteúdos oficiais, com vistas à melhoria da acessibilidade e da compreensão por parte dos estudantes.
+
+Também será observada a coerência entre as diferentes fontes documentais, priorizando-se versões mais recentes e alinhadas aos normativos da Reitoria e das coordenações de curso. Sempre que possível, serão mantidos os trechos originais dos documentos, com ajustes redacionais mínimos para garantir clareza, objetividade e consistência com a linguagem natural utilizada pelos estudantes.
+
+Esse processo visa garantir que o chatbot opere como um canal de acesso confiável a informações institucionais, replicando o conteúdo oficial da universidade, mas de forma acessível, centralizada e automatizada.
+
 \subsection{Definição de requisitos e escopo funcional}
 \subsection{Modelagem dos fluxos de atendimento}
 \subsection{Desenvolvimento e prototipação do chatbot}
