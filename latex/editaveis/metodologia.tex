@@ -68,6 +68,28 @@ A metodologia foi dividida nas seguintes etapas:
     \item \textbf{Validação da ferramenta:} aplicação de testes com usuários reais, analisando a efetividade da solução e coletando sugestões de melhorias.
 \end{enumerate}
 
+\subsection{Abordagem metodológica centrada no usuário: Design Thinking}
+
+O presente trabalho adota o \textit{Design Thinking} como abordagem metodológica para guiar as etapas de concepção, definição e prototipação da solução proposta. Essa escolha justifica-se pelo caráter centrado no usuário da metodologia, que visa compreender profundamente as necessidades do público-alvo e propor soluções inovadoras com foco na empatia, na colaboração e na experimentação iterativa~\cite{brown2009change, liedtka2018design}.
+
+De acordo com Brown~\cite{brown2009change}, o \textit{Design Thinking} é uma abordagem orientada à solução de problemas complexos, que combina sensibilidade ao fator humano com critérios técnicos e estratégicos de viabilidade. Liedtka~\cite{liedtka2018design} complementa que seu valor está em fornecer uma estrutura para a geração e testagem de ideias de forma ágil, criativa e sistemática.
+
+A aplicação do \textit{Design Thinking} neste trabalho segue o modelo de cinco etapas, adaptadas ao contexto de desenvolvimento do chatbot acadêmico:
+
+\begin{enumerate}
+    \item \textbf{Empatia:} busca pela compreensão profunda das necessidades dos estudantes da UnB por meio da pesquisa exploratória aplicada à comunidade discente, com foco em identificar dificuldades no acesso a informações institucionais;
+    
+    \item \textbf{Definição:} organização e interpretação dos dados coletados para delimitar com clareza o problema a ser resolvido, destacando as lacunas na comunicação acadêmica e a fragmentação das fontes de informação;
+    
+    \item \textbf{Ideação:} geração de ideias para possíveis soluções, considerando alternativas como sistemas web, aplicativos móveis e, especialmente, a proposta de um chatbot integrado a plataformas de comunicação já utilizadas pelos estudantes;
+    
+    \item \textbf{Prototipação:} construção de um protótipo funcional do chatbot, com base nos fluxos de atendimento definidos e nos dados estruturados extraídos de documentos oficiais;
+    
+    \item \textbf{Testes:} avaliação iterativa da solução com usuários reais, coleta de feedbacks e refinamento do sistema com base em critérios de usabilidade e conformidade com os objetivos definidos.
+\end{enumerate}
+
+A utilização do \textit{Design Thinking} neste projeto contribui para garantir que a solução desenvolvida seja não apenas tecnicamente viável, mas também desejável para os usuários e alinhada ao contexto institucional. Além disso, essa abordagem estimula uma postura investigativa e iterativa, promovendo a melhoria contínua da aplicação ao longo de seu ciclo de vida.
+
 \subsection{Pesquisa exploratória com estudantes da UnB}
 
 Com o objetivo de embasar o desenvolvimento da solução proposta neste trabalho, foi realizada uma pesquisa de caráter exploratório junto aos discentes da Faculdade do Gama da Universidade de Brasília (FGA/UnB). A intenção da investigação é compreender as principais dificuldades enfrentadas pelos estudantes no acesso a informações acadêmicas institucionais, bem como mapear suas necessidades e expectativas quanto à adoção de ferramentas digitais de suporte, como um chatbot automatizado.
@@ -122,10 +144,72 @@ Também será observada a coerência entre as diferentes fontes documentais, pri
 Esse processo visa garantir que o chatbot opere como um canal de acesso confiável a informações institucionais, replicando o conteúdo oficial da universidade, mas de forma acessível, centralizada e automatizada.
 
 \subsection{Definição de requisitos e escopo funcional}
+
+A definição de requisitos é uma etapa fundamental no processo de desenvolvimento de software, sendo responsável por transformar necessidades identificadas no levantamento de dados em funcionalidades claras, priorizadas e tecnicamente viáveis. Essa etapa é especialmente crítica em projetos que envolvem interação com usuários finais, como sistemas de atendimento automatizado, uma vez que as expectativas e os fluxos de uso precisam ser compreendidos e traduzidos em componentes do sistema~\cite{pressman2016engenharia, sommerville2011}.
+
+No presente trabalho, a definição dos requisitos do chatbot baseou-se em três principais fontes de informação: (i) a pesquisa exploratória conduzida com os estudantes da FCTE/UnB; (ii) a análise documental de normas institucionais e regulamentos acadêmicos; e (iii) os princípios de usabilidade e objetividade recomendados para sistemas de suporte conversacional. A combinação desses elementos permitiu identificar as funcionalidades mais demandadas, os temas prioritários e os canais preferenciais de acesso por parte dos usuários.
+
+Foram estabelecidos, inicialmente, requisitos funcionais voltados à consulta de informações acadêmicas por meio de interações em linguagem natural. Entre as funcionalidades previstas estão: responder a dúvidas frequentes com base nos documentos oficiais da universidade; direcionar o usuário para a leitura integral de um regulamento; exibir prazos e datas importantes; e, quando necessário, encaminhar o estudante para atendimento humano no nível 2, como coordenação de curso ou secretaria acadêmica.
+
+Do ponto de vista não funcional, considerou-se como requisitos: acessibilidade (compatibilidade com WhatsApp e Telegram), clareza das respostas, baixo tempo de resposta, consistência na linguagem adotada, e atualizabilidade da base de dados, com vistas à manutenção da relevância das informações.
+
+O escopo funcional delimitado nesta etapa contempla exclusivamente o atendimento automatizado de demandas de nível 1, com capacidade de triagem e repasse ao nível 2. Não estão contempladas integrações com sistemas internos da universidade, autenticação de usuários, nem o tratamento de requisições administrativas formais. Essa delimitação tem por objetivo garantir a viabilidade técnica e o foco do desenvolvimento durante a execução do trabalho de conclusão de curso.
+
+A definição de requisitos será documentada em formato textual e visual (diagramas de caso de uso e fluxos conversacionais), sendo refinada nas etapas seguintes de modelagem e prototipação.
+
 \subsection{Modelagem dos fluxos de atendimento}
+
+A modelagem dos fluxos de atendimento é uma etapa essencial no desenvolvimento de interfaces conversacionais, como chatbots, pois permite estruturar previamente os possíveis caminhos que uma interação pode seguir. Essa prática garante consistência, clareza e completude no atendimento automatizado, além de favorecer a identificação de exceções e pontos de escalonamento para atendimento humano.
+
+Segundo Barbosa e Silva~\cite{barbosa2010interacao}, a definição de fluxos bem estruturados está diretamente relacionada à usabilidade e à eficácia de sistemas interativos. No contexto deste trabalho, os fluxos de atendimento representam o conjunto de decisões e respostas que o chatbot poderá tomar a partir de entradas fornecidas pelos usuários, com base em palavras-chave, categorias temáticas e intenções previamente mapeadas.
+
+A construção desses fluxos será orientada pelas informações obtidas na análise documental e na pesquisa com os estudantes, garantindo alinhamento entre as funcionalidades implementadas e as necessidades reais dos usuários. Cada fluxo será organizado em formato hierárquico, utilizando diagramas de decisão e pseudodiálogos, com identificação clara de nós de entrada, pontos de bifurcação e ações finais, como resposta textual, link para documento ou redirecionamento para atendimento humano.
+
+Os temas tratados nos fluxos incluem, mas não se limitam a: trancamento de matrícula, reaproveitamento de disciplinas, prazos acadêmicos, participação em atividades complementares e dúvidas relacionadas ao SIGAA. Em situações onde a dúvida extrapola a competência do atendimento automatizado, o fluxo prevê o encaminhamento do estudante ao atendimento de nível 2, conforme os princípios de escalonamento definidos pelo ITIL v4~\cite{axelos2019itil}.
+
+Essa modelagem será documentada utilizando notações gráficas simples, como fluxogramas e diagramas de árvore de decisão, com o objetivo de facilitar a prototipação, o refinamento colaborativo e a posterior implementação do sistema.
+
 \subsection{Desenvolvimento e prototipação do chatbot}
+
+A fase de desenvolvimento e prototipação do chatbot consiste na transformação dos requisitos levantados e dos fluxos modelados em uma aplicação funcional de atendimento automatizado. Essa etapa contempla tanto a construção de uma interface conversacional coerente com os padrões definidos na modelagem quanto a implementação da lógica de resposta com base em dados previamente estruturados a partir da análise documental.
+
+Para o desenvolvimento da aplicação, será utilizada uma abordagem iterativa e incremental, com foco na entrega contínua de funcionalidades testáveis. Segundo Sommerville~\cite{sommerville2011}, esse modelo de desenvolvimento favorece projetos que envolvem prototipação rápida, retroalimentação dos usuários e validação de requisitos em ciclos curtos, como é o caso de aplicações voltadas à interação com o usuário final.
+
+A tecnologia de construção do chatbot será baseada em plataformas compatíveis com WhatsApp e Telegram, priorizando ferramentas que permitam flexibilidade na definição de fluxos, integração com banco de dados local e facilidade de manutenção. Serão avaliadas opções como o uso de frameworks como Node.js, Python (com bibliotecas como \textit{python-telegram-bot} e \textit{Twilio API}) ou plataformas de automação de mensagens com suporte a lógica condicional.
+
+O protótipo inicial será desenvolvido com base nos fluxos mais recorrentes identificados na pesquisa com os estudantes, de forma a garantir relevância e aplicabilidade. Em paralelo, será criado um ambiente de testes controlado, no qual usuários reais poderão interagir com o chatbot e fornecer feedback sobre clareza, navegabilidade e utilidade das respostas. Essa abordagem é recomendada por Barbosa e Silva~\cite{barbosa2010interacao}, que destacam a importância da prototipação no aprimoramento de sistemas interativos centrados no usuário.
+
+Por fim, o código-fonte da aplicação será modularizado e documentado, permitindo que futuras equipes da universidade possam evoluir o sistema, seja com integração a outros serviços acadêmicos, seja com a incorporação de novos temas ou regras institucionais.
+
 \subsection{Integração e testes com usuários}
+
+A etapa de integração e testes com usuários tem como objetivo verificar a conformidade do chatbot com os requisitos estabelecidos, além de avaliar sua eficácia, clareza e utilidade do ponto de vista dos estudantes da Universidade de Brasília. Essa fase é essencial para validar a aderência do sistema às necessidades reais da comunidade acadêmica e identificar oportunidades de melhoria antes da disponibilização final da ferramenta.
+
+Os testes serão conduzidos com um grupo de usuários selecionado a partir da própria comunidade estudantil da FCTE/UnB, preferencialmente contemplando diversidade de cursos, períodos e perfis de uso. A participação será voluntária, com convite direcionado àqueles que demonstraram interesse durante a pesquisa exploratória.
+
+A metodologia adotada será baseada em testes de usabilidade do tipo \textit{think-aloud}, nos quais os participantes interagem com o chatbot e expressam verbalmente suas impressões e dificuldades durante o uso. Essa técnica permite identificar barreiras cognitivas, problemas de compreensão e falhas de fluxo, sendo amplamente recomendada para sistemas interativos baseados em linguagem natural~\cite{nielsen1993usability}.
+
+Serão aplicados, ainda, questionários de avaliação baseados em escalas de usabilidade, como o \textit{System Usability Scale} (SUS), conforme proposto por Brooke~\cite{brooke1996sus}. Essa abordagem permite mensurar a percepção geral dos usuários sobre a facilidade de uso do sistema de forma padronizada e comparável.
+
+Durante os testes, será observada também a eficácia das respostas, o tempo de resolução, a clareza na apresentação dos conteúdos e a adequação do encaminhamento para o nível 2 de atendimento nos casos em que o chatbot não puder atender diretamente. Os feedbacks coletados serão utilizados para refinamento do protótipo e ajustes nos fluxos de atendimento.
+
+A condução dos testes respeitará os princípios éticos aplicáveis, com garantia de anonimato, livre consentimento e possibilidade de desistência a qualquer momento.
+
 \subsection{Avaliação com base em critérios de usabilidade e SLA}
+
+A avaliação do chatbot desenvolvido neste trabalho será conduzida com base em dois conjuntos complementares de critérios: os princípios de usabilidade, voltados à experiência do usuário, e os parâmetros de Acordo de Nível de Serviço (SLA), associados à qualidade e confiabilidade da entrega do serviço automatizado.
+
+A usabilidade será analisada segundo os atributos definidos por Nielsen~\cite{nielsen1993usability}, que incluem: facilidade de aprendizado, eficiência de uso, memorabilidade, taxa de erros e satisfação subjetiva. Esses critérios são amplamente aceitos na área de Interação Humano-Computador (IHC) e serão operacionalizados por meio de observações durante os testes e da aplicação do questionário padronizado \textit{System Usability Scale} (SUS), conforme descrito na subseção anterior.
+
+Adicionalmente, será realizada uma avaliação da qualidade do serviço prestado com base em métricas de SLA (Service Level Agreement), conforme orienta o ITIL v4~\cite{axelos2019itil}. As métricas adotadas incluem: tempo médio de resposta do chatbot, taxa de resolução no primeiro contato (First Call Resolution), percentual de dúvidas encaminhadas para atendimento de nível 2, e disponibilidade do sistema nos horários definidos de operação.
+
+Essas métricas serão extraídas a partir dos registros de uso do chatbot durante os testes e simulações controladas. A análise conjunta dos dados permitirá verificar se o sistema atende aos padrões mínimos de desempenho e utilidade, bem como identificar pontos de aprimoramento na arquitetura ou nos fluxos de atendimento.
+
+Essa abordagem integrada visa garantir que o chatbot não apenas funcione corretamente sob o ponto de vista técnico, mas também seja percebido como útil, confiável e eficiente pelos seus usuários finais.
+
+
+\subsection{Testes de software e validação funcional}
+\subsection{Critérios de qualidade do software desenvolvido}
 
 \section{Ferramentas e Tecnologias Utilizadas}
 
