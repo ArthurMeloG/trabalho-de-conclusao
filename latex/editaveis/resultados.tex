@@ -184,7 +184,86 @@ RF08 & O sistema deve informar ao usuário, de forma transparente, quais são su
 \end{tabular}
 \end{table}
 
-\subsection{Requisitos Não Funcionais}
+\subsection{Requisitos não funcionais do sistema}
+
+Além das funcionalidades específicas, o sistema chatbot deve atender a um conjunto de requisitos não funcionais (RNF), os quais tratam das qualidades e restrições globais que influenciam a experiência do usuário, o desempenho, a segurança e a manutenibilidade da solução. Esses requisitos garantem que o software não apenas funcione corretamente, mas também o faça de maneira eficaz e satisfatória \cite{pressman2016engenharia, iso25010}.
+
+A Tabela~\ref{tab:requisitos_nao_funcionais} apresenta os requisitos não funcionais definidos com base nas boas práticas de Engenharia de Software, nos resultados da pesquisa exploratória com os usuários e nos critérios observados durante o benchmarking.
+
+\begin{table}[H]
+\caption{Requisitos não funcionais do chatbot acadêmico}
+\label{tab:requisitos_nao_funcionais}
+\centering
+\begin{tabular}{|c|p{12cm}|}
+\hline
+\textbf{ID} & \textbf{Descrição do Requisito Não Funcional} \\
+\hline
+RNF01 & \textbf{Usabilidade}: o chatbot deve apresentar linguagem acessível, interface amigável e interação natural, garantindo que estudantes de diferentes níveis de familiaridade tecnológica possam utilizá-lo sem dificuldades. \\
+\hline
+RNF02 & \textbf{Confiabilidade}: o sistema deve responder com informações corretas e atualizadas, extraídas de fontes oficiais da UnB, como o Projeto Pedagógico de Curso (PPC), regulamentos e editais. \\
+\hline
+RNF03 & \textbf{Disponibilidade}: o chatbot deve estar disponível para uso 24 horas por dia, 7 dias por semana, uma vez que a busca por informações pode ocorrer fora do horário administrativo. \\
+\hline
+RNF04 & \textbf{Desempenho}: o tempo de resposta do chatbot deve ser inferior a 2 segundos, garantindo agilidade no atendimento e evitando frustração do usuário. \\
+\hline
+RNF05 & \textbf{Portabilidade}: o sistema deve funcionar corretamente nas plataformas Telegram e WhatsApp, conforme a preferência majoritária dos usuários identificada na pesquisa. \\
+\hline
+RNF06 & \textbf{Manutenibilidade}: o sistema deve ser projetado de forma modular e documentada, facilitando a atualização de informações e a adição de novas funcionalidades futuras. \\
+\hline
+RNF07 & \textbf{Segurança}: o chatbot não deve solicitar nem armazenar dados sensíveis dos usuários, respeitando os princípios da Lei Geral de Proteção de Dados Pessoais (LGPD) – Lei nº 13.709/2018. \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Priorização de requisitos}
+Haja vista a quantidade de funcionalidades elencadas através do levantamento de requisitos e do brainstorming, será utilizada a técnica de priorização de requisitos MoSCoW, que é uma abordagem eficaz para classificação com base na importância de cada exigência \cite{cottrell1999}. Ela se divide em 4 categorias:
+
+        \begin{itemize}
+            \item \textbf{\textit{Must Have}}: (Precisa
+            ter), são essenciais para o sucesso do projeto
+            \item \textbf{\textit{Should Have}}: (Deve ter), são requisitos desejáveis para o sistema, apesar de ser possível a existência do projeto sem eles, mesmo que temporariamente.
+            \item \textbf{\textit{Could Have}}: (Pode ter), funcionalidades adicionais que podem ser priorizadas, caso haja tempo.
+            \item \textbf{\textit{Won’t Have}}: (não terá agora), requisitos que não terão prioridade durante o desenvolvimento do projeto.
+        \end{itemize}
+
+Assim, a priorizacao pode ser conferida na Tabela ~\cite{priorizacao_requisitos}
+
+\begin{table}[H]
+\caption{Priorização dos requisitos segundo o modelo MoSCoW}
+\label{tab:priorizacao_requisitos}
+\centering
+\begin{tabular}{|p{9cm}|c|}
+\hline
+\textbf{Requisito} & \textbf{Prioridade} \\
+\hline
+RF01: Permitir consulta a dúvidas frequentes baseadas em regulamentos & Must Have \\
+\hline
+RF02: Exibir prazos e datas importantes com base no calendário acadêmico & Must Have \\
+\hline
+RF03: Gerar links diretos para documentos oficiais da UnB/FCTE & Should Have \\
+\hline
+RF04: Encaminhar o usuário para a secretaria ou professor responsável, quando necessário & Must Have \\
+\hline
+RF05: Armazenar histórico da conversa para fins de melhoria do sistema & Could Have \\
+\hline
+RNF01: Usabilidade (linguagem acessível e interação amigável) & Must Have \\
+\hline
+RNF02: Confiabilidade das informações (origem oficial) & Must Have \\
+\hline
+RNF03: Disponibilidade 24/7 & Should Have \\
+\hline
+RNF04: Tempo de resposta inferior a 2 segundos & Must Have \\
+\hline
+RNF05: Portabilidade (funcionar em Telegram e WhatsApp) & Must Have \\
+\hline
+RNF06: Manutenibilidade (modularidade e documentação) & Should Have \\
+\hline
+RNF07: Segurança (conformidade com a LGPD) & Must Have \\
+\hline
+\end{tabular}
+\end{table}
+
+
 \subsection{Critérios de Aceitação}
 
 
