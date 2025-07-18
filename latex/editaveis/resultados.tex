@@ -263,13 +263,76 @@ RNF07: Segurança (conformidade com a LGPD) & Must Have \\
 \end{tabular}
 \end{table}
 
+\subsection{Critérios de aceitação dos requisitos}
 
-\subsection{Critérios de Aceitação}
+Para garantir que os requisitos definidos para o chatbot sejam devidamente compreendidos, implementados e validados, estabelece-se neste trabalho um conjunto de critérios de aceitação. Esses critérios representam condições objetivas que permitem verificar se uma funcionalidade foi implementada corretamente e atende às expectativas previamente estabelecidas.
 
+Segundo Sommerville (2011), os critérios de aceitação são fundamentais para validar requisitos funcionais e não funcionais, atuando como ponto de verificação entre o que foi solicitado e o que foi entregue. No contexto do desenvolvimento ágil e iterativo adotado neste projeto, esses critérios também auxiliam na organização de tarefas e na construção de testes direcionados à verificação da solução.
+
+A formulação dos critérios foi orientada pelos seguintes princípios:
+\begin{itemize}
+    \item Clareza e objetividade nas condições de sucesso;
+    \item Alinhamento direto com os requisitos levantados;
+    \item Foco na experiência do usuário final;
+    \item Facilidade de mensuração e validação prática.
+\end{itemize}
+
+A Tabela~\ref{tab:criterios_aceitacao} apresenta os critérios de aceitação definidos para alguns dos requisitos funcionais mais relevantes do projeto.
+
+\begin{table}[H]
+\centering
+\caption{Critérios de aceitação de requisitos selecionados}
+\label{tab:criterios_aceitacao}
+\begin{tabular}{|p{5cm}|p{9cm}|}
+\hline
+\textbf{Requisito} & \textbf{Critério de Aceitação} \\ \hline
+Responder dúvidas frequentes & O chatbot deve retornar uma resposta coerente e correta para ao menos 90\% das perguntas listadas no banco de dados de perguntas frequentes. \\ \hline
+Fornecer links diretos para documentos oficiais & Ao ser questionado sobre determinado procedimento, o chatbot deve fornecer um link funcional que leve diretamente ao documento relevante, hospedado em domínio oficial da UnB ou FCTE. \\ \hline
+Apresentar prazos importantes & O chatbot deve ser capaz de listar, quando solicitado, os principais prazos do calendário acadêmico vigente, com as respectivas datas e descrições. \\ \hline
+Encaminhar para atendimento humano & Quando não for capaz de resolver a dúvida do usuário, o chatbot deve informar claramente a limitação e apresentar um canal de contato (e-mail ou link para atendimento via secretaria ou professor). \\ \hline
+Disponibilizar atendimento em múltiplos canais & O chatbot deve ser acessível por pelo menos duas plataformas distintas (por exemplo, WhatsApp e Telegram), com comportamento equivalente em ambas. \\ \hline
+\end{tabular}
+\end{table}
 
 \section{Modelagem e Arquitetura da Solução}
 
+Esta seção apresenta a modelagem técnica do sistema proposto, contemplando sua arquitetura geral, os principais componentes envolvidos, as interações entre os módulos e os padrões utilizados no desenvolvimento. A modelagem tem como objetivo estabelecer uma visão clara da estrutura interna do chatbot, evidenciando sua organização, responsabilidades e os fluxos de informação que permitem seu funcionamento.
+
+A definição da arquitetura da solução parte dos requisitos elicitados e das necessidades identificadas ao longo das etapas de pesquisa, com ênfase na simplicidade, escalabilidade e manutenibilidade do sistema. O chatbot foi concebido para operar como uma ferramenta de suporte informacional aos estudantes da Faculdade do Gama da Universidade de Brasília (FCTE/UnB), integrando-se a plataformas populares de mensageria e respondendo a consultas com base em documentos oficiais e regulamentações institucionais.
+
+\subsection{Arquitetura da Solução}
+
+A arquitetura da solução proposta foi concebida com base em princípios de modularidade, escalabilidade e facilidade de integração. A estrutura segue uma abordagem baseada em microsserviços, permitindo a separação clara entre as camadas de interface, lógica de negócios e persistência de dados.
+
+A Figura~\ref{fig:arquitetura} apresenta a arquitetura geral do sistema. O núcleo da aplicação é composto por uma API desenvolvida em \textit{Spring Boot}, responsável por centralizar a lógica de negócios do chatbot. Essa API é hospedada na nuvem da Amazon Web Services (AWS), o que garante maior disponibilidade, escalabilidade e segurança à solução.
+
+Na camada de dados, é utilizado um banco de dados relacional PostgreSQL, que armazena as informações necessárias para o funcionamento do sistema, como diálogos, regras de atendimento, histórico de interações e dados administrativos.
+
+Para a interface com o usuário, a solução oferece um \textit{frontend} desenvolvido em \textit{Next.js}, uma estrutura baseada em React, que proporciona uma experiência de aplicação de página única (SPA). Esse frontend é hospedado na plataforma Vercel, especializada no suporte a aplicações \textit{serverless} modernas.
+
+Além do acesso via navegador, a solução também permite que os usuários interajam com o chatbot através de plataformas de mensagens instantâneas, como WhatsApp e Telegram. Essas integrações ocorrem por meio das APIs específicas dessas plataformas, que se comunicam com a API do chatbot para fornecer respostas automáticas em tempo real.
+
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=0.95\textwidth]{../figuras/arquitetura.png}
+%     \caption{Arquitetura}
+%     \label{fig:arquitetura}
+% \end{figure}
+
+\subsection{Componentes da Aplicação}
+
+\subsection{Fluxo de Dados e Comunicação entre Módulos}
+
 \section{Fluxos e Casos de Uso}
 
-\section{Protótipo de Alta Fidelidade}
+% \subsection{Protótipo de Baixa Fidelidade}
+
+% O desenvolvimento de protótipos é uma etapa fundamental no processo de construção de soluções centradas no usuário, pois permite antecipar a estrutura, o funcionamento e a navegabilidade do sistema proposto antes de sua implementação final. Segundo Preece, Rogers e Sharp (2013), protótipos de baixa fidelidade são representações simplificadas que visam avaliar a concepção geral da interface e as principais funcionalidades, sem necessidade de detalhamento estético ou de integração com sistemas complexos.
+
+% Neste trabalho, optou-se por utilizar capturas de tela (\textit{screenshots}) diretamente do MVP já desenvolvido como forma de prototipação de baixa fidelidade. Essa decisão se deu em função da limitação de tempo disponível para elaboração de protótipos dedicados, além da existência de um produto funcional minimamente viável que já ilustra de forma eficaz os principais fluxos de interação.
+
+% Essa abordagem também é consistente com o modelo de desenvolvimento incremental adotado, em que versões preliminares do sistema são utilizadas como base para refinamentos e validações, conforme preconizado por metodologias ágeis como XP e Scrum.
+
+% As imagens apresentadas nas próximas seções demonstram as principais telas e interações do chatbot, permitindo uma análise visual e funcional da solução proposta, bem como auxiliando na validação junto aos usuários e stakeholders.
+
 
